@@ -1,0 +1,182 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-8 pl-3 pt-3">
+            <p class="heading">
+                <mdb-icon fas icon="{{popupIcon}}" class="title-icon"></mdb-icon>&nbsp;{{popupLabel}}
+            </p>
+        </div>
+
+
+        <div class="col-lg-3 ">
+
+            <p class="news-id" *ngIf="data">News ID - <span class="count">{{data.id}}</span>
+            </p>
+        </div>
+        <div class="col-lg-1 pt-2" style="text-align: right;" id="close">
+            <mdb-icon fas style=" color: #6146D5;cursor: pointer;visibility: visible;font-size: 24px;" icon="times"
+                mdbTooltip="Close" placement="left" (click)="onClose();">
+            </mdb-icon>
+        </div>
+    </div>
+
+    <mat-divider style="background-color:#d0d0d0;    margin-bottom: 10px;"></mat-divider>
+
+    <!-- <span style="color: red;vertical-align: -4px;">*</span> <span class="required-heading">Required</span> -->
+    <form [formGroup]='newsForm'>
+        <div class="col-md-12 pl-0 pr-0">
+            <div class="form-group">
+                <label class="label">News Title</label><br>
+                <input type="text" placeholder="Enter title" class="form-control input" formControlName="newsTitle"
+                    [ngClass]="{ 'is-invalid': submitted && f.newsTitle.errors }" maxlength="500">
+                <div *ngIf="submitted && f.newsTitle.errors" class="invalid-feedback" required>
+                    <div *ngIf="f.newsTitle.errors.required">News Title is required!</div>
+                    <div *ngIf="f.newsTitle.errors.maxLength">News title can't exceed more than 500 characters!</div>
+                </div>
+            </div>
+        </div>
+        <div class="poll-subject">Max character limit : 500</div>
+
+
+        <div class="col-md-5 pl-0">
+            <label class="label">Select News Category</label><br>
+            <!-- <div class="form-group"> -->
+                <ng-select class="md-4"  [clearable]="false" formControlName="newsCategoryId" onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))'
+                    [ngClass]="{ 'is-invalid': submitted && f.newsCategoryId.errors }">
+
+                    <!-- <option class="option" sledisabled hidden>Select Category</option> -->
+                    <ng-option value="" selected disabled hidden>Select/Search Category</ng-option>
+                    <ng-option class="option" *ngFor="let x of newsCategoryData" [value]="x.category_id">
+                        {{x.category_name}}
+
+                    </ng-option>
+                </ng-select>
+                <div *ngIf="submitted && f.newsCategoryId.errors" class="invalid-feedback">
+                    <div *ngIf="f.newsCategoryId.errors.required">News Category is required</div>
+                </div>
+
+            <!-- </div> -->
+        </div>
+        <!-- <mat-divider style="background-color:#d0d0d0 ;margin-top: 22px;"></mat-divider> -->
+
+
+        <div class="col-md-12 p-0">
+            <label class="label">News Description</label><br>
+            <div class="form-group">
+                <textarea placeholder="Enter description here" class="form-control input"
+                    formControlName="newsDescription" maxlength="5000"
+                    [ngClass]="{ 'is-invalid': submitted && f.newsDescription.errors }"></textarea>
+                <div *ngIf="submitted && f.newsDescription.errors" class="invalid-feedback">
+                    <div *ngIf="f.newsDescription.errors.required">News description is required</div>
+                    <div *ngIf="f.newsDescription.errors.maxLength">News description can't exceed more than 5000 characters!</div>
+                </div>
+            </div>
+        </div>
+        <div class="poll-subject">Max character limit : 5000</div>
+        <div class="col-md-12 pl-0">
+             <label class="label-upload">Upload Image (1 Attachment only for max size 5 MB)</label><br>
+           
+             <span style="position:relative;" *ngIf="isURL">
+            
+                
+            
+             <img src="{{url}}" class="img-upload" style="height: 120px;width: 165px;border-radius: 3%;" *ngIf="isURL" > 
+             <span  class="close AClass" (click)="deleteNewsFile()" *ngIf="isURL" style="color:red">&times;</span>
+
+             
+         </span>
+
+        <span  *ngIf="isURL">&nbsp; &nbsp; &nbsp; </span>
+         
+         <!-- <img src="{{url}}" class="img-upload" style="height: 120px;width: 165px;border-radius: 3%;" *ngIf="isURL" > <br/>
+       
+         <a class="remove-image" 
+         style="display: inline;" (click)="deleteNewsFile()" *ngIf="isURL">✖</a> -->
+       
+     
+        <button mat-raised-button color="search" for="fileInput" (click)="fileInput.value='';fileInput.click()"
+        >Browse Image</button>
+          
+          <input type='file' #fileInput hidden accept='image/*' (change)="onSelectFile($event)">
+        </div>
+   
+      
+    
+
+   <div *ngIf="newsData">
+            <mat-divider style="background-color:#d0d0d0;margin-top: 22px;" *ngIf="newsData.commentCount !== 0"></mat-divider>
+    <!-- <div class="space"></div> -->
+    <div class="comment-count" *ngIf="newsData.commentCount !== 0">{{newsData.commentCount}} comments</div>
+
+
+
+    <div *ngFor="let comment of newsData.comments">
+        <div class="row">
+            <div class="col-lg-10" style="margin-left: 33px;">
+                <h6 class="citizen-name-comment"><span class="pr-3">
+                        <!-- <img src="{{comment.image}}" class="img-square" > -->
+                        <!-- <img src="{{urlComment}}{{comment.image}}" class="img-square"> -->
+                        <img src="{{comment.image}}" class="img-square" *ngIf="comment.account_type == 'social'">
+                        <img src="{{urlComment}}/{{comment.image}}" class="img-square" *ngIf="comment.account_type == 'manual'">
+                    </span>{{comment.postedBy}}<span class="pt-2 displaySmallTextComment"> - Posted -
+                        {{comment.postedOn}}</span></h6>
+            </div>
+
+            <div class="col-lg-1" style="text-align: center;padding-left:60px">
+                <mdb-icon style=" color: #FE4848;cursor: pointer;" fas icon="trash-alt"
+                    (click)="deleteNewsComment(comment.commentID, comment.is_admin, comment.user_id)">
+                </mdb-icon>
+            </div>
+        </div>
+        <div class="row pl-5 pr-5">
+            <p class="pl-3 pr-5 displayMediumTextComment"> {{comment.comment}} </p>
+        </div>
+        <hr>
+    </div>
+
+    <div class="col-lg-12 "
+        *ngIf="newsData.commentCount!=0 && newsData.commentCount>3 && offset<newsData.commentCount">
+
+        <span class="load-more" (click)="getNewsDetails()">Load more comments...</span>
+    </div>
+</div>
+    <mat-divider style="background-color:#d0d0d0;margin-top: 22px;"></mat-divider>
+    <div class="news-hint"><span style="color: red;vertical-align: -4px;">*</span> Breaking news will be displayed in dashboard slider. After 48 hours it will be converted to normal news and removed from slider.</div>
+    <div class="news-hint"><span style="color: red;vertical-align: -4px;">*</span> Hide News will remove the post from News page in mobile app.</div>
+    <div class="row">
+        <div class="col-md-2 pt-1 pl-3">
+            <div class="form-group">
+
+                <mat-checkbox name="breaking" value="false" (change)="isBreakingNews($event)" formControlName="isBreakingNews">
+                    <span class="checkbox-label-disable" *ngIf="isDisable">Breaking News</span>
+                    <span class="checkbox-label" *ngIf="!isDisable">Breaking News</span>
+                    </mat-checkbox>
+            </div>
+        </div>
+        <div class="col-md-2 pt-1 pl-3">
+            <div class="form-group">
+
+                <mat-checkbox name="hide" value="false" (change)="isHideNews($event)" formControlName="isHideNews"><span
+                        class="checkbox-label">Hide News</span></mat-checkbox>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="float-right mb-3 pt-0">
+                <button mat-raised-button class="cancel" (click)="onClose()">Cancel</button>
+                <button mat-raised-button class="save ml-2" (click)="saveNews()">Save</button>
+            </div>
+        </div>
+
+     
+
+    </div>
+</form>
+<ngx-spinner 
+          bdColor="rgba(51,51,51,0.8)"
+          size="medium"
+          color="#fff"
+          type="timer"
+        >
+          <p style="font-size: 20px; color: white">Please wait...</p>
+        </ngx-spinner> 
+</div>

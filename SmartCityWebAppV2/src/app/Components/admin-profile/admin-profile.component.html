@@ -1,0 +1,246 @@
+<section class="bg">
+    <div class="row">
+    
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 header-color">
+        <!-- <div class="header-color p-0"> -->
+        <div class="bg-img-header p-0">
+          <h1 class="h1-heading"> {{head_title| uppercase}}</h1>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+    <div class="row">
+      <!-- <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center p-4">
+        <img width="100%" class="side-img" src="../../../assets/img/login-side-img.png" alt="..." />
+      </div> -->
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 p-4">
+        <div ng-app="myApp" ng-controller="myController">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 form-padding mb-3 ">
+                  <!-- <form name="myForm" class="form"> -->
+                  <form [formGroup]="adminProfileForm" class="form border-row">
+                    
+                    <div class="login-container">
+                      <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                        
+                          
+                         
+                         </div>
+                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" style="text-align: center;">
+                        <!-- <div *ngIf="adminDetails">
+                            <img src="{{url}}"  width="100%" class="rounded-circle usr-img .profile-img mr-2" for="fileInput" (click)="fileInput.value='';fileInput.click()" >
+                            <div class="profile-camera-icon" >
+                              <mdb-icon fas icon="camera" style="font-size: 10px;position: absolute;left: 5px; bottom: 5px;cursor: pointer;"></mdb-icon>
+                            </div> 
+                          </div> -->
+                     
+
+                      <div class="container" *ngIf="adminDetails">
+                        <input type='file' #fileInput hidden accept='image/*' (change)="onSelectFile($event)">
+                        <div class="outer">
+                          <img src="{{url}}"  width="100%" class="rounded-circle usr-img .profile-img mr-2" for="fileInput" (click)="fileInput.value='';fileInput.click()" >
+                          <div class="inner">
+                            
+                            
+                          <label for="fileInput" (click)="fileInput.value='';fileInput.click()"><mdb-icon fas icon="camera" style="font-size: 10px;position: absolute;left: 5px; bottom: 5px;cursor: pointer;"></mdb-icon></label>
+                          </div>
+                        </div>
+                      </div>
+                        <div class="profile-headline">
+                           My Profile
+                         </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 " style="text-align: right;padding-right: 80px;padding-top: 20px;">
+                          <mdb-icon fas icon="user-lock"  routerLink="/change-password" style="color: #6146D5;font-size: 13px;cursor: pointer;"></mdb-icon>&nbsp;
+                         <span class="password-link" (click)="verifyOTP()">Change Password</span> 
+                         
+                        </div>
+          
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 pt-4">
+                         <!-- <div class="md-form"> -->
+                        <!-- <mdb-icon fas icon="user" class="prefix" style="color: #6146D5;font-size: large;"></mdb-icon> -->
+                          <mat-form-field style="width: 90%;padding-top: 20px;">
+                            <mat-label style="font-family: 'Segoe UI';font-weight: 400;">Full Name</mat-label>
+                            <input type="text" matInput  required autocomplete="off" formControlName="fullName" minlength="1" >
+                            <mat-icon matPrefix style="color: #6146D5;font-size: 20px;">person</mat-icon>
+                            <mat-error *ngIf="adminProfileForm.get('fullName').hasError('required')">
+                              Full Name is required!
+                            </mat-error>
+                            <mat-error *ngIf="adminProfileForm.get('fullName').hasError('minlength')">
+                              Full Name should be at least 1 character long!
+                            </mat-error>     
+                            <mat-error *ngIf="adminProfileForm.get('fullName').hasError('maxlength')">
+                              Full Name can't exceed than 50 characters!
+                            </mat-error>
+                          </mat-form-field>
+                         
+                        
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 pt-4">
+                            <!-- <div class="md-form"> -->
+                           <!-- <mdb-icon fas icon="phone-alt" class="prefix" style="color: #6146D5;font-size: large;"></mdb-icon> -->
+                             <mat-form-field style="width: 90%;padding-top: 20px;">
+                               <mat-label style="font-family: 'Segoe UI';font-weight: 400;">Phone Number</mat-label>
+                               <input type="text" matInput  required autocomplete="off" formControlName="phoneNumber" minlength="10" maxlength="10">
+                               <mat-icon matPrefix style="color: #6146D5;font-size: 20px;">call</mat-icon>
+                               <mat-error *ngIf="adminProfileForm.get('phoneNumber').hasError('required')">
+                                Phone Number is required!
+                              </mat-error>
+                              <mat-error *ngIf="adminProfileForm.get('phoneNumber').hasError('pattern')">
+                                Please enter valid mobile number format!
+                              </mat-error>
+                             </mat-form-field>
+                            
+                           
+                           </div>
+                           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <!-- <div class="md-form"> -->
+                           <!-- <mdb-icon fas icon="envelope" class="prefix" style="color: #6146D5;font-size: large;"></mdb-icon> -->
+                             <mat-form-field style="width: 90%;">
+                               <mat-label style="font-family: 'Segoe UI';font-weight: 400;">Email ID</mat-label>
+                               <input type="email" matInput  required autocomplete="off" formControlName="email" readonly>
+                               <mat-icon matPrefix style="color: #6146D5;font-size: 20px;">mail</mat-icon>
+                               <mat-error *ngIf="adminProfileForm.get('email').hasError('required')">
+                                Email id is required!
+                              </mat-error>
+                             </mat-form-field>
+                            
+                           
+                           </div>
+                           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" style="margin-top: -3px;">
+
+                            <!-- <mdb-icon fas icon="tint" class="prefix" style="color: #6146D5;font-size: large;"></mdb-icon> -->
+                     
+                           <mat-form-field style=" width: 90%;">
+                             <mat-label style="font-family: 'Segoe UI';font-weight: 400;">Blood Group</mat-label>
+                             <mat-select (selectionChange)="selectedBloodGroupValue($event)" formControlName="bloodGroup"  style="padding-bottom: 5px !important;">
+                               
+                               <mat-option value="option1" *ngFor="let x of bloodGroupList" [value]="x.blood_group_id">{{x.blood_group}}</mat-option>
+                         
+                             </mat-select>
+                             <mat-icon matPrefix style="color: #6146D5;font-size: 20px;">opacity</mat-icon>
+                           </mat-form-field>
+                           </div>
+                           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                         
+                            <!-- <mdb-icon fas icon="address-book" class="prefix" style="color: #6146D5;font-size: large;"></mdb-icon> -->
+                            <mat-form-field style=" width: 90%;">
+                              <mat-label style="font-family: 'Segoe UI';font-weight: 400;">Address</mat-label>
+                              <input type="text" matInput autocomplete="off" formControlName="address">
+                              <mat-icon matPrefix style="color: #6146D5;font-size: 20px;">contacts</mat-icon>
+                              <!-- <mat-error *ngIf="adminProfileForm.get('address').hasError('required')">
+                                Address is required!
+                              </mat-error> -->
+                              
+                            </mat-form-field>
+                           
+                         
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                         
+                          <!-- <mdb-icon fas icon="phone-alt" class="prefix" style="color: #6146D5;font-size: large;"></mdb-icon> -->
+                          <mat-form-field style="width: 90%;">
+                            <mat-label style="font-family: 'Segoe UI';font-weight: 400;">Emergency Contact Number</mat-label>
+                            <input type="text" matInput   autocomplete="off"  formControlName="alternateNumber"  maxlength="10" minlength="10" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                            <mat-error *ngIf="adminProfileForm.get('alternateNumber').hasError('pattern')">
+                              Please enter valid mobile number format!
+                            </mat-error>
+                   
+                            <mat-icon matPrefix style="color: #6146D5;font-size: 20px;">call</mat-icon>
+                          </mat-form-field>
+                           
+                         
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                          <!-- <mdb-icon fas icon="city" class="prefix" style="color: #6146D5;font-size: large;"></mdb-icon> -->
+                        <mat-form-field style=" width: 90%;">
+                          <mat-label style="font-family: 'Segoe UI';font-weight: 400;">City</mat-label>
+                          <input type="text" matInput  required autocomplete="off" formControlName="city"  readonly>
+                          <mat-icon matPrefix style="color: #6146D5;font-size: 20px;">location_city</mat-icon>
+                          <mat-error *ngIf="adminProfileForm.get('city').hasError('required')">
+                            City is required!
+                          </mat-error>
+                        </mat-form-field>
+                            <!-- <mdb-icon fas icon="city" class="prefix" style="color: #6146D5;font-size: large;"></mdb-icon>
+                            <mat-form-field style="padding-left: 20px; width: 88%;">
+                              <mat-label style="font-family: 'Segoe UI';font-weight: 400;">City</mat-label>
+                              <input type="text" matInput  required autocomplete="off" formControlName="city"  >
+                              
+                            </mat-form-field> -->
+                           
+                         
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" style="margin-top: -3px;">
+                         
+                            <!-- <mdb-icon fas icon="map-marker-alt" class="prefix" style="color: #6146D5;font-size: large;"></mdb-icon> -->
+                            <!-- <mat-form-field style="padding-left: 20px; width: 88%;">
+                              <mat-label style="font-family: 'Segoe UI';font-weight: 400;">Pincode</mat-label>
+                              <input type="text" matInput  required autocomplete="off" formControlName="pinCode" minlength="6" >
+                             
+                              
+                            </mat-form-field> -->
+                           
+                            <mat-form-field style=" width:  90%;">
+                              <mat-label style="font-family: 'Segoe UI';font-weight: 400;" >Pincode</mat-label>
+                              <mat-select (selectionChange)="selectedPincodeValue($event)" formControlName="pinCode" required style="padding-bottom: 4px !important;">
+                                
+                                <mat-option value="option1" *ngFor="let x of pincodeList" [value]="x.pincode">{{x.ward_name}} - {{ x.pincode}}</mat-option>
+                          
+                              </mat-select>
+                              <mat-icon matPrefix style="color: #6146D5;font-size: 20px;">location_on</mat-icon>
+                              <mat-error *ngIf="adminProfileForm.get('pinCode').hasError('required')">
+                                Pincode is required!
+                              </mat-error>
+                            </mat-form-field>
+                        </div>
+                     
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                         
+                         
+                           
+                         
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 pt-4" style="padding-right: 93px;">
+                         
+                            <div class="row">
+                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+                                    
+                                    
+                                    
+                                        <button mat-raised-button class="save" (click)="updateAdminDetails()">SUBMIT</button>
+                                   
+                                
+                                </div>
+                              
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 pr-0">
+                                    
+                                    <button mat-raised-button class="cancel" routerLink="/HomePage">CANCEL</button>
+                             
+                               
+                            
+                            </div>
+                          
+                              
+                            </div>
+                         
+                        </div>
+                   
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+        </div>
+       
+      </div>
+    </div>
+    </section>
+    <ngx-spinner 
+    bdColor="rgba(51,51,51,0.8)"
+    size="medium"
+    color="#fff"
+    type="timer"
+    >
+    <p style="font-size: 20px; color: white">Please wait...</p>
+    </ngx-spinner>

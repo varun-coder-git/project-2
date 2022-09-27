@@ -1,0 +1,97 @@
+.pollsSurveys-heading-style {
+    padding-left: 18px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.pollsSurveys-back-button-style {
+    font-size: 30px;
+    font-weight: 100;
+    align-self: center;
+    background: #573882;
+    border-radius: 50%;
+    color: white;
+    max-width: 46px !important;
+    padding-left: 11px !important;
+    max-height: 50px !important;
+    opacity: 0.8 !important;
+}
+
+.pollsSurveys-image-style {
+    height: 40px;
+    width: 40px;
+}
+
+.pollsSurveys-heading-styles {
+    align-self: center;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 800;
+    padding-left: 0px !important;  
+}
+
+.pollsSurveys-button-style {
+    background-color : rgb(139 119 243) !important;
+    color: white !important;
+    width: 81%;
+    height: 40px;
+}
+
+.pollsSurveys-button-style-row {
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.pollsSurveys-tab-style {
+    width: 33.33%;
+    font-size: 12px;
+    padding: 0px !important;
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+}
+
+.pollsSurveys-tab-style.active {
+    width: 33.33%;
+    font-size: 12px;
+    padding: 0px !important;
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    background-color: #fff0 !important;
+    border-color: #ffffff00 #9059e900 #8e57e9 !important;
+    border-width: 2px !important;
+}
+
+.backButtonColor{
+    color: white;
+}
+
+@media (min-width: 200px) and (max-width: 349px) {
+    .banner-textpadding{
+        padding-top: 45% !important;
+    }  
+}
+@media (min-width: 350px) and (max-width: 576px) {
+    .banner-textpadding{
+        padding-top: 45% !important;
+    }
+}
+@media (max-width: 768px) and (min-width: 580px) {
+    .banner-textpadding{
+        padding-top: 30%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+    .banner-textpadding{
+        padding-top: 25%;
+    }
+}
+@media (min-width: 1024px) and (max-width: 3500px) {
+    .banner-textpadding{
+        padding-top: 20%;
+    }
+}
+

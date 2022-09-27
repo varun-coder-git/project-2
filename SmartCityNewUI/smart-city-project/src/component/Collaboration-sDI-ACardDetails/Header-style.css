@@ -1,0 +1,96 @@
+.header-height-style_SAT {
+    /* background-image: url(../../assets/curvebg2.png); */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header-dashboard-height-style_SAT {
+    /* background-image: url(../../assets/curvebg2.png); */
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+
+.header-title-style_SAT {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    align-self: self-end;
+    align-self: center;
+}
+
+.dropdown-profile-icon-style {
+    text-align: -webkit-right;
+    text-align: right;
+    /* padding-top: 5px; */
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 7rem !important;
+    padding: 12px !important;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0px 0px 5px 0px !important;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.details-container-style{
+    padding-top: 16% !important;
+}
+
+.back-icon-circle-style {
+    border-radius: 50%;
+    border: 1px solid white;
+    height: 30px;
+    width: 30px;
+    font-size : 22px;
+}
+
+.back-icon-div-allignemnt {
+    align-self: center;
+}
+
+#card-details-category {
+    border-radius: 30px;
+    background: #50BDD3;
+    width: fit-content;
+    height: fit-content;
+    text-align: left;
+    /* font: normal normal 600 14px/19px Segoe UI; */
+    font-size: 80% !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 20px;
+    padding-top: 6px;
+}

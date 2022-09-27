@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Smart City</string>
+    <string name="title_activity_main">Smart City</string>
+    <string name="package_name">com.smartcities.logindemo</string>
+    <string name="custom_url_scheme">com.smartcities.logindemo</string>
+    <string name="server_client_id">253449403570-7ehuh0krgqifrib78qhb4drck86beis2.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">5002945389728427</string>
+    <string name="fb_login_protocol_scheme">fb5002945389728427</string>
+</resources>

@@ -1,0 +1,511 @@
+.collaboration-tytle-allign-style_SAT {
+  /* background-image: url(../../assets/curvebg2.png); */
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+.collaboration-title-style_SAT {
+  font-weight: 500;
+  text-align: center;
+}
+
+.collaboration-main-div {
+  /* background:#F9F9F9; */
+  padding: 20px;
+  /* width: 200px; */
+  height: fit-content;
+  font-family: "Segoe UI";
+}
+
+.collaboration-card-body {
+  padding: 2px !important;
+}
+
+
+.dashboardImageStyle {
+  /* margin-top: -65px; */
+  /* margin-bottom: 15px; */
+  height: 50px !important;
+  width: 50px !important;
+}
+.collab-text-align {
+  text-align: left;
+}
+
+
+.collab-hr {
+  width: 76%;
+  color: rgb(202, 195, 195);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  margin-top: 8px;
+
+  font: normal normal 600 16px/21px Segoe UI;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+
+.card-right {
+  padding-right: 8% !important;
+}
+
+.card-left {
+  padding-left: 8% !important;
+}
+.card-sub-dashboard-top {
+  /* padding-top: 8%; */
+  padding-top: 3%;
+}
+
+.card-citizen-align {
+  padding-bottom: 14px;
+}
+
+@media (min-width: 1368px) {
+  .banner-image-style {
+  width: inherit;
+}
+  .collabIncidentImageStyle {
+  height: 25px !important;
+  width: 20px !important;
+  margin-top: 20px;
+  margin-left: 22px;
+  padding-bottom: 0px;
+}
+  .collaboration-card {
+  width: 100%;
+  padding: 2%;
+}
+  .cardIconsTitleCollab {
+  text-align: left;
+  font-size: 12px !important ;
+  font-weight: 600 !important;
+  padding-top: 10px;
+  padding-left: 20px;
+  color: black;
+}
+  .collaborationImageStyle {
+  height: 35px !important;
+  width: 35px !important;
+  margin: 2px;
+}
+  .collab-title-text {
+  text-align: left;
+  font-family: "Segoe UI";
+  font-weight: 500;
+  padding-left: 0px;
+  margin-top: 20px;
+  padding-bottom: 0px;
+}
+  .collabImageStyle {
+  height: 25px !important;
+  width: 25px !important;
+  margin-top: 20px;
+  margin-left: 22px;
+  padding-bottom: 0px;
+} 
+  .card-right {
+    padding-right: 0% !important;
+  }
+
+  .card-left {
+    padding-left: 0% !important;
+  }
+  .card-top {
+    padding-top: 0%;
+  }
+
+  .card-citizen-align {
+    padding-bottom: 0px;
+  }
+  .collaboration-main-div {
+    /* background:#F9F9F9; */
+    padding: 20px;
+    /* width: 200px; */
+    height: fit-content;
+    font-family: "Segoe UI";
+  }
+}
+
+.selected-tab-from-dashboard {
+  /* border-style: groove;
+    border-radius: 50%;
+    border-color: #fffefe; */
+
+  border-radius: 50%;
+  border-color: #b7e1f1;
+  box-shadow: 0 0.5rem 1rem #bfc8cc !important;
+}
+
+.dashboard-icons-style {
+  text-align: -webkit-center;
+  padding-left:  0px !important;
+  padding-right: 0px !important;
+}
+
+.body-style-height {
+  height: 100% !important;
+}
+
+@media (min-width: 1368px) {
+  .banner-image-style {
+  width: inherit;
+}
+  .collabIncidentImageStyle {
+  height: 25px !important;
+  width: 20px !important;
+  margin-top: 20px;
+  margin-left: 22px;
+  padding-bottom: 0px;
+}
+  .collaboration-card {
+  width: 100%;
+  padding: 2%;
+}
+  .cardIconsTitleCollab {
+  text-align: left;
+  font-size: 12px !important ;
+  font-weight: 600 !important;
+  padding-top: 10px;
+  padding-left: 20px;
+  color: black;
+}
+  .collaborationImageStyle {
+  height: 35px !important;
+  width: 35px !important;
+  margin: 2px;
+}
+  .collab-title-text {
+  text-align: left;
+  font-family: "Segoe UI";
+  font-weight: 500;
+  padding-left: 0px;
+  margin-top: 20px;
+  padding-bottom: 0px;
+}
+  .collabImageStyle {
+  height: 25px !important;
+  width: 25px !important;
+  margin-top: 20px;
+  margin-left: 22px;
+  padding-bottom: 0px;
+} 
+  .card-right {
+    padding-right: 0% !important;
+  }
+
+  .card-left {
+    padding-left: 0% !important;
+  }
+  .card-sub-dashboard-top {
+    padding-top: 2%;
+  }
+
+  .card-citizen-align {
+    padding-bottom: 0px;
+  }
+  .dashboard-main-div-curve {
+    height: fit-content !important;
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+  }
+}
+
+.banner-submenu-style {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.heading-image-style {
+  text-align: -webkit-center;
+  text-align: center;
+}
+
+@media (max-width: 670px) and (min-width: 200px) {
+  .banner-image-style {
+  width: inherit;
+}
+  .collabIncidentImageStyle {
+  height: 25px !important;
+  width: 20px !important;
+  margin-top: 20px;
+  margin-left: 22px;
+  padding-bottom: 0px;
+}
+  .collaboration-card {
+  width: 100%;
+  padding: 2%;
+}
+  .cardIconsTitleCollab {
+  text-align: left;
+  font-size: 12px !important ;
+  font-weight: 600 !important;
+  padding-top: 10px;
+  padding-left: 20px;
+  color: black;
+}
+  .collaborationImageStyle {
+  height: 35px !important;
+  width: 35px !important;
+  margin: 2px;
+}
+  .collab-title-text {
+  text-align: left;
+  font-family: "Segoe UI";
+  font-weight: 500;
+  padding-left: 0px;
+  margin-top: 20px;
+  padding-bottom: 0px;
+}
+  .collabImageStyle {
+  height: 25px !important;
+  width: 25px !important;
+  margin-top: 20px;
+  margin-left: 22px;
+  padding-bottom: 0px;
+} 
+  .dashboardImageStyle-header2 {
+    /* margin-top: 50px; */
+    margin-bottom: 15px;
+    margin-left: -25px;
+    height: 50px !important;
+    width: 50px !important;
+    position: fixed;
+    z-index: 6;
+  }
+
+  .dashboard-tytle-allign-style_Header {
+    /* background-image: url(../../assets/curvebg2.png); */
+    padding-top: 15px;
+    padding-bottom: 40px;
+  }
+  .banner-submenu-style-header2 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-top: 33% !important;
+  }
+}
+@media (max-width: 800px) and (min-width: 767px) {
+  .banner-image-style {
+  width: inherit;
+}
+  .collabIncidentImageStyle {
+  height: 40px !important;
+  width: 32px !important;
+  margin-top: 20px;
+  margin-left: 22px;
+  padding-bottom: 0px;
+}
+  .collaboration-card {
+  width: 100%;
+ padding-top: 20px;
+  height:110px
+}
+  .cardIconsTitleCollab {
+  text-align: left;
+  font-size: 20px !important ;
+  font-weight: 600 !important;
+  padding-top: 10px;
+  padding-left: 20px;
+  color: black;
+}
+.cardListRow{
+  margin-top:10px;
+}
+  .collaborationImageStyle {
+  height: 50px !important;
+  width: 50px !important;
+  margin: 2px;
+}
+  .collab-title-text {
+  text-align: left;
+  font-family: "Segoe UI";
+  font-weight: 500;
+  padding-left: 0px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-size:24px
+}
+.collabTitleRow{
+  margin-bottom:10px;
+}
+  .collabImageStyle {
+  height: 40px !important;
+  width: 40px !important;
+  margin-top: 20px;
+  margin-left: 22px;
+  padding-bottom: 0px;
+}
+}
+@media (min-width:801px) and (max-width:1020px){
+  .banner-image-style {
+  width: inherit;
+}
+  .collabIncidentImageStyle {
+  height: 25px !important;
+  width: 20px !important;
+  margin-top: 20px;
+  margin-left: 22px;
+  padding-bottom: 0px;
+}
+  .collaboration-card {
+  width: 100%;
+  padding: 2%;
+}
+  .cardIconsTitleCollab {
+  text-align: left;
+  font-size: 12px !important ;
+  font-weight: 600 !important;
+  padding-top: 10px;
+  padding-left: 20px;
+  color: black;
+}
+  .collaborationImageStyle {
+  height: 35px !important;
+  width: 35px !important;
+  margin: 2px;
+}
+  .collabImageStyle {
+  height: 25px !important;
+  width: 25px !important;
+  margin-top: 20px;
+  margin-left: 22px;
+  padding-bottom: 0px;
+} 
+ .collabImageStyle {
+  height: 25px !important;
+  width: 25px !important;
+  margin-top: 20px;
+  margin-left: 22px;
+  padding-bottom: 0px;
+} 
+}
+@media (min-width:1021px) and (max-width:1367px){
+  .banner-image-style {
+  width: inherit;
+  margin-top: -50px;
+}
+  .collabIncidentImageStyle {
+  height: 50px !important;
+  width: 40px !important;
+  margin-top: 20px;
+  margin-left: 22px;
+  padding-bottom: 0px;
+}
+  .collaboration-card {
+  width: 100%;
+ padding-top: 20px;
+  height:110px
+}
+  .cardIconsTitleCollab {
+  text-align: left;
+  font-size: 22px !important ;
+  font-weight: 600 !important;
+  padding-top: 10px;
+  padding-left: 20px;
+  color: black;
+}
+.cardListRow{
+  margin-top:10px;
+}
+  .collaborationImageStyle {
+  height: 60px !important;
+  width: 60px !important;
+  margin: 2px;
+}
+  .collab-title-text {
+  text-align: left;
+  font-family: "Segoe UI";
+  font-weight: 500;
+  padding-left: 0px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-size:26px
+}
+.collabTitleRow{
+  margin-bottom:10px;
+}
+  .collabImageStyle {
+  height: 50px !important;
+  width: 50px !important;
+  margin-top: 20px;
+  margin-left: 22px;
+  padding-bottom: 0px;
+}
+}
+
+/* iPad Pro */
+@media (max-width: 765px) and (min-width: 580px) {
+  .banner-image-style {
+  width: inherit;
+}
+  .collabIncidentImageStyle {
+  height: 25px !important;
+  width: 20px !important;
+  margin-top: 20px;
+  margin-left: 22px;
+  padding-bottom: 0px;
+}
+  .collaboration-card {
+  width: 100%;
+  padding: 2%;
+}
+  .cardIconsTitleCollab {
+  text-align: left;
+  font-size: 12px !important ;
+  font-weight: 600 !important;
+  padding-top: 10px;
+  padding-left: 20px;
+  color: black;
+}
+  .collaborationImageStyle {
+  height: 35px !important;
+  width: 35px !important;
+  margin: 2px;
+}
+  .collab-title-text {
+  text-align: left;
+  font-family: "Segoe UI";
+  font-weight: 500;
+  padding-left: 0px;
+  margin-top: 20px;
+  padding-bottom: 0px;
+}
+  .collabImageStyle {
+  height: 25px !important;
+  width: 25px !important;
+  margin-top: 20px;
+  margin-left: 22px;
+  padding-bottom: 0px;
+}
+  .inner-container-style {
+    padding-top: 12%;
+  }
+}
+
+.cards-block-align-style {
+  align-items: center;
+}
+
+.dashboardImageStyle-header2 {
+  margin-top: -22px;
+  margin-bottom: 15px;
+  margin-left: -25px;
+  height: 50px !important;
+  width: 50px !important;
+  position: fixed;
+  z-index: 6;
+}
+
+.dashboard-tytle-allign-style_Header {
+  /* background-image: url(../../assets/curvebg2.png); */
+  padding-top: 15px;
+  padding-bottom: 40px;
+}
+.banner-submenu-style-header2 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-top: 15%;
+}

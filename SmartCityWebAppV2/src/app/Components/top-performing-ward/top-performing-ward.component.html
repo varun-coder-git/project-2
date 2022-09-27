@@ -1,0 +1,27 @@
+<div>
+    <div class="page-content">
+        <div class="page-header">
+            <div class="container-fluid">
+                <h2 class="h5 no-margin-bottom "><span style="color:#000000;font-size:medium;"> <mdb-icon fas icon="chart-line" style="color:#6146D5;font-size:22px;"></mdb-icon>&nbsp;&nbsp; &nbsp;Top Performing Wards</span></h2>
+            </div>
+        </div>
+        <div class="graph-heading">Wards with maximum number of closed complaints: </div>
+        <canvas mdbChart class="chart-size"
+        [chartType]="chartType"
+        [datasets]="chartDatasets"
+        [labels]="chartLabels"
+        [colors]="chartColors"
+        [options]="chartOptions"
+        [legend]="true"
+        (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)">
+    </canvas>
+        <!-- <div class="container-fluid">
+            <div style="display: block; margin:auto;padding: 100px;height: 100%;width: 80%;">
+              
+              </div>
+               
+-->
+
+    </div> 
+</div>

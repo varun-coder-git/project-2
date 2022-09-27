@@ -1,0 +1,254 @@
+Select{
+font-size: 16px !important;
+Color:#3C3C3C !important
+}
+
+.category-drop-style-search{
+    /* padding-top: 25px; */
+    width: 100%;
+    z-index: 3;
+    min-height: 10px !important;
+}
+
+
+@media (min-width: 200px) and (max-width: 300px) {
+
+  .search-complaint-banners {
+    background-image: url("../../../assets/banner/Search Incident.jpg");
+    height: 175px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .search-complaint-banner-text {
+    padding-right: 40px;
+    padding-top: 35%;
+    padding-left: 25px;
+    text-align: left;
+    font: normal normal normal 12px/16px Segoe UI !important;
+    /* font-family: 'Segoe UI';
+    font-size: 12px; */
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+
+}
+
+@media (min-width: 301px) and (max-width: 349px) {
+
+  .search-complaint-banners {
+    background-image: url("../../../assets/banner/Search Incident.jpg");
+    height: 175px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .search-complaint-banner-text {
+    padding-right: 40px;
+    padding-top: 35%;
+    padding-left: 25px;
+    text-align: left;
+    font: normal normal normal 14px/18px Segoe UI !important;
+    /* font-family: 'Segoe UI';
+    font-size: 12px; */
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+
+}
+
+
+@media (min-width: 350px) and (max-width: 400px)
+{
+  .search-complaint-banners {
+    background-image: url("../../../assets/banner/Search Incident.jpg");
+    height: 180px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .search-complaint-banner-text {
+    padding-right: 40px;
+    padding-top: 35%;
+    padding-left: 25px;
+    text-align: left;
+    font: normal normal normal 16px/24px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 530px) {
+
+  .search-complaint-banners {
+    background-image: url("../../../assets/banner/Search Incident.jpg");
+    height: 180px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .search-complaint-banner-text {
+    padding-right: 40px;
+    padding-top: 35%;
+    padding-left: 25px;
+    text-align: left;
+    font: normal normal normal 16px/24px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+
+}
+
+@media (min-width: 531px) and (max-width: 576px) {
+  .search-complaint-banners {
+    background-image: url("../../../assets/banner/Search Complaint_desk.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .search-complaint-banner-text {
+    padding-right: 40px;
+    padding-top: 18%;
+    padding-left: 25px;
+    text-align: left;
+    font: normal normal normal 16px/24px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+
+}
+
+@media (min-width: 580px) and (max-width: 765px) {
+
+    .search-complaint-banners {
+        background-image: url("../../../assets/banner/Search Complaint_desk.jpg");
+        height: 200px;
+        width: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+    
+      .search-complaint-banner-text {
+        padding-right: 40px;
+        padding-top: 35%;
+        padding-left: 25px;
+        text-align: left;
+        font: normal normal normal 18px/26px Segoe UI;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-shadow: 0px 3px 6px #0000002b;
+      }
+
+}
+
+@media (min-width:767px) and (max-width:990px){
+  .search-complaint-banners {
+        background-image: url("../../../assets/banner/Search Complaint_desk.jpg");
+        height: 200px;
+        width: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-top: -10px;
+      }
+   .search-complaint-banner-text {
+    padding-right: 40px;
+    padding-top: 18%;
+    padding-left: 25px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1020px)  {
+
+    .search-complaint-banners {
+        background-image: url("../../../assets/banner/Search Complaint_desk.jpg");
+        height: 200px;
+        width: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+    
+      .search-complaint-banner-text {
+        padding-right: 40px;
+        padding-top: 18%;
+        padding-left: 25px;
+        text-align: left;
+        font: normal normal normal 18px/26px Segoe UI;
+        letter-spacing: 0px;
+        color: #ccc9c9;
+        text-shadow: 0px 3px 6px #0000002b;
+      }
+
+}
+
+@media (min-width:1021px) and (max-width:1367px){
+  .search-complaint-banners {
+        background-image: url("../../../assets/banner/Search Complaint_desk.jpg");
+        height: 200px;
+        width: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-top: -10px;
+      }
+   .search-complaint-banner-text {
+    padding-right: 40px;
+    padding-top: 18%;
+    padding-left: 25px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+}
+
+@media (min-width: 1368px) and (max-width: 3500px) {
+
+    .search-complaint-banners {
+        background-image: url("../../../assets/banner/Search Complaint_desk.jpg");
+        height: 200px;
+        width: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+    
+      .search-complaint-banner-text {
+        padding-right: 40px;
+        padding-top: 35%;
+        padding-left: 25px;
+        text-align: left;
+        font: normal normal normal 18px/26px Segoe UI;
+        letter-spacing: 0px;
+        color: #ccc9c9;
+        text-shadow: 0px 3px 6px #0000002b;
+      }
+
+}
+
+
+

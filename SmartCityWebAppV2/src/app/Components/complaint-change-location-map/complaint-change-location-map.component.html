@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.24/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.24/"></script>
+
+</head>
+
+<body>
+    <div class="entirePage">
+        <div class="row">
+            <div class="col-lg-8 pt-2">
+                <p class="heading">
+                    <!-- <mdb-icon far icon="edit" class="title-icon"></mdb-icon> -->
+                    <mdb-icon fas icon="map-marker-alt" class="title-icon"></mdb-icon>
+                    Change Location
+                </p>
+            </div>
+            <!-- <div class="col-lg-6 pt-2">
+               
+            </div> -->
+            <div class="col-lg-3 ">
+                <!-- <h6><span class="pr-2 titleName"> 
+                   
+                            <img src="{{url}}{{imgPath}}" class="img">&nbsp;&nbsp;
+                    </span>{{user_name | titlecase}}
+                </h6> -->
+                <!-- <p class="complaint-id">Done
+                </p> -->
+                <button mat-raised-button class="save ml-2" (click)="onSubmit()">Save Selected Location</button>
+            </div>
+            <div class="col-lg-1 pt-2" style="text-align: right;">
+                <mdb-icon fas style=" color: #6146D5;cursor: pointer;font-size: 24px;" icon="times" mdbTooltip="Close" placement="left"
+                    (click)="onClose()">
+                </mdb-icon>
+            </div>
+        </div>
+        <hr class="hr-title">
+        
+       
+      
+    
+        
+      
+        
+            <div id="viewDiv" #map></div>
+       
+    
+    
+       
+    
+    
+    </div>
+   
+</body>
+</html>

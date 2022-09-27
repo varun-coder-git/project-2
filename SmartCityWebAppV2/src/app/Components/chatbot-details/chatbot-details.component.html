@@ -1,0 +1,92 @@
+<div class="container" *ngIf="chatbotData">
+    <mdb-icon fas style=" color: #6146D5;float:right;cursor: pointer;font-size: 24px;" icon="times" mdbTooltip="Close" placement="left"
+        (click)="onClose()"></mdb-icon>
+    <div class="row pb-1">
+        <div class="col-md-8 pl-0 pb-2">
+            <mdb-icon fas icon="comment-alt" style=" color:#6146D5;font-size: large;vertical-align: -4px;"></mdb-icon>
+            &nbsp;
+            <span class="heading" style="padding-bottom: 4px;">Chatbot Information and
+                details</span>
+        </div>
+        <div class="col-md-4 pr-0 pb-2">
+            <!-- <img src="../../../assets/img/profileImage.png" style="width:10%;border-radius:50%;">&nbsp;&nbsp; -->
+            <!-- <img src="{{url}}{{Citizensdetails.image_path}}" class="img">&nbsp;&nbsp;
+            <label class="big-label">{{fullname|titlecase}}</label> -->
+        </div>
+    </div>
+
+    <mat-divider style="background-color:#d0d0d0 ;"></mat-divider>
+    <div>
+        <div class="row">
+            <div class="col-md-4 pt-3" style="text-align: right;">
+                <label class="detailsClass">Citizen Name :</label><br>
+                <label class="detailsClass">Ward Name :</label><br>
+                <label class="detailsClass">Email Address :</label><br>
+                <label class="detailsClass">Phone Number :</label><br>
+                <label class="detailsClass">Submitted on :</label><br>
+                <label class="detailsClass">Citizen Query :</label><br>
+             
+            </div>
+            <div class="col-md-8 pt-3">
+                <label class="labelClass">{{chatbotData.full_name}}</label><br>
+                <label class="labelClass">{{chatbotData.ward_name}}</label><br>
+                <label class="labelClass">{{chatbotData.email}}</label><br>
+                <label class="labelClass">{{chatbotData.phone_number}}  </label><br>
+                <label class="labelClass">{{chatbotData.reported_date| date:'MMMM d, y'}}</label><br>
+                <label class="labelClass" style="text-align: left;padding-right: 100px">{{chatbotData.chatbot_query}}</label>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 pb-3" style="text-align: right;">
+                <label class="detailsClass">Status :</label><br>
+            </div>
+            <div class="col-md-8  pb-3">
+                <div class="status-dropdown">
+                    <form [formGroup]='chatbotStatusForm'>
+                        <div class="form-group">
+                            <select class="form-control fac-dropdown" (change)="onStatusChange($event.target.value)"
+                                formControlName="chatbotStatus">
+                                <!-- [(ngModel)]="selectedStatus"> -->
+                                <!-- <option selected disabled hidden>Select Status</option> -->
+                                <!-- <option class="option">Open</option>
+                                <option class="option">Resolved</option> -->
+
+                                <option class="option" *ngFor="let x of chatbotStatus" name="status" ngDefaultControl
+                                    [value]="x.chatbot_status_id"> {{x.chatbot_status}}
+
+                                </option>
+                            </select>
+                        </div>
+                    </form>
+
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <mat-divider style="background-color:#d0d0d0 ;"></mat-divider>
+    <!-- <hr> -->
+    <div class="row"></div>
+    <div class="row">
+        <div class="col-md-4 pt-2 pl-3 pb-0">
+
+        </div>
+        <div class="col-md-8">
+            <div class="float-right mb-3 pt-2 pb-0 button-padding">
+                <button mat-raised-button class="cancel" (click)="onClose()">Cancel</button>
+                <button mat-raised-button class="save ml-2" (click)="updateChatbotStatus()">Save</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<ngx-spinner
+bdColor="rgba(51,51,51,0.8)"
+size="medium"
+color="#fff"
+type="timer"
+>
+<p style="font-size: 20px; color: white">Please wait...</p>
+</ngx-spinner> 

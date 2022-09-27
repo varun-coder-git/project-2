@@ -1,0 +1,159 @@
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/><div>
+    <div class="page-content">
+        <!-- <div class="page-header">
+            <div class="container-fluid">
+                <h2 class="h5 no-margin-bottom"><span style="color:#000000;font-size:medium;"> <mdb-icon fas icon="question" style="color:#6146D5;font-size:22px;"></mdb-icon>&nbsp;&nbsp; &nbsp; Help</span></h2>
+            </div>
+        </div> -->
+
+        <div class="container-fluid p-0 header-img" style="text-align: center;">
+
+            <!-- <img style="opacity: 0.3;width: 87%;" src="../../../assets/img/help-img.png"> -->
+            
+            <div class="container p-0">
+
+              <h4 class="search-heading">How can we  help you?</h4>
+              
+          
+                <!-- <div class="input-search">
+               
+                  
+                 <centre>
+                  
+                  </centre>
+               
+                </div> -->
+
+                <input type="text" class="search fontAwesome" placeholder='&#61442;  Search your issue' [(ngModel)]="temp_string"
+                    (keyup)="applyFilter($event.target.value)">
+            
+            </div>
+        </div>
+        <!-- <div *ngIf="input.value==''">Not Data found</div> -->
+     
+        <div class="container p-5" style="border-bottom: 2px solid #d0d0d0;">
+            <h4><strong>FAQ's</strong></h4>
+                <!-- <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search" mdbInput> -->
+            <mat-accordion>
+        
+                <mat-expansion-panel *ngFor="let panel of filtered_questions| filter : searchText;" class="mat-expansion-panel">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                     <p style="font-family: 'Segoe UI';font-weight: 600;font-size: 14px;padding-top: 13px;">{{panel.key}}</p> 
+                    </mat-panel-title>
+                     
+                  </mat-expansion-panel-header>
+                  <p style="white-space:pre-wrap;font-family: 'Segoe UI';font-weight: 400;font-size: 14px;">{{panel.value}}</p>
+                </mat-expansion-panel>
+              
+              </mat-accordion>
+              <div *ngIf="filtered_questions.length == 0">
+              <h3><center>No Data found...</center></h3>
+              </div>
+        </div>
+
+        <div class="container">
+         
+          
+          <div class="row">
+              <div class="col-md-1 p-3" style="text-align: right;margin-left: -34px;">
+                <mdb-icon far style=" color: #6146D5;font-size: 30px;font-weight: 400;" icon="question-circle"></mdb-icon>
+                  
+              </div>
+              <div class="col-md-11 p-3">
+                <p class="heading">FACING ANY ISSUE?</p>
+                <h1 class="form-headline">Please fill the form below to get in touch with us.</h1>
+              </div>
+          </div>
+      
+      
+          <!-- <hr color="#2B2647"> -->
+          
+          <form [formGroup]='helpForm'>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group" style="padding-bottom:9px;">
+                  <label class="label">Name</label><br>
+                    <input type="text" class="form-control input"
+                        formControlName="userName" disabled>
+                </div>
+                <div class="form-group">
+                  <label class="label">Select Category</label><br>
+                  <select class="form-control md-4 fac-dropdown textyformcontrol" formControlName="helpCategory" name="helpCategory" [ngClass]="{ 'is-invalid': submitted && f.helpCategory.errors }" >
+                    
+                    <option value="" selected hidden required="required">Select Category </option>
+                    
+                    <option class="option" *ngFor="let x of helpCategoryData" [value]="x.value">{{x.value}}
+                      
+                    </option>
+                  </select>
+                  <div *ngIf="submitted && f.helpCategory.errors" class="invalid-feedback">
+                    <div *ngIf="f.helpCategory.errors.required">Please select any category!</div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+              
+              <div class="form-group hold">
+                <label class="label">Your Query</label><br>
+                  <textarea class="form-control input" name="description" required="required" placeholder="Enter your query"
+                      formControlName="description" [ngClass]="{ 'is-invalid': submitted && f.description.errors }">
+                     
+                    </textarea> 
+                    
+                    <div *ngIf="submitted && f.description.errors" class="invalid-feedback">
+                      <div *ngIf="f.description.errors.required">Please enter your query!</div>
+                    </div>
+              </div>
+              <!-- <div class="form-group">
+                <input type="text"  name="name" required="required" />
+                <label>Enter first name</label>
+              </div> -->
+
+          </div>
+   
+            <!-- <div class="col-md-5 ">
+          
+          </div> -->
+            </div>
+         
+             
+           
+      
+             
+      
+              <!-- <hr color="#2B2647"> -->
+      
+              <!-- <mat-divider style="background-color:#d0d0d0;margin-top: 22px;"></mat-divider> -->
+      
+              <div class="row">
+              
+                  <div class="col-md-12" style="text-align: center;">
+                      <div class=" mb-3 pt-4" >
+                         
+                          <button mat-raised-button class="save ml-2" (click)="saveQuery()">SUBMIT</button>
+                      </div>
+                  </div>
+                  
+              </div>
+            
+          </form>
+          <!-- <mat-card *ngIf="isLoading" style="display: flex; justify-content: center; align-items: center">
+            <mat-progress-spinner 
+              color="primary" 
+              mode="indeterminate">
+            </mat-progress-spinner>
+          </mat-card> -->
+          <ngx-spinner 
+          bdColor="rgba(51,51,51,0.8)"
+          size="medium"
+          color="#fff"
+          type="timer"
+        >
+          <p style="font-size: 20px; color: white">Please wait...</p>
+        </ngx-spinner> 
+      </div>
+    </div>
+</div>
+

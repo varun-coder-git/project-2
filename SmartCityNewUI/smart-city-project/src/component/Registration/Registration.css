@@ -1,0 +1,423 @@
+.signup-container-style_HMD {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+
+}
+.signup-title-style_HMD {
+    font-weight: 300;
+    text-align: center;
+    font-size: 20px;
+} 
+.pincode-bold{
+    font-weight: 600;
+}
+.hidden-class{
+        display: none;
+}
+.signup-text-message-style {
+    /* padding-left: 35px !important; */
+    /* text-align: center; */
+    padding-top: 0px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.signup-button-style {
+    background-color : rgb(139 119 243) !important;
+    color: white !important;
+    width: 100%;
+    height: 40px;
+    
+}
+.forgot-button-style {
+    background-color : rgb(139 119 243) !important;
+    color: white !important;
+    width: 96%;
+    height: 40px;
+    
+}
+.signup-button-style-row {
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.signup-navbar-style {
+    background-image: linear-gradient( #8270f282, #ce9ffcad);
+    /* place-content: center !important; */
+    align-content: center;
+    justify-content: center !important;
+}
+.signup-navbar-style {
+    background-image: linear-gradient( #8270f282, #ce9ffcad);
+    /* place-content: center !important; */
+    align-content: center;
+    justify-content: center !important;
+}
+
+/* .MuiGrid-spacing-xs-1 > .MuiGrid-item {
+    text-align: left;
+    width: 90;
+} */
+
+.signup-title{
+    text-align: left;
+    font: normal normal 600 22px/30px Segoe UI;
+    letter-spacing: 0px;
+    color: #070707;
+    opacity: 1;
+}
+
+.sign-up-sub-title {
+    text-align: left;
+    font: normal normal normal 16px/21px Segoe UI;
+    letter-spacing: 0px;
+    color: #424242;
+}
+
+
+@media (min-width: 350px) and (max-width: 576px) {
+
+    .login-title-style-row_SAT{
+        padding-top: 15px;
+        padding-bottom: 25px;
+        text-align: center;
+    }
+
+    .reg-bgImage-style {
+        /* background-image: url(../../assets/curvebg2.png) !important; */
+    
+        background: transparent url('../../assets/curvebg2.png') 0% 0% no-repeat padding-box;
+        /* box-shadow: 5px 5px 17px #00000029; */
+        opacity: 1;
+        background-size: 100% 350px;
+        background-position: 0px -125px;
+    }
+
+
+    .login-welcome-text-style {
+        /* text-align: center; */
+        display: block;
+        /* padding-left: 35px !important; */
+        padding-top: 80px;
+        /* 
+        font-size: 21px;
+        font-weight: 700; */
+        text-align: left;
+        font: normal normal 600 22px/30px Segoe UI;
+        letter-spacing: 0px;
+        color: #070707;
+        opacity: 1;
+        user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+    }
+
+    
+    
+}
+
+@media (min-width: 250px) and (max-width: 349px) {
+
+    .login-title-style-row_SAT{
+        padding-top: 15px;
+        padding-bottom: 25px;
+        text-align: center;
+    }
+
+    .reg-bgImage-style {
+        /* background-image: url(../../assets/curvebg2.png) !important; */
+    
+        background: transparent url('../../assets/curvebg2.png') 0% 0% no-repeat padding-box;
+        /* box-shadow: 5px 5px 17px #00000029; */
+        opacity: 1;
+        background-size: 100% 350px;
+        background-position: 0px -125px;
+    }
+
+    .login-welcome-text-style {
+        /* text-align: center; */
+        display: block;
+        /* padding-left: 35px !important; */
+        padding-top: 94px;
+        /* 
+        font-size: 21px;
+        font-weight: 700; */
+        text-align: left;
+        font: normal normal 600 22px/30px Segoe UI;
+        letter-spacing: 0px;
+        color: #070707;
+        opacity: 1;
+        user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .login-title-style-row_SAT{
+        padding-top: 25px;
+    }  
+    
+    .login-welcome-text-style {
+        /* text-align: center; */
+        display: block;
+        /* padding-left: 35px !important; */
+        padding-top: 80px;
+        /* 
+        font-size: 21px;
+        font-weight: 700; */
+        text-align: left;
+        font: normal normal 600 22px/30px Segoe UI;
+        letter-spacing: 0px;
+        color: #070707;
+        opacity: 1;
+        user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+    }
+
+    .reg-bgImage-style {
+        /* background-image: url(../../assets/curvebg2.png) !important; */
+    
+        background: transparent url('../../assets/header.png') 0% 0% no-repeat padding-box;
+        /* box-shadow: 5px 5px 17px #00000029; */
+        opacity: 1;
+        background-size: 100% 150px;
+        /* background-position: 0px -150px; */
+    }
+    
+    .pageImage-style {
+        /* background-image: url(../../assets/curvebg2.png) !important; */
+    
+        background: transparent url('../../assets/Picture4.png') 0% 0% no-repeat padding-box;
+        /* box-shadow: 5px 5px 17px #00000029; */
+        opacity: 1;
+        background-size: 100% 100%;
+        /* background-position: 0px -150px; */
+    }
+
+    .reg-content-container {
+        background: #EEEEEE 0% 0% no-repeat padding-box;
+        opacity: 0.73;
+        margin-top: 82px;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+        -webkit-box-shadow: 0 0 0px 1000px #EEEEEE inset !important;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width:1020px){
+
+    .login-title-style-row_SAT{
+        padding-top: 15px;
+    }
+    .signup-button-style {
+    background-color : rgb(139 119 243) !important;
+    color: white !important;
+    width: 100%;
+    height: 55px;
+    
+}
+.forgot-button-style {
+    background-color : rgb(139 119 243) !important;
+    color: white !important;
+    width: 96%;
+    height: 55px;
+    
+}
+.sign-up-sub-title {
+    text-align: left;
+    font: normal normal normal 20px/25px Segoe UI;
+    letter-spacing: 0px;
+    color: #424242;
+}
+
+    .login-welcome-text-style {
+        /* text-align: center; */
+        display: block;
+        /* padding-left: 35px !important; */
+        padding-top: 60px;
+        /* 
+        font-size: 21px;
+        font-weight: 700; */
+        text-align: left;
+        font: normal normal 600 26px/34px Segoe UI;
+        letter-spacing: 0px;
+        color: #070707;
+        opacity: 1;
+        user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+    }
+.input-row{
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+    .reg-bgImage-style {
+        /* background-image: url(../../assets/curvebg2.png) !important; */
+    
+        background: transparent url('../../assets/header.png') 0% 0% no-repeat padding-box;
+        /* box-shadow: 5px 5px 17px #00000029; */
+        opacity: 1;
+        background-size: 100% 150px;
+        /* background-position: 0px -150px; */
+    }
+    
+    .pageImage-style {
+        /* background-image: url(../../assets/curvebg2.png) !important; */
+    
+        background: transparent url('../../assets/Picture4.png') 0% 0% no-repeat padding-box;
+        /* box-shadow: 5px 5px 17px #00000029; */
+        opacity: 1;
+        background-size: 100% 100%;
+        /* background-position: 0px -150px; */
+        min-height:100vh;
+    }
+
+    .reg-content-container {
+        background: #EEEEEE 0% 0% no-repeat padding-box;
+        opacity: 0.9;
+        margin-top: 82px;
+    }
+
+    .Toastify__toast-container {
+        /* width: 80% !important; */
+        padding: 0;
+        margin: 0 auto !important;
+        /* top: 30px !important; */
+        opacity: 1 !important;
+        z-index: 3;
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+        -webkit-box-shadow: 0 0 0px 1000px #EEEEEE inset !important;
+    }
+
+}
+
+@media (min-width: 1023px) and (max-width:1367px){
+   .login-title-style-row_SAT{
+        padding-top: 15px;
+    }
+    .signup-button-style {
+    background-color : rgb(139 119 243) !important;
+    color: white !important;
+    width: 100%;
+    height: 55px;
+    
+}
+.forgot-button-style {
+    background-color : rgb(139 119 243) !important;
+    color: white !important;
+    width: 96%;
+    height: 55px;
+    
+}
+.sign-up-sub-title {
+    text-align: left;
+    font: normal normal normal 22px/27px Segoe UI;
+    letter-spacing: 0px;
+    color: #424242;
+}
+
+    .login-welcome-text-style {
+        /* text-align: center; */
+        display: block;
+        /* padding-left: 35px !important; */
+        padding-top: 60px;
+        /* 
+        font-size: 21px;
+        font-weight: 700; */
+        text-align: left;
+        font: normal normal 600 26px/34px Segoe UI;
+        letter-spacing: 0px;
+        color: #070707;
+        opacity: 1;
+        user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+    }
+.input-row{
+    padding: top 15px;
+    padding-bottom: 15px;
+}
+
+    .reg-bgImage-style {
+        /* background-image: url(../../assets/curvebg2.png) !important; */
+    
+        background: transparent url('../../assets/header.png') 0% 0% no-repeat padding-box;
+        /* box-shadow: 5px 5px 17px #00000029; */
+        opacity: 1;
+        background-size: 100% 150px;
+        /* background-position: 0px -150px; */
+    }
+    
+    .pageImage-style {
+        /* background-image: url(../../assets/curvebg2.png) !important; */
+    
+        background: transparent url('../../assets/Picture4.png') 0% 0% no-repeat padding-box;
+        /* box-shadow: 5px 5px 17px #00000029; */
+        opacity: 1;
+        background-size: 100% 100%;
+        /* background-position: 0px -150px; */
+        min-height:100vh;
+    }
+
+    .reg-content-container {
+        background: #EEEEEE 0% 0% no-repeat padding-box;
+        opacity: 0.9;
+        margin-top: 82px;
+    }
+
+    .Toastify__toast-container {
+        /* width: 80% !important; */
+        padding: 0;
+        margin: 0 auto !important;
+        /* top: 30px !important; */
+        opacity: 1 !important;
+        z-index: 3;
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+        -webkit-box-shadow: 0 0 0px 1000px #EEEEEE inset !important;
+    }
+
+}
+
+.tooltip-style {
+    /* background-color: #f5f5f9 !important; */
+    /* color : rgba(0, 0, 0, 0.87); */
+    /* border: 1px solid #dadde9; */
+}
+
+.password-must-text{
+    color: blue
+}
+
+

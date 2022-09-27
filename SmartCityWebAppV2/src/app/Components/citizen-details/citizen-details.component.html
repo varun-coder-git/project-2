@@ -1,0 +1,99 @@
+<div class="container" *ngIf="Citizensdetails">
+    <mdb-icon fas style=" color: #6146D5;float:right;cursor: pointer;font-size: 24px;" icon="times" mdbTooltip="Close"
+        placement="left" (click)="onClose()"></mdb-icon>
+    <div class="row pb-1">
+        <div class="col-md-8 pl-0 pb-2">
+            <mdb-icon fas icon="user-friends" style=" color:#6146D5;font-size: large;"></mdb-icon>&nbsp;
+            <span class="heading" style="padding-bottom: 4px;">Citizen Information and details</span>
+        </div>
+        <div class="col-md-4 pr-0 pb-2">
+
+        </div>
+    </div>
+
+    <mat-divider style="background-color:#d0d0d0 ;"></mat-divider>
+    <div *ngIf="dataFound">
+        <div class="row">
+            <div class="col-md-6 pt-2" style="text-align: right;">
+                <label class="detailsClass">Citizen Name :</label>
+            </div>
+            <div class="col-md-6 pt-2">
+                <label class="labelClass">{{Citizensdetails.full_name|titlecase}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="text-align: right;">
+                <label class="detailsClass">Ward Name :</label>
+            </div>
+            <div class="col-md-6">
+                <label class="labelClass">{{Citizensdetails.ward_name}}</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6" style="text-align: right;">
+                <label class="detailsClass">Registration Date :</label>
+            </div>
+            <div class="col-md-6">
+                <label class="labelClass">{{Citizensdetails.registration_date|
+                    date:'dd-MM-yyyy'}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="text-align: right;">
+                <label class="detailsClass">Email Address :</label>
+            </div>
+            <div class="col-md-6">
+                <label class="labelClass">{{Citizensdetails.email}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="text-align: right;">
+                <label class="detailsClass">Phone Number :</label>
+            </div>
+            <div class="col-md-6">
+                <label class="labelClass">{{Citizensdetails.phone_number}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="text-align: right;">
+                <label class="detailsClass">Number of Complaints logged :</label>
+            </div>
+            <div class="col-md-6">
+                <label class="labelClass">{{Citizensdetails.complaint_logged_count}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="text-align: right;">
+                <label class="detailsClass">Number of Incidents logged :</label>
+            </div>
+            <div class="col-md-6">
+                <label class="labelClass">{{Citizensdetails.incident_count}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="text-align: right;">
+                <label class="detailsClass">Number of Ideas created :</label>
+            </div>
+            <div class="col-md-6">
+                <label class="labelClass">{{Citizensdetails.idea_count}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 pb-2" style="text-align: right;">
+                <label class="detailsClass">Number of Volunteer Activities created :</label>
+            </div>
+            <div class="col-md-6 pb-2">
+                <label class="labelClass">{{Citizensdetails.volunteer_activity}}</label>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="!dataFound">
+    <h5 style="color: aliceblue;text-align: center;">Citizens details are not available</h5>
+</div>
+<mat-divider style="background-color:#d0d0d0 ;"></mat-divider>
+
+<ngx-spinner bdColor="rgba(51,51,51,0.8)" size="medium" color="#fff" type="timer">
+    <p style="font-size: 20px; color: white">Please wait...</p>
+</ngx-spinner>

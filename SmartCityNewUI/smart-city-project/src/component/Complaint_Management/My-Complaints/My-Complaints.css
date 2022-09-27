@@ -1,0 +1,60 @@
+.table-container-style {
+  border: 1px solid #cec9c9;
+}
+
+.table-font-style {
+  font-size: 12px;
+  padding: 7px !important;
+}
+.table-title-div-ellipsis {
+  max-width: "100%";
+  color: blue;
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.table-title-ellipsis {
+  font-size: 12px;
+  color: #1b2033 !important;
+}
+.table-status-width {
+  width:83px;
+}
+.table-heading-style {
+  background: #d3d3d3;
+  font-weight: bold;
+}
+
+.circle-icon-style {
+  font-size: 8px !important;
+  padding-right: 5px;
+}
+
+.circle-icon-style-open {
+  color: #08d508;
+}
+
+.circle-icon-style-inProgress {
+  color: #ffc600;
+}
+
+.circle-icon-style-regected {
+  color: #ff3c00;
+}
+
+.circle-icon-style-closed {
+  /* color: #0026ff; */
+  color: #4e65e6;
+}
+
+.complaint-view-details-eye-icon {
+  color: #8439ff;
+  cursor: pointer;
+}
+
+.circle-icon-style-reopen {
+  color: #8f58e9;
+}

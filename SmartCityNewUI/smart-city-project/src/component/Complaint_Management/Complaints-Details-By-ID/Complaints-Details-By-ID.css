@@ -1,0 +1,17 @@
+.MuiRating-root {
+    color: #ffb400;
+    cursor: pointer;
+    display: inline-flex;
+    position: absolute !important;
+    font-size: 1.5rem;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.feedback-style {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important
+}
+
+.feedback-style-message {
+    margin-bottom: -12px !important;
+}

@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  height: 100%;
+  /* background-image: url(../src/assets/curvebg2.png); */
+}
+
+
+
+/* .esri-display-object svg{
+  display: none !important;
+} */
+
+.esri-widget{
+  padding: 2px !important;
+}
+
+#instruction {
+  z-index: 99;
+  position: absolute;
+  top: 15px;
+  left: 65%;
+  padding: 5px;
+  margin-left: -175px;
+  height: 30px;
+  width: 290px;
+  background: rgba(25, 25, 25, 0.8);
+  color: white;
+}
+=======
+.btn-info.dropdown-toggle {
+  background-color: transparent !important;
+}
+

@@ -1,0 +1,307 @@
+.css-yk16xz-control {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: transparent !important;
+    border-color: hsl(0,0%,80%);
+    border-radius: 0px !important;
+    border-style: none !important;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: groove !important;
+    /* border-width: 1px; */
+    cursor: default;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 38px;
+    outline: 0 !important;
+    position: relative;
+    -webkit-transition: all 100ms;
+    transition: all 100ms;
+    box-sizing: border-box;
+}
+
+.category-drop-style {
+    padding-top: 25px;
+    width : 100%;
+    z-index: 2;
+    border-width:'10px'
+}
+.countryCode-drop-style {
+    padding-top: 10.5px;
+    width : 100%;
+    z-index: 2;
+    margin-right: 2%;
+    width : 15%
+}
+.react-select__control{
+    border-bottom-width: '20px';
+}
+.category-drop-style-profile {
+    padding-top: 0px !important;
+}
+
+.css-1pahdxg-control:hover {
+    border-color: hsl(0,0%,70%) !important;
+    border-bottom: groove !important;
+}
+
+.css-yk16xz-control:hover {
+    border-color: hsl(0,0%,70%) !important;
+    border-bottom: groove !important;
+}
+
+.start-new-idea-description-box {
+    background-color: white;
+}
+
+.geolocation-button-style {
+    color: #6146d5 !important;
+    width: 100%;
+    height: 40px;
+}
+
+.geolocation-font-style {
+    font-size: 14px;
+    font-weight: 400;
+    padding-right: 0px !important;
+    align-self: center;
+}
+
+.geolocation-button-font-style {
+    font-size: 12px;
+    padding-left: 10px;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+.upload-icon-styles{
+    border: ridge;
+    border-width: 1px;
+    height: 60px;
+    text-align: -webkit-center;
+    padding-top: 10px;
+    width: 100%;
+    color: #dad5d5;
+    border-color: #c5bfbf;
+}
+
+.Attachment-font-style {
+    font-weight: 600;
+    font-size: 16px;
+    color: #212529;
+    padding-bottom: 10px;
+    
+}
+
+.max-size-font-style{
+    font-weight: 400;
+    font-size: 12px;
+    color: #212529;
+}
+
+.add-file-plus-icon-style {
+    color: rgb(89 73 169) !important;
+}
+
+@media (min-width: 200px) and (max-width: 300px) {
+
+    .start-new-Idea-heading{
+        text-align: center;
+        font: normal normal 600 14px/19px Segoe UI;
+        letter-spacing: 0.7px;
+        color: #000000;
+        text-shadow: 0px 3px 6px #00000029;
+        text-transform: capitalize;
+        place-self: center;
+        padding-right: 20% !important;
+    }
+
+    .start-new-idea-banner-text {
+        padding-right: 20%;
+        padding-top: 21%;
+        padding-left: 15px;
+        text-align: left;
+        font: normal normal normal 14px/16px Segoe UI;
+        /* font-size: 12px; */
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-shadow: 0px 3px 6px #0000002b;
+    }
+
+}
+
+@media (min-width: 301px) and (max-width: 349px) {
+
+    .start-new-Idea-heading{
+    text-align: center;
+    font: normal normal 600 14px/19px Segoe UI;
+    letter-spacing: 0.7px;
+    color: #000000;
+    text-shadow: 0px 3px 6px #00000029;
+    text-transform: capitalize;
+    place-self: center;
+    padding-right: 20% !important;
+}
+
+.start-new-idea-banner-text {
+    padding-right: 20%;
+    padding-top: 21%;
+    padding-left: 15px;
+    text-align: left;
+    font: normal normal normal 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+}
+
+}
+
+@media (min-width: 350px) and (max-width: 576px)
+{
+    .start-new-Idea-heading{
+        text-align: center;
+        font: normal normal 600 14px/19px Segoe UI;
+        letter-spacing: 0.7px;
+        color: #000000;
+        text-shadow: 0px 3px 6px #00000029;
+        text-transform: capitalize;
+        place-self: center;
+        padding-right: 20% !important;
+    }
+
+    .start-new-idea-banner-text {
+        padding-right: 20%;
+        padding-top: 21%;
+        padding-left: 15px;
+        text-align: left;
+        font: normal normal normal 16px/24px Segoe UI;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-shadow: 0px 3px 6px #0000002b;
+    }
+}
+
+@media (max-width: 765px) and (min-width: 580px){
+
+    .start-new-Idea-heading{
+        font: normal normal 600 17px/19px Segoe UI;
+        letter-spacing: 0.7px;
+        color: #000000;
+        text-shadow: 0px 3px 6px #00000029;
+        text-transform: capitalize;
+        padding-top: 14px;
+    }
+
+    .start-new-idea-banner-text {
+        padding-right: 31px;
+        padding-top: 20%;
+        padding-left: 40px;
+        text-align: left;
+        font: normal normal normal 18px/24px Segoe UI;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-shadow: 0px 3px 6px #0000002b;
+    }
+
+}
+
+@media (min-width: 767px) and (max-width: 990px) {
+      .start-new-Idea-heading{
+        font: normal normal 600 17px/19px Segoe UI;
+        letter-spacing: 0.7px;
+        color: #000000;
+        text-shadow: 0px 3px 6px #00000029;
+        text-transform: capitalize;
+        padding-top: 14px;
+    }
+
+    .start-new-idea-banner-text {
+        padding-right: 31px;
+        padding-top: 20%;
+        padding-left: 40px;
+        text-align: left;
+        font: normal normal normal 18px/26px Segoe UI;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-shadow: 0px 3px 6px #0000002b;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1024px)  {
+
+    .start-new-Idea-heading{
+        /* text-align: center; */
+        font: normal normal 600 18px/26px Segoe UI;
+        letter-spacing: 0.7px;
+        color: #000000;
+        text-shadow: 0px 3px 6px #00000029;
+        text-transform: capitalize;
+        padding-top: 14px;
+    }
+  
+
+    .start-new-idea-banner-text {
+        padding-right: 15px;
+        padding-top: 25%;
+        padding-left: 15px;
+        text-align: left;
+        font: normal normal normal 14px/16px Segoe UI;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-shadow: 0px 3px 6px #0000002b;
+    }
+    
+}
+
+@media (min-width: 1024px) and (max-width: 3500px) {
+
+    .start-new-Idea-heading{
+        text-align: center;
+        font: normal normal 600 14px/19px Segoe UI;
+        letter-spacing: 0.7px;
+        color: #000000;
+        text-shadow: 0px 3px 6px #00000029;
+        text-transform: capitalize;
+        padding-top: 7px;
+    }
+
+    .start-new-idea-banner-text {
+        padding-right: 31px;
+        padding-top: 20%;
+        padding-left: 40px;
+        text-align: left;
+        font: normal normal normal 18px/26px Segoe UI !important;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-shadow: 0px 3px 6px #0000002b;
+    }
+
+}
+
+
+.select-astric-red{
+    color: red;
+}
+
+.max-char-count-text-display {
+    font-size: 10px;
+    color: #d05050;
+    float: right;
+    font-weight: 600;
+    padding-top: 5px;
+}

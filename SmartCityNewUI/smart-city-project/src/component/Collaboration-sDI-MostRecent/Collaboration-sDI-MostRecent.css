@@ -1,0 +1,218 @@
+.tab-card-container-style {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+
+.tab-card-style {
+  background-color: #f0f0f9 !important;
+  margin-top: 25px;
+
+  /* background: #EFF0F2 0% 0% no-repeat padding-box !important; */
+  box-shadow: 0px 3px 12px #0000002e !important;
+  border: 1px solid #f0f0f9 !important;
+  height: 300px !important;
+}
+
+.tab-card-heading-style {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  height: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.tab-card-subject-style {
+  padding-top: 10px;
+  padding-left: 25px !important;
+  padding-right: 14px;
+  min-height: 70px;
+  max-height: 70px;
+  text-align: initial;
+  font: normal normal 600 16px/21px Segoe UI;
+  letter-spacing: 0px;
+  color: #1b2033 !important;
+  text-shadow: 0px 3px 6px #0000001a;
+}
+
+.tab-title-ellipsis {
+  color: #1b2033 !important;
+  text-shadow: 0px 3px 6px #0000001a;
+  font: normal normal 600 16px/21px Segoe UI;
+}
+
+.tab-title-div-ellipsis{
+    max-width: '100%';
+    color:blue;
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tab-card-body-style {
+  padding-left: 10px;
+  color: #272727 !important;
+  margin-bottom: 3px !important;
+}
+.tab-card-body-ellipsis{
+ color: #272727 !important;
+ font-size: .9rem;
+ font-weight: 400;
+}
+.tab-card-body-div-ellipsis{
+     max-width: '100%';
+    color:blue;
+    font-size: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tab-card-text-style {
+}
+
+.card-profile-image-style {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+}
+
+.card-profile-image-col-style {
+  align-self: center;
+  text-align-last: center;
+  padding-right: 0px !important;
+  padding-bottom: 5%;
+}
+
+.card-image-imfo-style {
+  padding-left: 10px !important;
+}
+
+.card-image-imfo-row-style {
+  height: 15px !important;
+  padding-top: 4px;
+  font-size: 10px;
+}
+
+.card-image-profile-name-style {
+  font-size: 85%;
+  font-weight: 700;
+  color: #38373a;
+  height: 15px;
+}
+
+.card-comments-style {
+  font-size: 14px;
+  font-weight: 600;
+  color: #9a63ea;
+  height: 15px;
+}
+
+.card-icon-style-delete {
+  color: #fe4848;
+  font-size: 20px !important;
+  cursor:pointer;
+}
+
+.card-icon-style {
+  color: #30626d;
+  font-size: 16px !important;
+  border-radius: 50%;
+  background: #e0e5e6;
+  /* height: 66%; */
+  /* width: 45%; */
+  padding: 12%;
+  text-align: center;
+  cursor:pointer;
+}
+
+.card-icon-alignment {
+  text-align: -webkit-right;
+  text-align: right;
+}
+
+.card-icon-alignment-reply {
+  text-align: -webkit-center;
+}
+
+hr {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  border: 2;
+  border-top-width: 2px;
+  border-top: 1px solid #c0c0c0 !important;
+}
+
+.Card-footer-style {
+  /* background-color: #D0D0D0; */
+}
+
+.cards-lable-style {
+  font-size: 14px;
+  font-weight: 600;
+  color: #353535;
+}
+
+#rcorners1 {
+  border-radius: 30px;
+  background: #50bdd3;
+  width: fit-content;
+  height: fit-content;
+  text-align: left;
+  /* font: normal normal 600 14px/19px Segoe UI; */
+  font-size: 80% !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  height: auto !important;
+}
+
+.text-muted {
+  text-align: left;
+  font: normal normal 600 16px/21px Segoe UI;
+  letter-spacing: 0px;
+  color: #1b2033 !important;
+  text-shadow: 0px 3px 6px #0000001a;
+}
+
+#rcorners-comment-count {
+  border-radius: 25px;
+  background: #e0e5e6;
+  width: fit-content;
+  height: fit-content;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 4%;
+  padding-right: 4%;
+  color: #30626d;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.comments-count-style {
+  color: #232323;
+  font-weight: 300;
+}
+
+.card-top-border {
+  background-color: #8c83ef;
+  border-radius: 5px 5px 0px 0px;
+  height: 5px;
+  width: 100%;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.card-footer__events {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

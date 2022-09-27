@@ -1,0 +1,1452 @@
+.login-container-style_SAT {
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+}
+
+.login-tytle-allign-style_SAT {
+  /* background-image: url(../../assets/curvebg2.png); */
+  color: white;
+  /* padding-top: 80px; */
+  padding-top: 20px;
+}
+
+@media (min-width: 1025px) {
+  .login-field-width-style {
+    width: 93% !important;
+  }
+  .dashboard-login-field-width-style {
+    width: 93% !important;
+  }
+  .login-text-message-style {
+  /* padding-left: 35px !important; */
+  /* text-align: center; */
+  /* padding-top: 0px;
+    font-size: 14px;
+    font-weight: 300; */
+  text-align: left;
+  font: normal normal normal 16px/21px Segoe UI;
+  letter-spacing: 0px;
+  color: #424242;
+  opacity: 1;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+}
+
+.MuiFormControl-root {
+  width: 100% !important;
+}
+
+.login-icon-color {
+  color: #4833ff;
+  font-size: 1.2rem !important;
+  margin-top: -12px;
+}
+
+.MuiCheckbox-root {
+  color: rgb(139 119 243) !important;
+}
+
+.login-checkbox-style {
+  padding-left: 0px !important;
+  size: 12px;
+}
+
+.login-forgetPassword-text-style {
+  padding-top: 10px;
+  font-size: 12px;
+  text-align: right;
+  font: normal normal 600 11px/14px Segoe UI;
+  letter-spacing: 0px;
+  color: #4833ff;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+
+.login-button-style {
+  color: white !important;
+  width: 100%;
+  height: 42px;
+
+  background: #7367f0 0% 0% no-repeat padding-box !important;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  opacity: 1;
+}
+.news-load-more-button-style {
+  color: white !important;
+  width: 100%;
+  height: 42px;
+
+  background: #7367f0 0% 0% no-repeat padding-box !important;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  opacity: 1;
+}
+.login-button-style-row {
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.Login-option-lable {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: 30% max-content 30%;
+  grid-template-rows: 20px 0;
+  grid-gap: 20px;
+  justify-content: center;
+  padding-top: 30px;
+
+  font: normal normal bold 12px/12px Arial;
+  color: #616161;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+
+.Login-option-lable:before,
+.Login-option-lable:after {
+  content: "";
+  border-top: 1px solid;
+  font: normal normal bold 12px/12px Arial;
+  color: #616161;
+
+}
+
+.Login-option-lable {
+  margin: 0px 0;
+  font-size: 14px;
+  color: rgb(78, 78, 78);
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+
+.login-registration-button-style {
+  z-index: 1500 !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  padding-top: 25px;
+  margin-right: -30px !important;
+  margin-left: -30px !important;
+}
+
+.login-navbar-style {
+  background-image: linear-gradient(#8270f282, #ce9ffcad);
+  /* place-content: center !important; */
+  align-content: center;
+  justify-content: center !important;
+}
+
+.skip-button-style {
+  background-color: #454452 !important;
+  color: white !important;
+  width: 100%;
+  height: 42px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+
+  text-align: center;
+  font: normal normal normal 13px/12px Arial;
+  letter-spacing: 1.3px;
+}
+
+.keep-me-log-in-style {
+  text-align: left;
+  font: normal normal normal 11px/14px Segoe UI;
+  font-weight: 500;
+  letter-spacing: 0px;
+  color: #575757;
+}
+
+#simple-dialog-title {
+  font-size: 10px !important;
+}
+
+@media only screen and (max-width: 480px) {
+  .Toastify__toast-container {
+    width: 80% !important;
+    padding: 0;
+    /* left: 30px !important; */
+    margin: 0 auto !important;
+    top: 30px !important;
+  }
+  .login-text-message-style {
+  /* padding-left: 35px !important; */
+  /* text-align: center; */
+  /* padding-top: 0px;
+    font-size: 14px;
+    font-weight: 300; */
+  text-align: left;
+  font: normal normal normal 16px/21px Segoe UI;
+  letter-spacing: 0px;
+  color: #424242;
+  opacity: 1;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+.news-load-more-button-style {
+  color: white !important;
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  background: #7367f0 0% 0% no-repeat padding-box !important;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  opacity: 1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+}
+
+.MuiFormLabel-asterisk {
+  color: red;
+}
+
+/* Media Quesries */
+@media (min-width: 1025px) and (max-width: 3500px) {
+  .login-title-style-row_SAT {
+    padding-top: 25px;
+  }
+  .login-text-message-style {
+  /* padding-left: 35px !important; */
+  /* text-align: center; */
+  /* padding-top: 0px;
+    font-size: 14px;
+    font-weight: 300; */
+  text-align: left;
+  font: normal normal normal 16px/21px Segoe UI;
+  letter-spacing: 0px;
+  color: #424242;
+  opacity: 1;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+  .login-welcome-text-style {
+    /* text-align: center; */
+    display: block;
+    /* padding-left: 35px !important; */
+    padding-top: 80px;
+    /* 
+        font-size: 21px;
+        font-weight: 700; */
+    text-align: left;
+    font: normal normal 600 22px/30px Segoe UI;
+    letter-spacing: 0px;
+    color: #070707;
+    opacity: 1;
+  }
+
+  .bgImage-style {
+    /* background-image: url(../../assets/curvebg2.png) !important; */
+
+    background: transparent url("../../assets/header.png") 0% 0% no-repeat
+      padding-box;
+    /* box-shadow: 5px 5px 17px #00000029; */
+    opacity: 1;
+    background-size: 100% 150px;
+    /* background-position: 0px -150px; */
+  }
+
+  .pageImage-style {
+    /* background-image: url(../../assets/curvebg2.png) !important; */
+
+    background: transparent url("../../assets/Picture4.png") 0% 0% no-repeat
+      padding-box;
+    /* box-shadow: 5px 5px 17px #00000029; */
+    opacity: 1;
+    background-size: 100% 100%;
+    /* background-position: 0px -150px; */
+  }
+  .bg-container-style-opacity-cards-screen {
+    /* background: rgb(218 217 217 / 50%); */
+    background: rgb(230 230 230 / 70%);
+  }
+  .content-container {
+    background: rgba(238, 238, 238, .73) 0% 0% no-repeat padding-box;
+    /* opacity: 0.73; */
+    margin-top: 35px;
+    padding: 0px 15px;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #eeeeee inset !important;
+  }
+
+  .login-password-field-width-style {
+    width: 90% !important;
+    text-align: left;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #4a4848;
+    opacity: 1;
+  }
+  .dashboard-login-password-field-width-style {
+    width: 90% !important;
+    text-align: left;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #4a4848;
+    opacity: 1;
+  }
+  .news-load-more-button-style {
+    color: white !important;
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+    background: #7367f0 0% 0% no-repeat padding-box !important;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    opacity: 1;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .login-title-style-row_SAT {
+    padding-top: 25px;
+  }
+  .login-text-message-style {
+  /* padding-left: 35px !important; */
+  /* text-align: center; */
+  /* padding-top: 0px;
+    font-size: 14px;
+    font-weight: 300; */
+  text-align: left;
+  font: normal normal normal 16px/21px Segoe UI;
+  letter-spacing: 0px;
+  color: #424242;
+  opacity: 1;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+  .login-welcome-text-style {
+    /* text-align: center; */
+    display: block;
+    /* padding-left: 35px !important; */
+    padding-top: 80px;
+    /* 
+        font-size: 21px;
+        font-weight: 700; */
+    text-align: left;
+    font: normal normal 600 22px/30px Segoe UI;
+    letter-spacing: 0px;
+    color: #070707;
+    opacity: 1;
+  }
+
+  .full-login-container-style {
+    padding-top: 40px;
+  }
+  .news-load-more-button-style {
+    color: white !important;
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+    background: #7367f0 0% 0% no-repeat padding-box !important;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    opacity: 1;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1020px) {
+  .full-login-container-style {
+    padding-top: 200px;
+  }
+  .login-text-message-style {
+  /* padding-left: 35px !important; */
+  /* text-align: center; */
+  /* padding-top: 0px;
+    font-size: 14px;
+    font-weight: 300; */
+  text-align: left;
+  font: normal normal normal 16px/21px Segoe UI;
+  letter-spacing: 0px;
+  color: #424242;
+  opacity: 1;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+.news-load-more-button-style {
+  color: white !important;
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  background: #7367f0 0% 0% no-repeat padding-box !important;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  opacity: 1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 786px) {
+  .login-title-style-row_SAT {
+    padding-top: 15px;
+  }
+  .login-button-style {
+  color: white !important;
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  background: #7367f0 0% 0% no-repeat padding-box !important;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  opacity: 1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.news-load-more-button-style {
+  color: white !important;
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  background: #7367f0 0% 0% no-repeat padding-box !important;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  opacity: 1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.Question-reg-login-style {
+  text-align: center;
+  font: normal normal 600 18px/16px Segoe UI;
+  letter-spacing: 0.7px;
+  color: #2e2e2e;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+
+.OR-login-with{
+  margin-top: 20px;
+}
+.login-registration-button-style {
+  z-index: 1500 !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  padding-top: 40px;
+  margin-right: -30px !important;
+  margin-left: -30px !important;
+  padding-bottom: 35px;
+}
+
+
+  .login-welcome-text-style {
+    /* text-align: center; */
+    display: block;
+    /* padding-left: 35px !important; */
+    padding-top: 60px;
+    /* 
+        font-size: 21px;
+        font-weight: 700; */
+    text-align: left;
+    font: normal normal 600 26px/34px Segoe UI;
+    letter-spacing: 0px;
+    color: #070707;
+    opacity: 1;
+  }
+  .login-text-message-style {
+  /* padding-left: 35px !important; */
+  /* text-align: center; */
+  /* padding-top: 0px;
+    font-size: 14px;
+    font-weight: 300; */
+  text-align: left;
+  font: normal normal normal 20px/25px Segoe UI;
+  letter-spacing: 0px;
+  color: #424242;
+  opacity: 1;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+.login-forgetPassword-text-style {
+  padding-top: 10px;
+  font-size: 12px;
+  text-align: right;
+  font: normal normal 600 15px/19px Segoe UI;
+  letter-spacing: 0px;
+  color: #4833ff;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+.input-row{
+  padding-top:18px;
+  padding-bottom: 18px;
+}
+.skip-button-style {
+  background-color: #454452 !important;
+  color: white !important;
+  width: 100%;
+  height: 55px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  text-align: center;
+  font: normal normal normal 17px/16px Arial;
+  letter-spacing: 1.3px;
+}
+.button-row{
+  margin-top:30px;
+}
+.register-button-style{
+  height: 40px;
+  padding-top: 10px;
+}
+
+  .bgImage-style {
+    /* background-image: url(../../assets/curvebg2.png) !important; */
+
+    background: transparent url("../../assets/header.png") 0% 0% no-repeat
+      padding-box;
+    /* box-shadow: 5px 5px 17px #00000029; */
+    opacity: 1;
+    background-size: 100% 150px;
+    /* background-position: 0px -150px; */
+  }
+
+  .pageImage-style {
+    /* background-image: url(../../assets/curvebg2.png) !important; */
+
+    background: transparent url("../../assets/Picture4.png") 0% 0% no-repeat
+      padding-box;
+    /* box-shadow: 5px 5px 17px #00000029; */
+    opacity: 1;
+    background-size: 100% 100%;
+    height: fit-content;
+    /* background-position: 0px -150px; */
+  }
+  .bg-container-style-opacity-cards-screen {
+    /* background: rgb(218 217 217 / 50%); */
+    background: rgb(230 230 230 / 70%);
+  }
+  .Login-option-lable {
+  margin: 0px 0;
+  font-size: 18px;
+  color: rgb(78, 78, 78);
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+  .content-container {
+    background:rgba(238, 238, 238, .9) 0% 0% no-repeat padding-box;
+    /* opacity: 0.9; */
+    margin-top: 40px;
+    padding: 25px 15px;
+  }
+
+  .Toastify__toast-container {
+    /* width: 80% !important; */
+    padding: 0;
+    margin: 0 auto !important;
+    /* top: 30px !important; */
+    opacity: 1 !important;
+    z-index: 3;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #eeeeee inset !important;
+  }
+
+  .login-password-field-width-style {
+    width: 94% !important;
+    text-align: left;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #4a4848;
+    opacity: 1;
+  }
+  .dashboard-login-password-field-width-style {
+    width: 94% !important;
+    text-align: left;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #4a4848;
+    opacity: 1;
+  }
+  .login-field-width-style {
+    width: 94% !important;
+  }
+  .dashboard-login-field-width-style {
+    width: 94% !important;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1367px) {
+    .login-title-style-row_SAT {
+    padding-top: 15px;
+  }
+  .login-button-style {
+  color: white !important;
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  background: #7367f0 0% 0% no-repeat padding-box !important;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  opacity: 1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.news-load-more-button-style {
+  color: white !important;
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  background: #7367f0 0% 0% no-repeat padding-box !important;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  opacity: 1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.Question-reg-login-style {
+  text-align: center;
+  font: normal normal 600 18px/16px Segoe UI;
+  letter-spacing: 0.7px;
+  color: #2e2e2e;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+
+.OR-login-with{
+  margin-top: 20px;
+}
+.login-registration-button-style {
+  z-index: 1500 !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  padding-top: 40px;
+  margin-right: -30px !important;
+  margin-left: -30px !important;
+  padding-bottom: 35px;
+}
+  .login-welcome-text-style {
+    /* text-align: center; */
+    display: block;
+    /* padding-left: 35px !important; */
+    padding-top: 60px;
+    /* 
+        font-size: 21px;
+        font-weight: 700; */
+    text-align: left;
+    font: normal normal 600 26px/34px Segoe UI;
+    letter-spacing: 0px;
+    color: #070707;
+    opacity: 1;
+  }
+  .login-text-message-style {
+  /* padding-left: 35px !important; */
+  /* text-align: center; */
+  /* padding-top: 0px;
+    font-size: 14px;
+    font-weight: 300; */
+  text-align: left;
+  font: normal normal normal 20px/25px Segoe UI;
+  letter-spacing: 0px;
+  color: #424242;
+  opacity: 1;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+.login-forgetPassword-text-style {
+  padding-top: 10px;
+  font-size: 12px;
+  text-align: right;
+  font: normal normal 600 15px/19px Segoe UI;
+  letter-spacing: 0px;
+  color: #4833ff;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+.input-row{
+  padding-top:18px;
+  padding-bottom: 18px;
+}
+.skip-button-style {
+  background-color: #454452 !important;
+  color: white !important;
+  width: 100%;
+  height: 55px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  text-align: center;
+  font: normal normal normal 17px/16px Arial;
+  letter-spacing: 1.3px;
+}
+.button-row{
+  margin-top:30px;
+}
+.register-button-style{
+  height: 40px;
+  padding-top: 10px;
+}
+
+  .bgImage-style {
+    /* background-image: url(../../assets/curvebg2.png) !important; */
+
+    background: transparent url("../../assets/header.png") 0% 0% no-repeat
+      padding-box;
+    /* box-shadow: 5px 5px 17px #00000029; */
+    opacity: 1;
+    background-size: 100% 150px;
+    /* background-position: 0px -150px; */
+  }
+
+  .pageImage-style {
+    /* background-image: url(../../assets/curvebg2.png) !important; */
+
+    background: transparent url("../../assets/Picture4.png") 0% 0% no-repeat
+      padding-box;
+    /* box-shadow: 5px 5px 17px #00000029; */
+    opacity: 1;
+    background-size: 100% 100%;
+    height: fit-content;
+    /* background-position: 0px -150px; */
+  }
+  .bg-container-style-opacity-cards-screen {
+    /* background: rgb(218 217 217 / 60%); */
+    background: rgb(230 230 230 / 70%);
+  }
+  .Login-option-lable {
+  margin: 0px 0;
+  font-size: 18px;
+  color: rgb(78, 78, 78);
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+  .content-container {
+    background: rgba(238, 238, 238, .9) 0% 0% no-repeat padding-box;
+    /* opacity: 0.9; */
+    margin-top: 40px;
+    padding: 25px 15px;
+  }
+
+  .Toastify__toast-container {
+    /* width: 80% !important; */
+    padding: 0;
+    margin: 0 auto !important;
+    /* top: 30px !important; */
+    opacity: 1 !important;
+    z-index: 3;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #eeeeee inset !important;
+  }
+
+  .login-password-field-width-style {
+    width: 90% !important;
+    text-align: left;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #4a4848;
+    opacity: 1;
+  }
+  .dashboard-login-password-field-width-style {
+    width: 96% !important;
+    text-align: left;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #4a4848;
+    opacity: 1;
+  }
+  .login-field-width-style {
+    width: 90% !important;
+  }
+  .dashboard-login-field-width-style {
+    width: 96% !important;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .login-title-style-row_SAT {
+    padding-top: 15px;
+  }
+  .login-text-message-style {
+  /* padding-left: 35px !important; */
+  /* text-align: center; */
+  /* padding-top: 0px;
+    font-size: 14px;
+    font-weight: 300; */
+  text-align: left;
+  font: normal normal normal 16px/21px Segoe UI;
+  letter-spacing: 0px;
+  color: #424242;
+  opacity: 1;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+  .login-welcome-text-style {
+    /* text-align: center; */
+    display: block;
+    /* padding-left: 35px !important; */
+    padding-top: 60px;
+    /* 
+        font-size: 21px;
+        font-weight: 700; */
+    text-align: left;
+    font: normal normal 600 22px/30px Segoe UI;
+    letter-spacing: 0px;
+    color: #070707;
+    opacity: 1;
+  }
+
+  .bgImage-style {
+    /* background-image: url(../../assets/curvebg2.png) !important; */
+
+    background: transparent url("../../assets/header.png") 0% 0% no-repeat
+      padding-box;
+    /* box-shadow: 5px 5px 17px #00000029; */
+    opacity: 1;
+    background-size: 100% 150px;
+    /* background-position: 0px -150px; */
+  }
+
+  .pageImage-style {
+    /* background-image: url(../../assets/curvebg2.png) !important; */
+
+    background: transparent url("../../assets/Picture4.png") 0% 0% no-repeat
+      padding-box;
+    /* box-shadow: 5px 5px 17px #00000029; */
+    opacity: 1;
+    background-size: 100% 100%;
+    height: fit-content;
+    /* background-position: 0px -150px; */
+  }
+  .bg-container-style-opacity-cards-screen {
+    /* background: rgb(218 217 217 / 60%); */
+    background: rgb(230 230 230 / 70%);
+  }
+  .content-container {
+    background: rgba(238, 238, 238, .9) 0% 0% no-repeat padding-box;
+    /* opacity: 0.9; */
+    margin-top: 35px;
+    padding: 0px 15px;
+  }
+
+  .Toastify__toast-container {
+    /* width: 80% !important; */
+    padding: 0;
+    margin: 0 auto !important;
+    /* top: 30px !important; */
+    opacity: 1 !important;
+    z-index: 3;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #eeeeee inset !important;
+  }
+
+  .login-password-field-width-style {
+    width: 90% !important;
+    text-align: left;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #4a4848;
+    opacity: 1;
+  }
+  .dashboard-login-password-field-width-style {
+    width: 90% !important;
+    text-align: left;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #4a4848;
+    opacity: 1;
+  }
+  .login-field-width-style {
+    width: 90% !important;
+  }
+  .dashboard-login-field-width-style {
+    width: 90% !important;
+  }
+}
+@media (min-width: 786px) and (max-width: 1024px) {
+  .login-title-style-row_SAT {
+    padding-top: 15px;
+  }
+  .login-text-message-style {
+  /* padding-left: 35px !important; */
+  /* text-align: center; */
+  /* padding-top: 0px;
+    font-size: 14px;
+    font-weight: 300; */
+  text-align: left;
+  font: normal normal normal 16px/21px Segoe UI;
+  letter-spacing: 0px;
+  color: #424242;
+  opacity: 1;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+  .login-welcome-text-style {
+    /* text-align: center; */
+    display: block;
+    /* padding-left: 35px !important; */
+    padding-top: 60px;
+    /* 
+        font-size: 21px;
+        font-weight: 700; */
+    text-align: left;
+    font: normal normal 600 22px/30px Segoe UI;
+    letter-spacing: 0px;
+    color: #070707;
+    opacity: 1;
+  }
+
+  .bgImage-style {
+    /* background-image: url(../../assets/curvebg2.png) !important; */
+
+    background: transparent url("../../assets/header.png") 0% 0% no-repeat
+      padding-box;
+    /* box-shadow: 5px 5px 17px #00000029; */
+    opacity: 1;
+    background-size: 100% 150px;
+    /* background-position: 0px -150px; */
+  }
+
+  .pageImage-style {
+    /* background-image: url(../../assets/curvebg2.png) !important; */
+
+    background: transparent url("../../assets/Picture4.png") 0% 0% no-repeat
+      padding-box;
+    /* box-shadow: 5px 5px 17px #00000029; */
+    opacity: 1;
+    background-size: 100% 100%;
+    height: fit-content;
+    /* background-position: 0px -150px; */
+  }
+  .bg-container-style-opacity-cards-screen {
+    /* background: rgb(218 217 217 / 60%); */
+    background: rgb(230 230 230 / 70%);
+  }
+  .content-container {
+    background: rgba(238, 238, 238, .9) 0% 0% no-repeat padding-box;
+    /* opacity: 0.9; */
+    margin-top: 35px;
+    padding: 0px 15px;
+  }
+
+  .Toastify__toast-container {
+    /* width: 80% !important; */
+    padding: 0;
+    margin: 0 auto !important;
+    /* top: 30px !important; */
+    opacity: 1 !important;
+    z-index: 3;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #eeeeee inset !important;
+  }
+
+  .login-password-field-width-style {
+    width: 95% !important;
+    text-align: left;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #4a4848;
+    opacity: 1;
+  }
+  .dashboard-login-password-field-width-style {
+    width: 95% !important;
+    text-align: left;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #4a4848;
+    opacity: 1;
+  }
+  .login-field-width-style {
+    width: 95% !important;
+  }
+  .dashboard-login-field-width-style {
+    width: 95% !important;
+  }
+  .news-load-more-button-style {
+    color: white !important;
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+    background: #7367f0 0% 0% no-repeat padding-box !important;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    opacity: 1;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) and (min-width: 580px) {
+  .full-login-container-style {
+    padding-top: 150px;
+  }
+  .login-text-message-style {
+  /* padding-left: 35px !important; */
+  /* text-align: center; */
+  /* padding-top: 0px;
+    font-size: 14px;
+    font-weight: 300; */
+  text-align: left;
+  font: normal normal normal 16px/21px Segoe UI;
+  letter-spacing: 0px;
+  color: #424242;
+  opacity: 1;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+.news-load-more-button-style {
+  color: white !important;
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  background: #7367f0 0% 0% no-repeat padding-box !important;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  opacity: 1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+}
+
+@media (min-width: 576px) {
+  .login-title-style-row_SAT {
+    padding-top: 15px;
+  }
+  .login-text-message-style {
+  /* padding-left: 35px !important; */
+  /* text-align: center; */
+  /* padding-top: 0px;
+    font-size: 14px;
+    font-weight: 300; */
+  text-align: left;
+  font: normal normal normal 16px/21px Segoe UI;
+  letter-spacing: 0px;
+  color: #424242;
+  opacity: 1;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+.news-load-more-button-style {
+  color: white !important;
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  background: #7367f0 0% 0% no-repeat padding-box !important;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  opacity: 1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+}
+
+@media (min-width: 350px) and (max-width: 576px) {
+  .login-title-style-row_SAT {
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+  .login-text-message-style {
+  /* padding-left: 35px !important; */
+  /* text-align: center; */
+  /* padding-top: 0px;
+    font-size: 14px;
+    font-weight: 300; */
+  text-align: left;
+  font: normal normal normal 16px/21px Segoe UI;
+  letter-spacing: 0px;
+  color: #424242;
+  opacity: 1;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+  .bgImage-style {
+    /* background-image: url(../../assets/curvebg2.png) !important; */
+
+    background: transparent url("../../assets/curvebg2.png") 0% 0% no-repeat
+      padding-box;
+    /* box-shadow: 5px 5px 17px #00000029; */
+    opacity: 1;
+    background-size: 100% 350px;
+    background-position: 0px -70px;
+  }
+
+  .login-welcome-text-style {
+    /* text-align: center; */
+    display: block;
+    /* padding-left: 35px !important; */
+    padding-top: 80px;
+    /* 
+        font-size: 21px;
+        font-weight: 700; */
+    text-align: left;
+    font: normal normal 600 22px/30px Segoe UI;
+    letter-spacing: 0px;
+    color: #070707;
+    opacity: 1;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px rgb(255, 255, 255) inset !important;
+  }
+
+  .login-password-field-width-style {
+    width: 90% !important;
+    text-align: left;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #4a4848;
+    opacity: 1;
+  }
+  .dashboard-login-password-field-width-style {
+    width: 90% !important;
+    text-align: left;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #4a4848;
+    opacity: 1;
+  }
+  .login-field-width-style {
+    width: 90% !important;
+    text-align: left;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #4a4848;
+    opacity: 1;
+  }
+  .dashboard-login-field-width-style {
+    width: 90% !important;
+    text-align: left;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #4a4848;
+    opacity: 1;
+  }
+  .news-load-more-button-style {
+    color: white !important;
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+    background: #7367f0 0% 0% no-repeat padding-box !important;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    opacity: 1;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+.login-title-style_SAT {
+  font-weight: 300;
+  /* text-align: center;
+    font-size: 22px; */
+
+  text-align: center;
+  font: normal normal normal 26px/35px Segoe UI;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 250px) and (max-width: 349px) {
+  .login-title-style_SAT {
+    font-weight: 300;
+    /* text-align: center;
+        font-size: 22px; */
+
+    text-align: center;
+    font: normal normal normal 18px/35px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+    opacity: 1;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .login-text-message-style {
+  /* padding-left: 35px !important; */
+  /* text-align: center; */
+  /* padding-top: 0px;
+    font-size: 14px;
+    font-weight: 300; */
+  text-align: left;
+  font: normal normal normal 16px/21px Segoe UI;
+  letter-spacing: 0px;
+  color: #424242;
+  opacity: 1;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+  .login-welcome-text-style {
+    /* text-align: center; */
+    display: block;
+    /* padding-left: 35px !important; */
+    padding-top: 94px;
+    text-align: left;
+    font: normal normal 600 22px/30px Segoe UI;
+    letter-spacing: 0px;
+    color: #070707;
+    opacity: 1;
+  }
+
+  .login-password-field-width-style {
+    width: 89% !important;
+    text-align: left;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #4a4848;
+    opacity: 1;
+  }
+  .dashboard-login-password-field-width-style {
+    width: 89% !important;
+    text-align: left;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #4a4848;
+    opacity: 1;
+  }
+  .dashboard-login-field-width-style {
+    width: 89% !important;
+    text-align: left;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #4a4848;
+    opacity: 1;
+  }
+  .news-load-more-button-style {
+    color: white !important;
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+    background: #7367f0 0% 0% no-repeat padding-box !important;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    opacity: 1;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  /* .login-title-style-row_SAT{
+        padding-top: 15px;
+        padding-bottom: 25px;
+    } */
+    .login-text-message-style {
+  /* padding-left: 35px !important; */
+  /* text-align: center; */
+  /* padding-top: 0px;
+    font-size: 14px;
+    font-weight: 300; */
+  text-align: left;
+  font: normal normal normal 16px/21px Segoe UI;
+  letter-spacing: 0px;
+  color: #424242;
+  opacity: 1;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+  .bgImage-style {
+    /* background-image: url(../../assets/curvebg2.png) !important; */
+
+    background: transparent url("../../assets/curvebg2.png") 0% 0% no-repeat
+      padding-box;
+    /* box-shadow: 5px 5px 17px #00000029; */
+    opacity: 1;
+    background-size: 100% 350px;
+    background-position: 0px -70px;
+  }
+
+  .login-welcome-text-style {
+    /* text-align: center; */
+    display: block;
+    /* padding-left: 35px !important; */
+    padding-top: 80px;
+    /* 
+        font-size: 21px;
+        font-weight: 700; */
+    text-align: left;
+    font: normal normal 600 22px/30px Segoe UI;
+    letter-spacing: 0px;
+    color: #070707;
+    opacity: 1;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px rgb(255, 255, 255) inset !important;
+  }
+  .news-load-more-button-style {
+    color: white !important;
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+    background: #7367f0 0% 0% no-repeat padding-box !important;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    opacity: 1;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+.Toastify__toast-container--top-center {
+  top: 8.2em !important;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+input[type="number"]::-webkit-clear-button {
+  display: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+input[type="number"]::-webkit-outside-spin-button {
+  display: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input {
+  filter: none;
+}
+
+.register-login-style {
+  text-align: center;
+  font: normal normal bold 14px/12px Segoe UI;
+  letter-spacing: 0.7px;
+  color: #1810ff;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.Question-reg-login-style {
+  text-align: center;
+  font: normal normal 600 14px/12px Segoe UI;
+  letter-spacing: 0.7px;
+  color: #2e2e2e;
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+
+.google-btn {
+  background-color: rgb(255, 255, 255);
+  display: inline-flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.54);
+  box-shadow: none !important;
+  padding: 0px;
+  border-radius: 50% !important;
+  border: 1px solid transparent;
+  font-size: 14px !important;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+}
+
+.google-btn svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.fb-btn {
+  background-image: url("/src/assets/fb.png") !important;
+  height: 45px;
+  width: 45px;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+

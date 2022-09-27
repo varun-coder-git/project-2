@@ -1,0 +1,282 @@
+<html>
+  <head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" >
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+</head>
+
+<div class="container" id="contain">
+    <!-- <span style="color: #EF7A2D;font-size: x-large;float:right;" (click)="onClose()">×</span> -->
+    <!-- <mdb-icon fas style=" color: #6146D5;float:right;cursor: pointer;" icon="times" mdbTooltip="Close" placement="left" (click)="onClose()"></mdb-icon> -->
+    <div class="row">
+        <div class="col-md-8 pl-3 pt-3">
+            <p class="heading"><mdb-icon fas icon="{{popupIcon}}" class="title-icon"></mdb-icon>&nbsp;{{popupLabel}}</p>
+        </div>
+        <!-- <div class="col-md-4 pr-0"> -->
+            <!-- <img src="../../../assets/img/profileImage.png" style="width:15%;border-radius:50%;" *ngIf="isEdit">&nbsp;&nbsp; -->
+            <!-- <img src="{{url}}{{pollData.image_path}}" class="img" *ngIf="pollData">&nbsp;&nbsp;
+            <label class="big-label">{{userName}}</label> -->
+        <!-- </div> -->
+
+        <div class="col-lg-3 ">
+            <!-- <h6><span class="pr-2 titleName"> 
+               
+                        <img src="{{url}}{{imgPath}}" class="img">&nbsp;&nbsp;
+                </span>{{user_name | titlecase}}
+            </h6> -->
+            <p class="poll-id" *ngIf="data">Complaint ID - <span class="count">N/A</span>
+            </p>
+        </div>
+        <div class="col-lg-1 pt-2" style="text-align: right;" id="close">
+            <mdb-icon fas style=" color: #6146D5;cursor: pointer;visibility: visible;font-size: 24px;" icon="times" mdbTooltip="Close" placement="left" (click)="onClose();">
+            </mdb-icon>
+        </div>
+    </div>
+
+
+    <!-- <hr color="#2B2647"> -->
+    <mat-divider style="background-color:#d0d0d0;    margin-bottom: 10px;"></mat-divider>
+    <span style="color: red;vertical-align: -4px;">*</span> <span class="required-heading">Required</span>
+    <form [formGroup]='complaintForm'>
+        <div class="row">
+        <div class="col-md-6 ">
+            <div class="form-group">
+                <label class="label">Citizen Mobile Number</label><br>
+                <input type="number" placeholder="Enter Mobile Number" class="form-control input" onkeydown="return event.keyCode !== 69 && event.keyCode !== 189" pattern="[0-9]{10}"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    formControlName="citizenMobileNo" [ngClass]="{ 'is-invalid': submittedMobile && f.citizenMobileNo.errors }" maxlength="10">
+                    <div *ngIf="submittedMobile && f.citizenMobileNo.errors" class="invalid-feedback" required>
+                        <div *ngIf="f.citizenMobileNo.errors.required">Mobile number is required!</div>
+                        <div *ngIf="f.citizenMobileNo.errors.pattern">Please enter valid mobile number!</div>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-6 pt-4">
+         
+                
+                <button mat-raised-button class="checkCitizen ml-2" (click)="checkCitizenExist()">Check Citizen Exists</button>
+ 
+           
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 ">
+            <div class="form-group">
+                <label class="label">Citizen Name</label><br>
+                <input type="text" placeholder="Citizen Name" class="form-control input" maxlength="50" onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))'
+                    formControlName="citizenName" [ngClass]="{ 'is-invalid': submitted && f.citizenName.errors }">
+                    <div *ngIf="submitted && f.citizenName.errors" class="invalid-feedback" required>
+                        <div *ngIf="f.citizenName.errors.required">Citizen name is required!</div>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-6 ">
+            <div class="form-group">
+                <label class="label">Citizen Email</label><br>
+                <input type="text" placeholder="Citizen Email" class="form-control input"
+                    formControlName="citizenEmail" [ngClass]="{ 'is-invalid': submitted && f.citizenEmail.errors }" >
+                    <div *ngIf="submitted && f.citizenEmail.errors " class="invalid-feedback" required>
+                        <div *ngIf="f.citizenEmail.errors.required">Citizen email is required!</div>
+                        <div *ngIf="f.citizenEmail.errors.email">Invalid email format!</div>
+                        <!-- <div *ngIf="f.citizenEmail.errors.email">Invalid email format!</div> -->
+                    </div>
+                    <!-- <div *ngIf="submitted && f.citizenEmail.errors" class="invalid-feedback" email>
+                      
+                       
+                    </div> -->
+            </div>
+        </div>
+        </div>
+        <mat-divider style="background-color:#d0d0d0 ;margin-top: 22px;"></mat-divider>
+        <div class="col-md-12 pl-0 pr-0">
+            <div class="form-group">
+                <label class="label">Complaint Title</label><br>
+                <input type="text" placeholder="Enter Title" class="form-control input" 
+                    formControlName="title" [ngClass]="{ 'is-invalid': submitted && f.title.errors }" maxlength="250">
+                    <div *ngIf="submitted && f.title.errors" class="invalid-feedback" required>
+                        <div *ngIf="f.title.errors.required">Complaint Title is required!</div>
+                  
+                    </div>
+            </div>
+        </div>
+        <div class="poll-subject">Max character limit : 250</div>
+        <!-- <ng-select [(ngModel)]="selectedCar" placeholder="Search Category..">
+          <ng-option class="option" *ngFor="let x of complaintCategoryData" [value]="x.complaint_cat_id">{{x.category_name}}</ng-option>
+       </ng-select> -->
+       
+       <!--Using items input-->
+    
+        <div class="row">
+            <div class="col-md-6">
+                <label class="label">Select Complaint Category</label><br>
+               
+                <ng-select class="md-4" [clearable]="false" formControlName="complaint_cat_id" onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))' [ngClass]="{ 'is-invalid': submitted && f.complaint_cat_id.errors }">
+                  
+                  <!-- <option class="option" sledisabled hidden>Select Category</option> -->
+                  <ng-option  class="head-option" value="" selected disabled hidden>Select/Search Category</ng-option>
+                  <ng-option  class="option" *ngFor="let x of complaintCategoryData" [value]="x.complaint_cat_id">{{x.category_name}}
+                   
+                  </ng-option>
+                </ng-select>
+                <div *ngIf="submitted && f.complaint_cat_id.errors" class="invalid-feedback">
+                  <div *ngIf="f.complaint_cat_id.errors.required">Complaint Category is required!</div>
+              </div>
+             
+             
+              
+            </div>
+
+            <div class="col-md-6">
+             
+              
+                    <label class="label">Select Ward</label><br>
+                  
+                  <ng-select class=" md-4 " placeholder="Select/Search Category" [clearable]="false" formControlName="ward_id" [ngClass]="{ 'is-invalid': submitted && f.ward_id.errors }">
+                    
+                    <!-- <option class="option" sledisabled hidden>Select Category</option> -->
+                    <ng-option class="head-option" value="" selected disabled hidden>Select/Search Ward</ng-option>
+                    <ng-option class="option" *ngFor="let x of pincodeList" [value]="x.ward_id">{{x.ward_name}} - {{ x.pincode}}
+                     
+                    </ng-option>
+                  </ng-select>
+                  <div *ngIf="submitted && f.ward_id.errors" class="invalid-feedback">
+                    <div *ngIf="f.ward_id.errors.required">Ward is required!</div>
+                </div>
+               
+              
+              
+            </div>
+        </div>
+        <!-- <hr color="#2B2647"> -->
+        <!-- <ng-select [items]="cars" 
+        bindLabel="name" 
+        bindValue="id" 
+        [(ngModel)]="selectedCar">
+</ng-select> -->
+        <div class="row">
+            
+            <div class="col-md-12 pt-2 pl-3">
+                <label class="label">Address</label><br>
+                <span class="required-heading">{{currentAddress}}</span>  
+                   
+                  
+               <!-- </div>
+            <div class="col-md-4 pt-2">
+                <br> -->
+             <span class="changeLocationIcon"> <mdb-icon fas icon="map-marker-alt"></mdb-icon></span>  
+                
+                <span class="changeLocation" (click)="changeMapLocation();" *ngIf="locationShow">Change Location</span>
+                <span class="changeLocation" *ngIf="locationHide">Change Location</span>
+            </div>
+            
+        </div>
+        <mat-divider style="background-color:#d0d0d0 ;margin-top: 22px;"></mat-divider>
+        <div class="row">
+      
+
+            <div class="col-md-6">
+             
+              
+                    <label class="label">Complaint via</label><br>
+                  <div class="form-group">
+                  <select class="form-control md-4 fac-dropdown" formControlName="complaint_via" [ngClass]="{ 'is-invalid': submitted && f.complaint_via.errors }">
+                    
+                    <!-- <option class="option" sledisabled hidden>Select Category</option> -->
+                    <option value="" selected disabled hidden>Complaint via</option>
+                    <option value="Toll Free Number" class="option" >
+                      Toll Free Number
+                    </option>
+                    <option value="Email" class="option" >
+                       Email 
+                       </option>
+                     
+                  </select>
+                  <div *ngIf="submitted && f.complaint_via.errors" class="invalid-feedback">
+                    <div *ngIf="f.complaint_via.errors.required">Complaint via is required!</div>
+                </div>
+                  <!-- <div *ngIf="submitted && f.poll_category_id.errors" class="invalid-feedback">
+                    <div *ngIf="f.poll_category_id.errors.required">This is required field</div>
+                </div> -->
+               
+                </div>
+              
+            </div>
+          
+        </div>
+        <div class="col-md-12 p-0">
+            <label class="label">Complaint Description</label><br>
+            <div class="form-group" >
+                <textarea placeholder="Enter description here" class="form-control input" maxlength="500"
+                formControlName="complaint"  [ngClass]="{ 'is-invalid': submitted && f.complaint.errors }"></textarea>
+                <div *ngIf="submitted && f.complaint.errors" class="invalid-feedback">
+                    <div *ngIf="f.complaint.errors.required">Complaint Description is required!</div>
+                </div>
+            
+            </div>
+        </div>
+       
+ 
+    
+        <div class="col-md-12 pl-0">
+                
+            <label class="label-upload">Attachments (Attach Image/Video/Document 
+                (max size 5MB))</label><br>
+            <div class="row">
+              <div class="col-lg-3">
+                <button  mat-raised-button color="search" for="fileInputPDF" (click)="fileInputPDF.value='';fileInputPDF.click()"
+                [disabled]="isDisabled">Upload Attachments</button> &nbsp;&nbsp;
+              </div>
+              <div class="col-lg-9">
+                <span style="position:relative;" *ngIf="ispdfURL">
+                  
+                       
+                  
+           
+                  <span *ngFor="let file of files;let i=index">
+                 <span class="attachments-filename">
+                     <!-- <i class="{{getFileExtension(filename)}}" style="color:#6146D5;font-size:50px;padding-left: 20px;padding-top: 10px;"
+                  aria-hidden="true"></i> --> {{file.name}} &nbsp;&nbsp;&nbsp;<i (click)="remove(file)" class="fa fa-remove" style="font-size:14px;color: red;"></i><br>
+                 </span> 
+                       <!-- <span class="wrap-img-doc-txt" style="font-weight: 400;font-family: 'Segoe UI'; padding-left: 2px;">
+                         {{filename}}
+                     </span>  -->
+               </span>
+                  
+ 
+              
+          </span>
+ 
+               <input type='file' #fileInputPDF multiple hidden  (change)="onSelectFileDocument($event)">
+                </div>
+            </div>
+        
+          
+        </div>
+        <mat-divider style="background-color:#d0d0d0;margin-top: 22px;"></mat-divider>
+        
+        <div class="row">
+            <div class="col-md-8 pt-4 pl-3">
+                <!-- <div class="attachments-hint"><span style="color: red;vertical-align: -4px;">*</span> Attach Image/Video/Document 
+                    (max size 5MB)</div>-->
+                <div class="attachments-hint"><span style="color: red;vertical-align: -4px;">*</span> Maximum 3 attachments allowed</div>
+            </div>
+            <div class="col-md-4">
+                <div class="float-right mb-3 pt-4">
+                    <button mat-raised-button class="cancel" (click)="onClose()">Cancel</button>
+                    <button mat-raised-button class="save ml-2" (click)="saveComplaint()" [disabled]="isDisabled">Save</button>
+                </div>
+            </div>
+            
+        </div>
+      
+    </form>
+</div>
+
+<ngx-spinner 
+bdColor="rgba(51,51,51,0.8)"
+size="medium"
+color="#fff"
+type="timer"
+>
+<p style="font-size: 20px; color: white">Please wait...</p>
+</ngx-spinner> 

@@ -1,0 +1,7 @@
+{
+  "name": "smart-city",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

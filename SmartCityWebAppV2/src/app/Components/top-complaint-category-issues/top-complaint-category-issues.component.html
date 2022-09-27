@@ -1,0 +1,68 @@
+<div>
+  <div class="page-content">
+    <div class="page-header">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 pt-1 ">
+            <h2 class="h5 no-margin-bottom " style="text-align: left;">
+              <span style="color:#000000;font-size:medium;font-weight: 400;">
+                <mdb-icon fas icon="chart-line" style="color:#4e37b0;font-size:20px;vertical-align: -2px;"></mdb-icon>
+                &nbsp;&nbsp; &nbsp;Top Complaint Category Issues
+              </span>
+            </h2>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+
+            <select class="form-control fac-dropdown" (change)="onDateChange($event.target.value)">
+              <!-- <option selected disabled hidden>Select Status</option> -->
+
+              <option selected class="option" name="status" value="1"> This Week
+
+              </option>
+              <option class="option" name="status" value="2"> This Month
+
+              </option>
+              <option class="option" name="status" value="3"> This Year
+
+              </option>
+            </select>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 graph-heading">Categories with maximum complaints:
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+
+
+
+        <!-- <button type="button" class="calendar-btn">
+                  <mdb-icon far icon="calendar-alt" style="color: #4e37b0; font-size: medium;padding-right:5px"></mdb-icon>
+                  This Week
+                </button> -->
+
+      </div>
+    </div>
+    <div id="msg" style="color:black;font-size: 24px;
+
+    font-weight: 600;font-family: 'Segoe UI'; padding-top: 0px !important;" >
+      
+    </div>
+    <canvas mdbChart class="chart-size" [chartType]="chartType" [datasets]="chartDatasets" [labels]="chartLabels"
+      [colors]="chartColors" [options]="chartOptions" [legend]="true" (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)">
+    </canvas>
+    <!-- <div class="container-fluid">
+            <div style="display: block; margin:auto;padding: 100px;height: 100%;width: 80%;">
+              
+              </div>
+               
+-->
+
+  </div>
+</div>

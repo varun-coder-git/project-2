@@ -1,0 +1,1713 @@
+.share-discuss-heading-style {
+  padding-left: 35px;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+.share-discuss-back-button-style {
+  font-size: 30px;
+  font-weight: 100;
+  align-self: center;
+  background: #573882;
+  border-radius: 50%;
+  color: white !important;
+  max-width: 46px !important;
+  padding-left: 11px !important;
+  max-height: 50px !important;
+  opacity: 0.8 !important;
+}
+.backButtonStyle {
+  color: white !important;
+}
+
+.share-discuss-image-style {
+  height: 50px;
+  width: 50px;
+}
+
+.share-discuss-heading-styles {
+  align-self: center;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: 800;
+  padding-left: 0px !important;
+}
+
+.share-discuss-button-style {
+  background-color: #593198 !important;
+  color: white !important;
+  /* opacity: 0.75; */
+  width: 87%;
+  height: 40px;
+}
+
+.share-discuss-button-style-row {
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.inner-header-space {
+  padding-top: 60px;
+  padding-bottom: 25px;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+  min-width: -webkit-fill-available;
+  background-color: #9e72de;
+}
+
+.search-bar-icon-style {
+  color: #6146d5;
+  font-size: 16px;
+}
+
+.serach-bar-style {
+  padding-top: 5% !important;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px !important;
+  height: 40px !important;
+}
+
+.MuiOutlinedInput-input {
+  padding: 2% !important;
+  background: #ffffff 0% 0% no-repeat padding-box !important;
+}
+
+.back-arrow-icon-style {
+  align-self: center;
+  padding-right: 2%;
+  /* text-align: -webkit-center; */
+}
+
+@media (min-width: 200px) and (max-width: 300px) {
+  .header-title-style_SAT {
+    font-family: "Segoe UI" !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    font-size: 15px !important;
+    align-self: self-end !important;
+    align-self: center !important;
+  }
+
+  .back-arrow-icon {
+    /* background-color: #E4DAFE; */
+    color: #f5f5f5;
+    font-size: 20px !important;
+    border-radius: 50%;
+    width: 90%;
+    padding: 25%;
+  }
+
+  .small-screen-padding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .collaboration-banners {
+    background-image: url("../../assets/banner/idea_mob.jpg");
+    height: 146px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .volunter-banners {
+    background-image: url("../../assets/banner/volunteer_mob.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .polls-banners {
+    background-image: url("../../assets/banner/Surveys_mob.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .trends-banners {
+    background-image: url("../../assets/banner/trend_mob.jpg");
+    height: 180px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .Emergency-banners {
+    background-image: url("../../assets/banner/emergency_mob.png");
+    height: 180px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .complaintStatus-banners {
+    background-image: url("../../assets/banner/incidentstatus.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .collaboration-banner-text {
+    text-align: left;
+    font: normal normal 600 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .collaboration-banner-text2 {
+    text-align: left;
+    font: normal normal 600 22px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .collaboration-banner-text3 {
+    padding-right: 15px;
+    padding-top: 15px !important;
+    padding-left: 15px;
+    text-align: left;
+    font: normal normal normal 12px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-trend-banner-text3 {
+    padding-right: 15px;
+    padding-top: 15px !important;
+    padding-left: 15px;
+    text-align: left;
+    font: normal normal normal 12px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-emergency-banner-text3 {
+    padding-right: 15px;
+    padding-top: 25px !important;
+    padding-left: 15px;
+    text-align: left;
+    font: normal normal normal 12px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-idea-banner-text3 {
+    padding-right: 15px;
+    padding-top: 15px !important;
+    padding-left: 15px;
+    text-align: left;
+    font: normal normal normal 12px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .start-new-idea-btn-allignment {
+    padding-top: 7%;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+
+  .share-disciss-tab-style {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    padding-bottom: 10px !important;
+  }
+
+  .share-disciss-tab-style.active {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    background-color: #fff0 !important;
+    border-color: #ffffff00 #9059e900 #8e57e9 !important;
+    border-width: 2px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .search-bar-allignemt-style {
+    padding-top: 50px;
+  }
+
+  .inner-container-banner-margin {
+    margin-top: 12px;
+    margin-left: 16px !important;
+    margin-right: 8px !important;
+  }
+
+  .btn-color-style {
+    color: white !important;
+    margin: 0%;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 349px) {
+  .header-title-style_SAT {
+    font-family: "Segoe UI" !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    font-size: 15px !important;
+    align-self: self-end !important;
+    align-self: center !important;
+  }
+
+  .back-arrow-icon {
+    /* background-color: #E4DAFE; */
+    color: #f5f5f5;
+    font-size: 20px !important;
+    border-radius: 50%;
+    width: 90%;
+    padding: 25%;
+  }
+
+  .small-screen-padding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .collaboration-banners {
+    background-image: url("../../assets/banner/idea_mob.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .volunter-banners {
+    background-image: url("../../assets/banner/volunteer_mob.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .polls-banners {
+    background-image: url("../../assets/banner/Surveys_mob.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .trends-banners {
+    background-image: url("../../assets/banner/trend_mob.jpg");
+    height: 180px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .Emergency-banners {
+    background-image: url("../../assets/banner/emergency_mob.png");
+    height: 180px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .complaintStatus-banners {
+    background-image: url("../../assets/banner/incidentstatus.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .collaboration-banner-text {
+    text-align: left;
+    font: normal normal 600 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .collaboration-banner-text2 {
+    text-align: left;
+    font: normal normal 600 22px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .collaboration-banner-text3 {
+    padding-right: 20px;
+    padding-top: 20px !important;
+    padding-left: 18px;
+    text-align: left;
+    font: normal normal normal 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-trend-banner-text3 {
+    padding-right: 20px;
+    padding-top: 40px !important;
+    padding-left: 18px;
+    text-align: left;
+    font: normal normal normal 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #e8e8e8;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-emergency-banner-text3 {
+    padding-right: 20px;
+    padding-top: 30% !important;
+    padding-left: 18px;
+    text-align: left;
+    font: normal normal normal 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-idea-banner-text3 {
+    padding-right: 20px;
+    padding-top: 20px !important;
+    padding-left: 18px;
+    text-align: left;
+    font: normal normal normal 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+
+  .start-new-idea-btn-allignment {
+    padding-top: 7%;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+
+  .share-disciss-tab-style {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    padding-bottom: 10px !important;
+  }
+
+  .share-disciss-tab-style.active {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    background-color: #fff0 !important;
+    border-color: #ffffff00 #9059e900 #8e57e9 !important;
+    border-width: 2px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .search-bar-allignemt-style {
+    padding-top: 55px;
+  }
+
+  .inner-container-banner-margin {
+    margin-top: 16px;
+    margin-left: 16px !important;
+    margin-right: 14px !important;
+  }
+
+  .btn-color-style {
+    color: white !important;
+    margin: 0%;
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 400px) {
+  .back-arrow-icon {
+    /* background-color: #E4DAFE; */
+    color: #f5f5f5;
+    font-size: 26px !important;
+    border-radius: 50%;
+    width: 100%;
+    padding: 25%;
+    /* border-color: #F5F5F5;
+        border-style: solid;
+        border-width: 1px; */
+    text-align: center;
+  }
+
+  .small-screen-padding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .collaboration-banners {
+    background-image: url("../../assets/banner/idea_mob.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .volunter-banners {
+    background-image: url("../../assets/banner/volunteer_mob.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .polls-banners {
+    background-image: url("../../assets/banner/Surveys_mob.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .trends-banners {
+    background-image: url("../../assets/banner/trend_mob.jpg");
+    height: 180px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .Emergency-banners {
+    background-image: url("../../assets/banner/emergency_mob.png");
+    height: 180px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .complaintStatus-banners {
+    background-image: url("../../assets/banner/incidentstatus.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .collaboration-banner-text {
+    text-align: left;
+    font: normal normal 600 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .collaboration-banner-text2 {
+    text-align: left;
+    font: normal normal 600 22px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .collaboration-banner-text3 {
+    padding-right: 20px;
+    padding-top: 35px !important;
+    padding-left: 20px;
+    text-align: left;
+    font: normal normal normal 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-trend-banner-text3 {
+    padding-right: 20px;
+    padding-top: 35px !important;
+    padding-left: 20px;
+    text-align: left;
+    font: normal normal normal 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-emergency-banner-text3 {
+    padding-right: 20px;
+    padding-top: 25% !important;
+    padding-left: 20px;
+    text-align: left;
+    font: normal normal normal 16px/20px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-idea-banner-text3 {
+    padding-right: 20px;
+    padding-top: 35px !important;
+    padding-left: 20px;
+    text-align: left;
+    font: normal normal normal 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+
+  .start-new-idea-btn-allignment {
+    padding-top: 7%;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+
+  .share-disciss-tab-style {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    padding-bottom: 10px !important;
+  }
+
+  .share-disciss-tab-style.active {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    background-color: #fff0 !important;
+    border-color: #ffffff00 #9059e900 #8e57e9 !important;
+    border-width: 2px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .search-bar-allignemt-style {
+    padding-top: 60px;
+  }
+
+  .inner-container-banner-margin {
+    margin-top: 18px;
+    margin-left: 18px !important;
+    margin-right: 18px !important;
+  }
+
+  .btn-color-style {
+    color: white !important;
+    margin: 0%;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 530px) {
+  .back-arrow-icon {
+    /* background-color: #E4DAFE; */
+    color: #f5f5f5;
+    font-size: 26px !important;
+    border-radius: 50%;
+    width: 100%;
+    padding: 25%;
+    /* border-color: #F5F5F5;
+        border-style: solid;
+        border-width: 1px; */
+    text-align: center;
+  }
+
+  .small-screen-padding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .collaboration-banners {
+    background-image: url("../../assets/banner/idea_mob.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .volunter-banners {
+    background-image: url("../../assets/banner/volunteer_mob.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .polls-banners {
+    background-image: url("../../assets/banner/Surveys_mob.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .trends-banners {
+    background-image: url("../../assets/banner/trend_mob.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .Emergency-banners {
+    background-image: url("../../assets/banner/emergency_mob.png");
+    height: 180px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .complaintStatus-banners {
+    background-image: url("../../assets/banner/incidentstatus.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .collaboration-banner-text {
+    text-align: left;
+    font: normal normal 600 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .collaboration-banner-text2 {
+    text-align: left;
+    font: normal normal 600 22px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .collaboration-banner-text3 {
+    padding-right: 23px;
+    padding-top: 50px;
+    padding-left: 20px;
+    text-align: left;
+    font: normal normal normal 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-trend-banner-text3 {
+    padding-right: 23px;
+    padding-top: 50px;
+    padding-left: 20px;
+    text-align: left;
+    font: normal normal normal 16px/24px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-emergency-banner-text3 {
+    padding-right: 23px;
+    padding-top: 70px;
+    padding-left: 20px;
+    text-align: left;
+    font: normal normal normal 18px/24px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-idea-banner-text3 {
+    padding-right: 23px;
+    padding-top: 50px;
+    padding-left: 20px;
+    text-align: left;
+    font: normal normal normal 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+
+  .start-new-idea-btn-allignment {
+    padding-top: 7%;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+
+  .share-disciss-tab-style {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    padding-bottom: 10px !important;
+  }
+
+  .share-disciss-tab-style.active {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    background-color: #fff0 !important;
+    border-color: #ffffff00 #9059e900 #8e57e9 !important;
+    border-width: 2px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .search-bar-allignemt-style {
+    padding-top: 60px;
+  }
+
+  .inner-container-banner-margin {
+    margin-top: 21px;
+    margin-left: 23px !important;
+    margin-right: 23px !important;
+  }
+
+  .btn-color-style {
+    color: white !important;
+    margin: 0%;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 531px) and (max-width: 576px) {
+  .back-arrow-icon {
+    /* background-color: #E4DAFE; */
+    color: #f5f5f5;
+    font-size: 26px !important;
+    border-radius: 50%;
+    width: 100%;
+    padding: 25%;
+    /* border-color: #F5F5F5;
+        border-style: solid;
+        border-width: 1px; */
+    text-align: center;
+  }
+
+  .small-screen-padding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .collaboration-banners {
+    background-image: url("../../assets/banner/idea_mob.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .volunter-banners {
+    background-image: url("../../assets/banner/volunteer_mob.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .polls-banners {
+    background-image: url("../../assets/banner/Surveys_mob.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .trends-banners {
+    background-image: url("../../assets/banner/trend_mob.jpg");
+    height: 180px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .Emergency-banners {
+    background-image: url("../../assets/banner/emergency_mob.png");
+    height: 250px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .complaintStatus-banners {
+    background-image: url("../../assets/banner/incidentstatus.jpg");
+    height: 200px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .collaboration-banner-text {
+    text-align: left;
+    font: normal normal 600 16px/24px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .collaboration-banner-text2 {
+    text-align: left;
+    font: normal normal 600 22px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .collaboration-banner-text3 {
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-left: 15px;
+    text-align: left;
+    font: normal normal normal 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-trend-banner-text3 {
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-left: 15px;
+    text-align: left;
+    font: normal normal normal 16px/24px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-emergency-banner-text3 {
+    padding-right: 15px;
+    padding-top: 125px;
+    padding-left: 15px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-idea-banner-text3 {
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-left: 15px;
+    text-align: left;
+    font: normal normal normal 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .start-new-idea-btn-allignment {
+    padding-top: 7%;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+
+  .share-disciss-tab-style {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    padding-bottom: 10px !important;
+  }
+
+  .share-disciss-tab-style.active {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    background-color: #fff0 !important;
+    border-color: #ffffff00 #9059e900 #8e57e9 !important;
+    border-width: 2px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .search-bar-allignemt-style {
+    padding-top: 65px;
+  }
+
+  .inner-container-banner-margin {
+    margin-top: 30px;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 580px) and (max-width: 765px) {
+  .back-arrow-icon {
+    /* background-color: #E4DAFE; */
+    color: #f5f5f5;
+    font-size: 35px !important;
+    /* border-radius: 50%; */
+    width: 70%;
+    padding: 10%;
+    /* border-color: #F5F5F5;
+        border-style: solid;
+        border-width: 1px; */
+    text-align: center;
+  }
+
+  .collaboration-banners {
+    background-image: url("../../assets/banner/idea_desk.jpg");
+    height: 200px;
+    width: 100%;
+  }
+
+  .volunter-banners {
+    background-image: url("../../assets/banner/volunteer.jpg");
+    height: 200px;
+    width: 100%;
+  }
+
+  .polls-banners {
+    background-image: url("../../assets/banner/Surveys_desk.jpg");
+    height: 200px;
+    width: 100%;
+  }
+  .trends-banners {
+    background-image: url("../../assets/banner/trend_desk.jpg");
+    height: 200px;
+    width: 100%;
+  }
+
+  .Emergency-banners {
+    background-image: url("../../assets/banner/emergency_desk.png");
+    height: 200px;
+    width: 100%;
+  }
+
+  .complaintStatus-banners {
+    background-image: url("../../assets/banner/incidentstatus_desk.jpg");
+    height: 200px;
+    width: 100%;
+  }
+
+  .inner-container-style-collaboration {
+    padding-top: 2%;
+  }
+
+  .collaboration-banner-text {
+    text-align: left;
+    font: normal normal 600 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .collaboration-banner-text2 {
+    text-align: left;
+    font: normal normal 600 22px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .collaboration-banner-text3 {
+    padding-right: 28px;
+    padding-top: 25%;
+    padding-left: 38px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-trend-banner-text3 {
+    padding-right: 28px;
+    padding-top: 25%;
+    padding-left: 38px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #fffdfd;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-emergency-banner-text3 {
+    padding-right: 28px;
+    padding-top: 25%;
+    padding-left: 38px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #fffdfd;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-idea-banner-text3 {
+    padding-right: 28px;
+    padding-top: 25%;
+    padding-left: 38px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .start-new-idea-btn-allignment {
+    padding-top: 7%;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+
+  .share-disciss-tab-style {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    padding-bottom: 10px !important;
+  }
+
+  .share-disciss-tab-style.active {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    background-color: #fff0 !important;
+    border-color: #ffffff00 #9059e900 #8e57e9 !important;
+    border-width: 2px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .search-bar-allignemt-style {
+    padding-top: 72px;
+  }
+
+  .inner-container-banner-margin {
+    margin-top: 18px;
+    margin-left: 10px !important;
+    margin-right: 0px !important;
+    margin-bottom: 10px;
+  }
+
+  .btn-color-style {
+    color: white !important;
+    margin: 0%;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+  .back-arrow-icon {
+    /* background-color: #E4DAFE; */
+    color: #f5f5f5;
+    font-size: 25px;
+    /* border-radius: 50%; */
+    width: 15%;
+    height: 40px;
+    padding-right: 2%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    padding-left: 3.5%;
+  }
+
+  .volunter-banners {
+    background-image: url("../../assets/banner/volunteer.jpg");
+    height: 200px;
+    width: 100%;
+  }
+  .complaintStatus-banners {
+    background-image: url("../../assets/banner/incidentstatus_desk.jpg");
+    height: 200px;
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 10%;
+  }
+  .collaboration-banner-text3 {
+    padding-right: 28px;
+    padding-top: 25%;
+    padding-left: 38px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-emergency-banner-text3 {
+    padding-right: 28px;
+    padding-top: 23%;
+    padding-left: 38px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #fffdfd;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-idea-banner-text3 {
+    padding-right: 28px;
+    padding-top: 18%;
+    padding-left: 38px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-trend-banner-text3 {
+    padding-right: 28px;
+    padding-top: 25%;
+    padding-left: 38px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #fffdfd;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .Emergency-banners {
+    background-image: url("../../assets/banner/emergency_desk.png");
+    height: 200px;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top:40px;
+  }
+
+  .search-bar-allignemt-style {
+    padding-top: 72px;
+  }
+  .trends-banners {
+    background-image: url("../../assets/banner/trend_desk.jpg");
+    height: 200px;
+    width: 100%;
+    margin-bottom: 6%;
+  }
+  .collaboration-banners {
+    background-image: url("../../assets/banner/idea_desk.jpg");
+    height: 200px;
+    width: 100%;
+  }
+  .inner-container-banner-margin {
+    margin-top: 30px;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+    margin-bottom: 8px;
+  }
+  .start-new-idea-btn-allignment {
+    padding-top: 7%;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+  .share-disciss-tab-style {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    padding-bottom: 10px !important;
+  }
+
+  .share-disciss-tab-style.active {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    background-color: #fff0 !important;
+    border-color: #ffffff00 #9059e900 #8e57e9 !important;
+    border-width: 2px !important;
+    padding-bottom: 10px !important;
+  }
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1020px) {
+  .back-arrow-icon {
+    /* background-color: #E4DAFE; */
+    color: #f5f5f5;
+    font-size: 25px;
+    border-radius: 50%;
+    width: 17%;
+    padding: 4%;
+  }
+
+  .collaboration-banners {
+    background-image: url("../../assets/banner/idea_desk.jpg");
+    height: 200px;
+    width: 100%;
+  }
+
+  .volunter-banners {
+    background-image: url("../../assets/banner/volunteer.jpg");
+    height: 200px;
+    width: 100%;
+  }
+  .polls-banners {
+    background-image: url("../../assets/banner/Surveys_desk.jpg");
+    height: 200px;
+    width: 100%;
+  }
+  .trends-banners {
+    background-image: url("../../assets/banner/trend_desk.jpg");
+    height: 200px;
+    width: 100%;
+  }
+
+  .Emergency-banners {
+    background-image: url("../../assets/banner/emergency_desk.png");
+    height: 200px;
+    width: 100%;
+  }
+
+  .complaintStatus-banners {
+    background-image: url("../../assets/banner/incidentstatus_desk.jpg");
+    height: 200px;
+    width: 100%;
+  }
+
+  .inner-container-style-collaboration {
+    padding-top: 2%;
+  }
+
+  .collaboration-banner-text {
+    text-align: left;
+    font: normal normal 600 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .collaboration-banner-text2 {
+    text-align: left;
+    font: normal normal 600 22px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .collaboration-banner-text3 {
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-left: 15px;
+    text-align: left;
+    font: normal normal normal 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-trend-banner-text3 {
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-left: 15px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #e8e8e8;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-emergency-banner-text3 {
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-left: 15px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #e8e8e8;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-idea-banner-text3 {
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-left: 15px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+
+  .start-new-idea-btn-allignment {
+    padding-top: 7%;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+
+  .share-disciss-tab-style {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    padding-bottom: 10px !important;
+  }
+
+  .share-disciss-tab-style.active {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    background-color: #fff0 !important;
+    border-color: #ffffff00 #9059e900 #8e57e9 !important;
+    border-width: 2px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .search-bar-allignemt-style {
+    padding-top: 63px;
+  }
+
+  .inner-container-banner-margin {
+    margin-bottom: 0px !important;
+    margin-top: 0px;
+    margin-left: 5px !important;
+    margin-right: 2px !important;
+  }
+}
+
+@media (min-width: 1021px) and (max-width: 1367px) {
+  .back-arrow-icon {
+    /* background-color: #E4DAFE; */
+    color: #f5f5f5;
+    font-size: 25px;
+    border-radius: 50%;
+    width: 17%;
+    padding: 4%;
+  }
+  .volunter-banners {
+    background-image: url("../../assets/banner/volunteer.jpg");
+    height: 200px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .complaintStatus-banners {
+    background-image: url("../../assets/banner/incidentstatus_desk.jpg");
+    height: 200px;
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 10%;
+  }
+  .collaboration-banner-text3 {
+    padding-right: 28px;
+    padding-top: 22%;
+    padding-left: 38px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-emergency-banner-text3 {
+    padding-right: 28px;
+    padding-top: 22%;
+    padding-left: 38px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #fffdfd;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-idea-banner-text3 {
+    padding-right: 28px;
+    padding-top: 15%;
+    padding-left: 38px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-trend-banner-text3 {
+    padding-right: 28px;
+    padding-top: 22%;
+    padding-left: 38px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #fffdfd;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .Emergency-banners {
+    background-image: url("../../assets/banner/emergency_desk.png");
+    height: 200px;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top:35px;
+  }
+
+  .search-bar-allignemt-style {
+    padding-top: 72px;
+  }
+  .trends-banners {
+    background-image: url("../../assets/banner/trend_desk.jpg");
+    height: 200px;
+    width: 100%;
+    margin-bottom: 6%;
+  }
+  .collaboration-banners {
+    background-image: url("../../assets/banner/idea_desk.jpg");
+    height: 200px;
+    width: 100%;
+  }
+  .inner-container-banner-margin {
+    margin-top: 30px;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+    margin-bottom: 8px;
+  }
+  .start-new-idea-btn-allignment {
+    padding-top: 7%;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+  .share-disciss-tab-style {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    padding-bottom: 10px !important;
+  }
+
+  .share-disciss-tab-style.active {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    background-color: #fff0 !important;
+    border-color: #ffffff00 #9059e900 #8e57e9 !important;
+    border-width: 2px !important;
+    padding-bottom: 10px !important;
+  }
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1368px) and (max-width: 3500px) {
+  .back-arrow-icon {
+    /* background-color: #E4DAFE; */
+    color: #f5f5f5;
+    font-size: 25px;
+    /* border-radius: 50%; */
+    width: 15%;
+    height: 40px;
+    padding-right: 2%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    padding-left: 3.5%;
+  }
+
+  .collaboration-banners {
+    background-image: url("../../assets/banner/idea_desk.jpg");
+    height: 155px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .volunter-banners {
+    background-image: url("../../assets/banner/volunteer.jpg");
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .polls-banners {
+    background-image: url("../../assets/banner/Surveys_desk.jpg");
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .trends-banners {
+    background-image: url("../../assets/banner/trend_desk.jpg");
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .Emergency-banners {
+    background-image: url("../../assets/banner/emergency_desk.png");
+    height: 150px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .complaintStatus-banners {
+    background-image: url("../../assets/banner/incidentstatus_desk.jpg");
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top:2%
+  }
+
+  .inner-container-style-collaboration {
+    padding-top: 5%;
+  }
+
+  .banner-image {
+    place-content: center;
+  }
+
+  .collaboration-banner-text {
+    text-align: left;
+    font: normal normal 600 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .collaboration-banner-text2 {
+    text-align: left;
+    font: normal normal 600 22px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .collaboration-banner-text3 {
+    padding-right: 30px;
+    padding-top: 12px;
+    padding-left: 29px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-trend-banner-text3 {
+    padding-right: 30px;
+    padding-top: 12px;
+    padding-left: 29px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-emergency-banner-text3 {
+    padding-right: 30px;
+    padding-top: 12px;
+    padding-left: 29px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+  .collaboration-idea-banner-text3 {
+    padding-right: 30px;
+    padding-top: 12px;
+    padding-left: 29px;
+    text-align: left;
+    font: normal normal normal 18px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+
+  .start-new-idea-btn-allignment {
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+
+  .share-disciss-tab-style {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    padding-bottom: 10px !important;
+  }
+
+  .share-disciss-tab-style.active {
+    width: 33.33%;
+    font-size: 12px;
+    /* padding: 0px !important; */
+    align-self: center;
+    text-align-last: center;
+    font-weight: 500;
+    color: #495057;
+    background-color: #fff0 !important;
+    border-color: #ffffff00 #9059e900 #8e57e9 !important;
+    border-width: 2px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .search-bar-allignemt-style {
+    padding-top: 60px;
+  }
+
+  .inner-container-banner-margin {
+    margin-bottom: 0px !important;
+    margin-top: 0px;
+    margin-left: 5px !important;
+    margin-right: 2px !important;
+  }
+}
+
+.all-header-space {
+  padding-top: 60px;
+  padding-bottom: 25px;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+  min-width: -webkit-fill-available;
+  background-color: #9e72de;
+}
+
+.font-sizevolunter {
+  font-size: 9px;
+}
+
+.editcardvolunter {
+  font-size: 20px !important;
+}
+.editcardvolunterplacing {
+  text-align: right;
+  padding-right: 0px !important;
+  color: #9e72de;
+  cursor:pointer;
+}
+
+.profile-image-align-style {
+  place-self: center;
+}

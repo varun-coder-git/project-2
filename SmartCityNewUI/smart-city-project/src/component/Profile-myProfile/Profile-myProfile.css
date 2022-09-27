@@ -1,0 +1,82 @@
+
+
+.top-margin{
+    margin-top: 5px;
+}
+
+.profileimage{
+    text-align: center;
+}
+.pointer-cursor{
+    cursor: pointer;
+}
+.profile-image-div{
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: black;
+    border-radius:80px;
+    }  
+.round-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 80px;
+}
+.cameraIconStyle {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    background-color:#8170F2;
+    position: absolute;
+    bottom:0px ;
+    margin-top: 30px;
+    right: 4px;
+    text-align: center;
+   padding-top: 6px;
+   cursor: pointer;
+}
+#userImage{
+    display: none;
+}
+
+.top-margin{
+    margin-top: 5px;
+}
+
+.ct-icon-style{
+    align-self: flex-end;
+}
+
+.drop-down-style-z-index {
+    z-index: 4 !important;
+}
+
+.MuiInputBase-root.Mui-disabled {
+    color: rgb(0 0 0) !important;
+    cursor: default;
+}
+
+.category-drop-style-profile {
+    padding-top: 0px !important;
+}
+
+.css-1pahdxg-control {
+    /* border-color: #f3f2f2 !important; */
+    /* border-bottom: #495057 !important; */
+    border-right: 0px;
+    border-left: 0px;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+/* .css-1pahdxg-control:hover,
+.css-1pahdxg-control:focus {
+    border-color: #f3f2f2 !important;
+    border-bottom: #495057 !important;
+    border-right: 0px;
+    border-left: 0px;
+    box-shadow: 0px !important;
+    background-color: transparent !important;
+} */

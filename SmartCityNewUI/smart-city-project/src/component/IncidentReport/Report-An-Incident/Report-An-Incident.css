@@ -1,0 +1,197 @@
+
+@media (min-width: 200px) and (max-width: 349px)
+{
+  .incident-banners {
+    background-image: url("../../../assets/banner/incidentreport_mob.jpg");
+    height: 210px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .report-incident-banner-text {
+    padding-right: 22px;
+    padding-top: 25%;
+    padding-left: 15px;
+    text-align: left;
+    font: normal normal normal 14px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+    font-size:12px;
+  }
+}
+@media (min-width: 535px) and (max-width: 576px)
+{
+  .incident-banners {
+    background-image: url("../../../assets/banner/complain_desk.jpg");
+    height: 210px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .report-incident-banner-text {
+    padding-right: 22px;
+    padding-top: 13%;
+    padding-left: 15px;
+    text-align: left;
+    font: normal normal normal 16px/24px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+}
+@media (min-width: 350px) and (max-width: 535px)
+{
+  .incident-banners {
+    background-image: url("../../../assets/banner/incidentreport_mob.jpg");
+    height: 210px;
+    width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .report-incident-banner-text {
+    padding-right: 22px;
+    padding-top: 25%;
+    padding-left: 15px;
+    text-align: left;
+    font: normal normal normal 16px/24px Segoe UI;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #0000002b;
+  }
+}
+@media (max-width: 765px) and (min-width: 580px){
+    .incident-banners {
+      background-image: url("../../../assets/banner/incidentstatus.jpg");
+      height: 200px;
+      width: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  
+    .report-incident-banner-text {
+      padding-right: 22px;
+      padding-top: 18%;
+      padding-left: 15px;
+      text-align: left;
+      font: normal normal normal 18px/26px Segoe UI;
+      letter-spacing: 0px;
+      color: #ffffff;
+      text-shadow: 0px 3px 6px #0000002b;
+    }
+  
+  }
+
+  @media (min-width: 767px) and (max-width: 990px){
+      .incident-banners {
+      background-image:url("../../../assets/banner/complain_desk.jpg");
+      height: 200px;
+      width: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin-top:-10px;
+      margin-bottom: 10px;
+    }
+    .report-incident-banner-text {
+      padding-right: 22px;
+      padding-top: 13%;
+      padding-left: 15px;
+      text-align: left;
+      font: normal normal normal 18px/26px Segoe UI;
+      letter-spacing: 0px;
+      color: #ffffff;
+      text-shadow: 0px 3px 6px #0000002b;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1020px)  {
+    .incident-banners {
+      background-image: url("../../../assets/banner/incidentstatus.jpg");
+      height: 200px;
+      width: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  
+    .report-incident-banner-text {
+      padding-right: 22px;
+      padding-top: 18%;
+      padding-left: 15px;
+      text-align: left;
+      font: normal normal normal 18px/26px Segoe UI;
+      letter-spacing: 0px;
+      color: #ffffff;
+      text-shadow: 0px 3px 6px #0000002b;
+    }  
+}
+ @media (min-width: 1021px) and (max-width: 1034px){
+      .incident-banners {
+      background-image: url("../../../assets/banner/complain_desk.jpg");
+      height: 200px;
+      width: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin-top:-10px;
+      margin-bottom: 10px;
+    }
+    .report-incident-banner-text {
+      padding-right: 22px;
+      padding-top: 18%;
+      padding-left: 15px;
+      text-align: left;
+      font: normal normal normal 18px/26px Segoe UI;
+      letter-spacing: 0px;
+      color: #ffffff;
+      text-shadow: 0px 3px 6px #0000002b;
+    }
+  }
+@media (min-width: 1035px) and (max-width: 3500px) {
+
+    .incident-banners{
+      background-image: url("../../../assets/banner/complain_desk.jpg");
+      height: 200px;
+      width: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  
+    .report-incident-banner-text {
+      padding-right: 22px;
+      padding-top: 18%;
+      padding-left: 15px;
+      text-align: center;
+      font: normal normal normal 18px/26px Segoe UI;
+      letter-spacing: 0px;
+      color: #ffffff;
+      text-shadow: 0px 3px 6px #0000002b;
+    }
+
+  }
+
+  .anonymous-text-style{
+    padding-top: 0px !important;
+    font-size: 12px;
+    text-align: left;
+    font: normal normal 300 11px/14px Segoe UI;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.anonymous-text-note-style {
+  text-align: left;
+    font: normal normal 300 11px/14px Segoe UI;
+    letter-spacing: 0px;
+    color: #0089ff;
+    font-weight: 600;
+}

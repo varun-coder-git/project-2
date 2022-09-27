@@ -1,0 +1,209 @@
+<section class="bg">
+    <div class="row">
+    
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 header-color">
+        <!-- <div class="header-color p-0"> -->
+        <div class="bg-img-header p-0">
+          <h1 class="h1-heading"> {{head_title| uppercase}}</h1>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center p-4">
+        <img width="100%" class="side-img" src="../../../assets/img/login-side-img.png" alt="..." />
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 pl-3 pr-3">
+        <div ng-app="myApp" ng-controller="myController">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 form-padding mb-3 ">
+              <!-- <form name="myForm" class="form"> -->
+              <form [formGroup]="signupForm"  class="form border-row">
+                <p class="heading">Sign Up</p>
+                <p class="head-line pb-1">Please fill in the below details to connect with us!</p>
+                <div class="login-container">
+                  <div class="row">
+      
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 pt-0 pb-0">
+                     <!-- <div class="md-form"> -->
+                    <!-- <mdb-icon fas icon="user" class="prefix" style="color: #6146D5;font-size: large;"></mdb-icon> -->
+                      <mat-form-field style="width: 91%;">
+                        <mat-label style="font-family: 'Segoe UI';font-weight: 400;">Full Name</mat-label>
+                        <input type="email" matInput  required autocomplete="off" formControlName="fullName" minlength="1">
+                        <mat-icon matPrefix style="color: #6146D5;font-size: 20px;">person</mat-icon>
+                        <mat-error *ngIf="signupForm.get('fullName').hasError('required')">
+                          Full Name is required!
+                        </mat-error>
+                        <mat-error *ngIf="signupForm.get('fullName').hasError('minlength')">
+                          Full Name should be at least 1 character long!
+                        </mat-error>     
+                        <mat-error *ngIf="signupForm.get('fullName').hasError('maxlength')">
+                          Full Name can't exceed than 50 characters!
+                        </mat-error>
+                      </mat-form-field>
+                     
+                    
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 pt-0 pb-0">
+                        <!-- <div class="md-form"> -->
+                       <!-- <mdb-icon fas icon="phone-alt" class="prefix" style="color: #6146D5;font-size: large;"></mdb-icon> -->
+                         <mat-form-field style="width: 91%;">
+                           <mat-label style="font-family: 'Segoe UI';font-weight: 400;">Phone Number</mat-label>
+                           <input type="email" matInput  required autocomplete="off" formControlName="phoneNumber" minlength="10" maxlength="10">
+                           <mat-icon matPrefix style="color: #6146D5;font-size: 20px;">call</mat-icon>
+                           <mat-error *ngIf="signupForm.get('phoneNumber').hasError('required')">
+                            Phone Number is required!
+                          </mat-error>
+                          <mat-error *ngIf="signupForm.get('phoneNumber').hasError('pattern')">
+                            Please enter valid mobile number format!
+                          </mat-error>
+                         </mat-form-field>
+                        
+                       
+                       </div>
+                       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 pt-0 pb-0">
+                        <!-- <div class="md-form"> -->
+                       <!-- <mdb-icon fas icon="envelope" class="prefix" style="color: #6146D5;font-size: large;"></mdb-icon> -->
+                         <mat-form-field style="width: 91%;">
+                           <mat-label style="font-family: 'Segoe UI';font-weight: 400;">Email ID</mat-label>
+                           <input type="email" matInput  required autocomplete="off" formControlName="email" style="padding-bottom: 4px !important; ">
+                           <mat-icon matPrefix style="color: #6146D5;font-size: 20px;">email</mat-icon>
+                           <mat-error *ngIf="signupForm.get('email').hasError('required')">
+                            Email ID is required!
+                          </mat-error>
+                          <mat-error *ngIf="signupForm.get('email').hasError('email')">
+                            Please enter correct email id format!
+                          </mat-error>
+                         </mat-form-field>
+                        
+                       
+                       </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 pt-0 pb-0">
+                     
+                        <!-- <mdb-icon fas icon="lock" class="prefix" style="color: #6146D5;font-size: large;"></mdb-icon> -->
+                        <mat-form-field style="width: 91%;">
+                          <mat-label style="font-family: 'Segoe UI';font-weight: 400;">Password</mat-label>
+                          <input [type]="hide ? 'password' : 'text'" matInput required (change)="onPasswordChange()" autocomplete="off" formControlName="password"  minlength="8">
+                          <!-- <mdb-icon matSuffix class="eye-style" (click)="hide = !hide" fas icon="{{hide ? 'eye-slash' : 'eye'}}"></mdb-icon> -->
+                          <mat-icon matPrefix style="color: #6146D5;font-size: 20px;">lock</mat-icon>
+                          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                            <mat-icon style="color: #7E7E7E;font-size: 20px;">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button>
+                          <mat-error *ngIf="signupForm.get('password').hasError('required')">
+                            Password is required!
+                          </mat-error>
+                          <mat-error *ngIf="signupForm.get('password').hasError('minlength')">
+                            Password should be atleast 8 characters long!
+                          </mat-error>
+                          <mat-error *ngIf="signupForm.get('password').hasError('pattern')">
+                            Password must contain at least one lowercase, uppercase alphabet, number & special character!
+                          </mat-error>
+                        </mat-form-field>
+                       
+                     
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 pt-0 pb-0">
+                     
+                        <!-- <mdb-icon fas icon="lock" class="prefix" style="color: #6146D5;font-size: large;"></mdb-icon> -->
+                        <mat-form-field style=" width: 91%;">
+                          <mat-label style="font-family: 'Segoe UI';font-weight: 400;">Confirm Password</mat-label>
+                          <input [type]="hideConfirm ? 'password' : 'text'" matInput  (change)="onPasswordChange()" required autocomplete="off" formControlName="confirmPassword"  minlength="8">
+                          <!-- <mdb-icon matSuffix class="eye-style" (click)="hideConfirm = !hideConfirm" fas icon="{{hideConfirm ? 'eye-slash' : 'eye'}}"></mdb-icon> -->
+                          <mat-icon matPrefix style="color: #6146D5;font-size: 20px;">lock</mat-icon>
+                          <button mat-icon-button matSuffix (click)="hideConfirm = !hideConfirm" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                            <mat-icon style="color: #7E7E7E;font-size: 20px;">{{hideConfirm ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button>
+                          <mat-error *ngIf="signupForm.get('confirmPassword').hasError('required')">
+                            Confirm Password is required!
+                          </mat-error>
+                          <mat-error *ngIf="signupForm.get('confirmPassword').hasError('minlength')">
+                            Password should be atleast 8 characters long!
+                          </mat-error>
+                          <mat-error *ngIf="signupForm.get('confirmPassword').hasError('pattern')">
+                            Password must contain at least one lowercase, uppercase alphabet, number & special character!
+                          </mat-error>
+                          
+                          <mat-error *ngIf="signupForm.get('confirmPassword').hasError('mismatch')">Password doesn't match!</mat-error>
+                        </mat-form-field>
+                       
+                     
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pt-0 pb-0 pr-0">
+                     
+                        <!-- <mdb-icon fas icon="city" class="prefix" style="color: #6146D5;font-size: large;"></mdb-icon> -->
+                        <mat-form-field style="width: 91%;">
+                          <mat-label style="font-family: 'Segoe UI';font-weight: 400;">City</mat-label>
+                          <input type="text" matInput  required autocomplete="off" formControlName="city"  readonly>
+                          <mat-icon matPrefix style="color: #6146D5;font-size: 20px;">location_city</mat-icon>
+                          <mat-error *ngIf="signupForm.get('city').hasError('required')">
+                            City is required!
+                          </mat-error>
+                        </mat-form-field>
+                       
+                     
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7  pl-4 pt-0 pb-0">
+                     
+                        <!-- <mdb-icon fas icon="map-marker-alt" class="prefix" style="color: #6146D5;font-size: large;"></mdb-icon> -->
+                        <!-- <mat-form-field style="padding-left: 20px; width: 79%;">
+                          <mat-label style="font-family: 'Segoe UI';font-weight: 400;">Pincode</mat-label>
+                          <input type="text" matInput  required autocomplete="off" formControlName="pinCode" minlength="6" >
+                         
+                          
+                        </mat-form-field> -->
+                        <mat-form-field style=" width: 82%;">
+                          <mat-label style="font-family: 'Segoe UI';font-weight: 400;">Pincode</mat-label>
+                          <mat-select (selectionChange)="selectedPincodeValue($event)" required formControlName="pinCode" style="padding-bottom: 5px !important; ">
+                            
+                            <mat-option value="option1" *ngFor="let x of pincodeList" [value]="x.pincode">{{x.ward_name}} - {{ x.pincode}}</mat-option>
+                      
+                          </mat-select>
+                          <mat-icon matPrefix style="color: #6146D5;font-size: 20px;">location_on</mat-icon>
+                          <mat-error *ngIf="signupForm.get('pinCode').hasError('required')">
+                            Pincode is required!
+                          </mat-error>
+                        </mat-form-field>
+                       
+                     
+                    </div>
+                    <!-- <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                     
+                        <mdb-icon far icon="address-book" class="prefix" style="color: #6146D5;font-size: large;"></mdb-icon>
+                        <mat-form-field style="padding-left: 20px; width: 89%;">
+                          <mat-label style="font-family: 'Segoe UI';font-weight: 400;">Address</mat-label>
+                          <input type="text" matInput  required autocomplete="off" formControlName="address"  >
+                          
+                          
+                        </mat-form-field>
+                       
+                     
+                    </div> -->
+                    <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 pt-3 pb-0">
+                      <div class="form-group">
+                        <label class="input-heading"></label>
+                        <!-- <button class="login-btn">LOGIN</button> -->
+                        <button mat-raised-button class="login-btn" (click)="registerAdmin()">SIGN UP</button>
+                      
+                        <p class="register-line pt-3">Already have an account? <a class="register-link" href="#" routerLink="/Login">LOGIN</a></p>
+                       
+                        <!-- <div class="clearfix"></div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    </section>
+    <ngx-spinner 
+    bdColor="rgba(51,51,51,0.8)"
+    size="medium"
+    color="#fff"
+    type="timer"
+    >
+    <p style="font-size: 20px; color: white">Please wait...</p>
+    </ngx-spinner> 

@@ -1,0 +1,13 @@
+.TCbotAvator{
+    width: 50px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    background-color:  #e8e3ff;
+    color: #a653ff;
+    font-weight: 700;
+  }
+

@@ -1,0 +1,158 @@
+<div class="container">
+    <!-- <span style="color: #EF7A2D;font-size: x-large;float:right;" (click)="onClose()">×</span> -->
+    <!-- <mdb-icon fas style=" color: #6146D5;float:right;cursor: pointer;" icon="times" mdbTooltip="Close" placement="left" (click)="onClose()"></mdb-icon> -->
+    <div class="row">
+        <div class="col-md-8 pl-3 pt-3">
+            <p class="heading"><mdb-icon fas icon="{{popupIcon}}" class="title-icon"></mdb-icon>&nbsp;{{popupLabel}}</p>
+        </div>
+        <!-- <div class="col-md-4 pr-0"> -->
+            <!-- <img src="../../../assets/img/profileImage.png" style="width:15%;border-radius:50%;" *ngIf="isEdit">&nbsp;&nbsp; -->
+            <!-- <img src="{{url}}{{pollData.image_path}}" class="img" *ngIf="pollData">&nbsp;&nbsp;
+            <label class="big-label">{{userName}}</label> -->
+        <!-- </div> -->
+
+        <div class="col-lg-3 ">
+            <!-- <h6><span class="pr-2 titleName"> 
+               
+                        <img src="{{url}}{{imgPath}}" class="img">&nbsp;&nbsp;
+                </span>{{user_name | titlecase}}
+            </h6> -->
+            <p class="poll-id" *ngIf="data">Poll ID - <span class="count">{{data.poll_id}}</span>
+            </p>
+        </div>
+        <div class="col-lg-1 pt-2" style="text-align: right;" id="close">
+            <mdb-icon fas style=" color: #6146D5;cursor: pointer;visibility: visible;font-size: 24px;" icon="times" mdbTooltip="Close" placement="left" (click)="onClose();">
+            </mdb-icon>
+        </div>
+    </div>
+
+
+    <!-- <hr color="#2B2647"> -->
+    <mat-divider style="background-color:#d0d0d0;    margin-bottom: 10px;"></mat-divider>
+    <span style="color: red;vertical-align: -4px;">*</span> <span class="required-heading">Required</span>
+    <form [formGroup]='pollForm'>
+        <div class="col-md-10 pl-0 pr-0">
+            <div class="form-group">
+                <label class="label">Poll Subject</label><br>
+                <input type="text" placeholder="Enter question" class="form-control input"
+                    formControlName="poll_subject" [ngClass]="{ 'is-invalid': submitted && f.poll_subject.errors }" maxlength="500">
+                    <div *ngIf="submitted && f.poll_subject.errors" class="invalid-feedback" required>
+                        <div *ngIf="f.poll_subject.errors.required">Poll Subject is required</div>
+                    </div>
+            </div>
+        </div>
+        <div class="poll-subject">Max character limit : 500</div>
+
+        <div class="row">
+            <div class="col-md-5">
+                <label class="label">Start Date</label><br>
+                <!-- <mat-form-field appearance="outline">
+            <input matInput [matDatepicker]="picker1" placeholder="Choose Start Date" formControlName="startDate">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field> -->
+                <div class="form-group">
+                    <input type="date" placeholder="Choose Date" class="form-control input" [min]="todayDate" formControlName="start_date" [ngClass]="{ 'is-invalid': submitted && f.start_date.errors }">
+                    <div *ngIf="submitted && f.start_date.errors" class="invalid-feedback">
+                        <div *ngIf="f.start_date.errors.required">Start date is required</div>
+                    </div>
+
+                </div>
+              
+            </div>
+
+            <div class="col-md-5">
+                <label class="label">End Date</label><br>
+                <div class="form-group">
+                    <input type="date" placeholder="Choose Date" class="form-control input" formControlName="end_date" [ngClass]="{ 'is-invalid': submitted && f.end_date.errors }">
+                    <div *ngIf="submitted && f.end_date.errors" class="invalid-feedback">
+                        <div *ngIf="f.end_date.errors.required">End date is required</div>
+                    </div>
+
+                </div>
+                <!-- <mat-form-field appearance="outline">
+            <input matInput [matDatepicker]="picker" placeholder="Choose End Date" formControlName="endDate">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field> -->
+            </div>
+        </div>
+        <!-- <hr color="#2B2647"> -->
+        
+        <div class="col-md-5 pl-0">
+            <label class="label">Select Poll Category</label><br>
+         
+          <ng-select class="md-4 " [clearable]="false"  formControlName="poll_category_id" onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))' [ngClass]="{ 'is-invalid': submitted && f.poll_category_id.errors }">
+            
+            <!-- <option class="option" sledisabled hidden>Select Category</option> -->
+            <ng-option class="option-first" value="" selected disabled hidden>Select/Search Category</ng-option>
+            <ng-option class="option" *ngFor="let x of pollCategoryData" [value]="x.poll_cat_id">{{x.poll_category_name}}
+             
+            </ng-option>
+          </ng-select>
+          <div *ngIf="submitted && f.poll_category_id.errors" class="invalid-feedback">
+            <div *ngIf="f.poll_category_id.errors.required">Poll Category is required</div>
+        </div>
+       
+        
+      </div>
+        <mat-divider style="background-color:#d0d0d0 ;margin-top: 22px;"></mat-divider>
+        
+        <!-- <mat-radio-group>
+    <mat-radio-button value="1">Single Answer</mat-radio-button>
+    <mat-radio-button value="2">Multiple Answer</mat-radio-button>
+  </mat-radio-group> -->
+  <div class="col-md-5 pl-0">
+    <label class="label">Select Question Type</label><br>
+        <div class="form-group">
+            
+            <div class="radio" >
+                <input type="radio" class="radio" value="single" name="question_type_id"
+                    formControlName="question_type_id"/>&nbsp; Single Choice &nbsp;&nbsp;&nbsp;
+                <input type="radio" class="radio" value="multiple" name="question_type_id"
+                    formControlName="question_type_id" />&nbsp; Multiple Choice
+            </div>
+
+                <!-- <mat-radio-button value="single" name="question_type_id" class="smallRadio" [checked]="pollData?pollData.question_type === 'single':true"
+                formControlName="question_type_id"><span class="checkbox-label"></span>Single Choice</mat-radio-button>
+                <mat-radio-button value="multiple" name="question_type_id" class="smallRadio" [checked]="pollData?pollData.question_type === 'multiple':false"
+                formControlName="question_type_id">Multiple Choice</mat-radio-button> -->
+           
+        </div>
+        </div>
+        <div class="col-md-5 p-0">
+            <label class="label">Answer Choices(One per line) Max 10</label><br>
+            <div class="form-group">
+                <textarea placeholder="Type options here" class="form-control input"
+                    formControlName="answer_choice"  [ngClass]="{ 'is-invalid': submitted && f.answer_choice.errors }"></textarea>
+                    <div *ngIf="submitted && f.answer_choice.errors" class="invalid-feedback">
+                        <div *ngIf="f.answer_choice.errors.required">Answer Choices are required</div>
+                    </div>
+            </div>
+        </div>
+
+       
+
+        <!-- <hr color="#2B2647"> -->
+
+        <mat-divider style="background-color:#d0d0d0;margin-top: 22px;"></mat-divider>
+
+        <div class="row">
+            <div class="col-md-4 pt-4 pl-3">
+                <div class="form-group" *ngIf="isEdit">
+                    <!-- <input type="checkbox" name="poll" value="false" formControlName="is_disable">
+                    <label class="checkbox-label" >&nbsp; Disable this poll</label> -->
+                    <mat-checkbox name="poll" value="false" formControlName="is_disable"><span class="checkbox-label">Disable this poll</span></mat-checkbox>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="float-right mb-3 pt-4">
+                    <button mat-raised-button class="cancel" (click)="onClose()">Cancel</button>
+                    <button mat-raised-button class="save ml-2" (click)="savePoll()">Save</button>
+                </div>
+            </div>
+            
+        </div>
+      
+    </form>
+</div>

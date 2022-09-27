@@ -1,0 +1,15 @@
+{
+	"appId": "com.smartcities.logindemo",
+	"appName": "Smart City",
+	"webDir": "build",
+	"bundledWebRuntime": false,
+	"plugins": {
+		"GoogleAuth": {
+			"scopes": [
+				"profile",
+				"email"
+			],
+			"serverClientId": "253449403570-7ehuh0krgqifrib78qhb4drck86beis2.apps.googleusercontent.com"
+		}
+	}
+}

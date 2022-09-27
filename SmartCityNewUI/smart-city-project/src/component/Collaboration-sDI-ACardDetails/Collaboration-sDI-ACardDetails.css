@@ -1,0 +1,171 @@
+.card-details-heading-style {
+    border-bottom-style: inset;
+}
+
+
+.card-details-title-style {
+
+    text-align: left;
+    font: normal normal 600 18px/19px Segoe UI;
+    letter-spacing: 0.2px;
+    color: #1B2033;
+    line-height: 22px;
+}
+
+.card-details-title-row-style {
+    padding-top: 5px;
+}
+
+.card-details-description-style {
+    text-align-last: left;
+    font: normal normal normal 14px/17px Segoe UI;
+    letter-spacing: 0.2px;
+    color: #2D2D2D;
+    line-height: 22px;
+}
+
+.card-details-category-style {
+    text-align: left;
+    font: normal normal 600 14px/20px Segoe UI;
+    letter-spacing: 0.26px;
+    color: #1A1A1A;
+}
+
+.card-details-category-value-style {
+    text-align: left;
+    font: normal normal normal 14px/20px Segoe UI;
+    letter-spacing: 0.26px;
+    color: #1A1A1A;
+}
+
+.cards-postedBy-row-style {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    border-bottom-style: inset
+}
+
+.comment-cards-row-style {
+    width: 100%;
+    text-align: -webkit-center;
+    box-shadow: none !important;
+    border-bottom-style: inset;
+    color: red;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.add-comment-style {
+    color: #640CFF;
+}
+
+.comment-sent-icon-style {
+    place-self: center !important;
+}
+
+.commet-postedOnn-date {
+    font-size: 8px;
+    font-weight: 400;
+    color: #141414;
+    padding-left: 5px;
+}
+
+.card-comment-description-style {
+    font-size: 12px;
+    font-weight: 400;
+    color: #353535;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.MuiOutlinedInput-multiline {
+    padding: 0px !important;
+}
+
+.load-more-comments-text-style {
+    padding-top: 10px;
+    text-align: right;
+    font: normal normal normal 10px/20px Segoe UI;
+    letter-spacing: 0.22px;
+    color: #5429FF;
+}
+
+.details-profile-image-col-style {
+    text-align-last: left;
+    /* padding-right: 0px !important; */
+}
+
+.details-profile-image-style {
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 50%;
+}
+
+.details-image-imfo-style {
+    padding-left: 20px !important;
+}
+
+.details-comment-count-row-style {
+    padding-top: 20px;
+}
+
+.details-image-profile-name-style {
+    font-size: 90%;
+    font-weight: 600;
+    /* color: #303649; */
+    height: 15px;
+    text-align: center;
+    font-family: Segoe UI;
+    letter-spacing: 0px;
+    color: #303649;
+}
+
+.card-image-imfo-row-style {
+    height: 18px !important;
+    padding-top: 5px !important;
+    font-size: 10px;
+    text-align: left;
+    font: normal normal 600 10px/14px Segoe UI;
+    letter-spacing: 0px;
+    color: #727272;
+}
+.comment-count-display-style{
+    
+}
+
+.doc-file-icon-style{
+    color: #ff0000;
+}
+
+.media-file-icon-style{
+    color: #67A0FF;
+}
+
+.image-file-icon-style{
+    color: #1CCD9D;
+    padding-top: 2px;
+}
+
+.word-file-icon-style{
+    color: #0060ff;
+}
+
+.xlsx-file-icon-style{
+    color: #15912f;
+}
+
+.txt-file-icon-style{
+    color: #afb5b0;
+}
+
+.ppt-file-icon-style{
+    color: #ff0254;
+}
+
+.attachment-row-style{
+    margin-top: 15px;
+    /* border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2; */
+    border: 1px solid #e2e2e2;
+    margin-bottom: 15px;
+}

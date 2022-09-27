@@ -1,0 +1,67 @@
+.esri-widget--button  {
+    font-size: 14px !important;
+    background-color: #fff;
+    color: #6e6e6e;
+    width: 32px !important;
+    height: 32px !important;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 125ms ease-in-out;
+  }
+
+
+  .Mapscreenres{
+    position: absolute !important;
+    top: 50px !important;
+    bottom: 60px !important;
+    width: 100% !important;
+    padding: 10px !important;
+  }
+
+  /* @media (min-width: 320px) and (max-width: 568px) {
+    .Mapscreenres{
+      height: 440px !important;
+      width: 100vw;
+      padding:10px;
+    } 
+  } */
+
+  /* @media (min-width: 360px) and (max-width: 640px) {
+    .Mapscreenres{
+      height: 440px !important;
+      width: 100vw;
+      padding:10px;
+    } 
+  }
+
+  @media (min-width: 411px) and (max-width: 731px) {
+    .Mapscreenres{
+      height: 530px !important;
+      width: 100vw;
+      padding:10px;
+    } 
+  } */
+
+
+  /* @media (min-width: 411px) and (max-width: 823px) {
+    .Mapscreenres{
+      height: 620px !important;
+      width: 100vw;
+      padding:10px;
+    } 
+  } */
+/* 
+  @media (min-width: 375px) and (max-width: 812px) {
+    .Mapscreenres{
+      height: 610px !important;
+      width: 100vw;
+      padding:10px;
+    } 
+  } */

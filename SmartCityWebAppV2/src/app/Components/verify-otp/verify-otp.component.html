@@ -1,0 +1,83 @@
+<section class="bg">
+    <div class="row">
+    
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 header-color">
+        <!-- <div class="header-color p-0"> -->
+        <div class="bg-img-header p-0">
+          <h1 class="h1-heading"> {{head_title| uppercase}}</h1>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center p-4">
+        <img width="100%" class="side-img" src="../../../assets/img/login-side-img.png" alt="..." />
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 pl-3 pr-3">
+        <div ng-app="myApp" ng-controller="myController">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 form-padding mb-3 ">
+              <!-- <form name="myForm" class="form"> -->
+              <form [formGroup]="otpForm" class="form border-row">
+                <p class="heading">Verify OTP</p>
+                <p class="head-line pb-1">Code is sent to your registered email-id</p>
+                <div class="login-container">
+                  <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 pb-0" style="text-align: center;margin-bottom: -30px;">
+                     <img src="../../../assets/img/password-window.png" height="80%">
+                     
+                     </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 pt-0" style="text-align: center; ">
+                     <!-- <div class="md-form"> -->
+                    <!-- <mdb-icon fas icon="user" class="prefix" style="color: #6146D5;font-size: large;"></mdb-icon> -->
+                      <!-- <mat-form-field style="padding-left: 20px;width: 88%;">
+                        <mat-label style="font-family: 'Segoe UI';font-weight: 400;">OTP</mat-label>
+                        <input type="email" matInput  required autocomplete="off" formControlName="OTP">
+                      </mat-form-field> -->
+
+                      <mat-form-field appearance="outline" style=" width: 340px;">
+                        <mat-label>OTP</mat-label>
+                        <input type="text" matInput class="otp-input" formControlName="OTP" required autocomplete="off" minlength="4" maxlength="4" 
+                        onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                        <mat-error *ngIf="otpForm.get('OTP').hasError('required')">
+                          OTP is required!
+                        </mat-error>
+                        <mat-error *ngIf="otpForm.get('OTP').hasError('maxlength')">
+                          OTP should be 4 digit number!
+                        </mat-error>
+                        <mat-error *ngIf="otpForm.get('OTP').hasError('minlength')">
+                          OTP should be 4 digit number!
+                        </mat-error>
+                      </mat-form-field>
+                      
+                    
+                    </div>
+    
+                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7" style="margin-top: -22px;" >
+                  
+                    </div>
+                  
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pl-4" style="margin-top: -22px;">
+                      <span class="otp-line pl-3" (click)="resendOTP()">Resend OTP</span>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 pt-1 pl-4 pr-4" style="margin-top: 20px;    text-align: center;">
+                      <div class="form-group">
+                        <label class="input-heading"></label>
+                        <!-- <button class="login-btn">LOGIN</button> -->
+                        <button mat-raised-button class="login-btn" (click)="verifyOTP()">VERIFY OTP</button>
+                      
+                        <p class="register-line pt-4">Click here to go back to <a class="register-link" href="#" (click)="logout()">LOGIN</a></p>
+                       
+                        <!-- <div class="clearfix"></div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    </section>

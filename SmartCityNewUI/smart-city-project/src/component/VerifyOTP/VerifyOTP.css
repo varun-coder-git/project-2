@@ -1,0 +1,94 @@
+.verifyotp-header{
+    /* background-image: url(../../assets/curvebg2.png); */
+    padding-top: 20px;
+    padding-bottom: 23px;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+}
+
+.verifyotp-welcome-text-style {
+    text-align: center;
+    display: block;
+    /* padding-left: 35px !important; */
+    padding-top: 55px;
+    font-size: 21px;
+    font-weight: 700;
+}
+.verifyotp-text-message-style {
+    /* padding-left: 35px !important; */
+    text-align: center;
+    padding-top: 0px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.VerifyOTPMuiGrid-spacing-xs-1 > .MuiGrid-item {
+    text-align: center !important;
+    width:100% !important;
+    margin: 8px !important;
+}
+/* .VerifyOTP-MuiGrid-spacing-xs-1 {
+    width: calc(100% + 8px);
+    margin: 8.5px !important;
+} */
+
+.OtpInput-box{
+
+width: 30px !important;
+height: 30px !important;
+text-align: center !important;
+border: 1px solid blue !important;
+}
+
+.Otp-Input-class {
+    justify-content: center !important;
+}
+
+.OtpInput-box-border{
+    width: 2em;
+    text-align: center;
+   
+}
+
+.otp-field-width-style {
+    width: 100% !important;
+}
+
+.otp-textfeild-style {
+    font-size: 25px !important;
+    color: blue !important;
+    text-align-last: center;
+    letter-spacing: 25px !important;
+}
+
+#textfieldOtp {
+    font: inherit;
+    color: blue !important;
+    width: 100% !important;
+    border: 0;
+    height: 2.0em;
+    margin: 0;
+    display: block;
+    padding: 6px 0 7px;
+    min-width: 0;
+    background: none;
+    box-sizing: content-box;
+    animation-name: mui-auto-fill-cancel;
+    letter-spacing: 25px !important;
+    animation-duration: 10ms;
+    -webkit-tap-highlight-color: transparent;
+    text-align: -webkit-center !important;
+    font-weight: bold !important;
+    font-size: 25px !important;
+}
+
+.resendOTP-text-style {
+    padding-top: 10px;
+    font-size: 12px;
+    text-align: right;
+    color: rgb(139 119 243);
+    font-weight: bold;
+    /* padding-top: 2px !important; */
+}
+.resendOTP-cursor-style{
+    cursor: pointer; 
+}

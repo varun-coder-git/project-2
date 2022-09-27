@@ -1,0 +1,231 @@
+<div class="entirePage" *ngIf="incidentData">
+    <div class="row">
+        <div class="col-lg-8 pt-2">
+            <p class="heading">
+                <mdb-icon fas icon="bell" class="title-icon"></mdb-icon>
+                View/Edit Incident
+            </p>
+        </div>
+        <!-- <div class="col-lg-6 pt-2">
+           
+        </div> -->
+        <div class="col-lg-3 ">
+            <!-- <h6><span class="pr-2 titleName"> 
+               
+                        <img src="{{url}}{{imgPath}}" class="img">&nbsp;&nbsp;
+                </span>{{user_name | titlecase}}
+            </h6> -->
+            <p class="complaint-id">Incident ID - <span class="count">{{incidentData.Incident_Id}}</span>
+            </p>
+        </div>
+        <div class="col-lg-1 pt-2" style="text-align: right;">
+            <mdb-icon fas style=" color: #6146D5;cursor: pointer;font-size: 24px;" icon="times" mdbTooltip="Close" placement="left"
+                (click)="onClose()">
+            </mdb-icon>
+        </div>
+    </div>
+    <hr class="hr-title">
+    <div class="row">
+
+        <div class="col-lg-12 title-align" >
+            <span class="titleName">
+                <!-- <mdb-icon class="pr-2" style="color: #6146D5;" fas icon="lightbulb"></mdb-icon> -->
+                {{incidentData.Incident_Title}}
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-5">
+            <p class="pl-5 displaySmallTextTitle">Posted By - <span
+                    style="color: #6146D5;font-weight: 500;">{{incidentData.Full_name| titlecase}}</span> -
+                {{incidentData.Incident_PostedDate}} </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 description-padding">
+            <p class="pl-3 displayMediumText">{{incidentData.Incident_Description}}</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- <div class="col-lg-12 description-padding">
+            <span class="pl-3 category">Category Name:</span><span class="category-value">
+                {{incidentData.Incident_CategoryName}}</span>
+        </div> -->
+<!-- 
+        <div class="col-lg-12 description-padding">
+            <span class="pl-3 category">Incident Status:</span>
+            <span><form [formGroup]='incidentStatusForm'>
+                <span class="form-group">
+                    <select class="form-control col-md-2 fac-dropdown" (change)="onStatusChange($event.target.value)"
+                    formControlName="incidentStatus">
+          
+                        <option selected disabled hidden>Select Status</option>
+
+                        <option class="option" *ngFor="let x of incidentStatus" name="status" ngDefaultControl
+                            [value]="x.incident_status_id"> {{x.incident_status_type}}
+
+                        </option>
+                    </select>
+                </span>
+            </form></span>
+            <span class="save-as" (click)="updateIncidentStatus()" mdbTooltip="Update Incident Status"
+                placement="right">Save Status</span>
+        </div> -->
+        <div class="col-lg-12 description-padding" style="padding-right: 0px;">
+            <span class="pl-3 pr-2 pt-1 category" style="float: left;">Incident Category:</span>
+            <form [formGroup]='incidentCategoryForm' style="float:left; width:25%">
+                <!-- <div class="form-group">
+                    <select class="form-control col-md-2 fac-dropdown" (change)="onCategoryChange($event.target.value)"
+                        formControlName="complaintCategory">
+                       
+                        <option selected disabled hidden>Select Category</option>
+
+                        <option class="option"  name="category" ngDefaultControl
+                            *ngFor="let x of complaintCategoryData" [value]="x.complaint_cat_id">{{x.category_name}}
+
+                        </option>
+                    </select>
+                </div> -->
+                <ng-select class="md-4" [clearable]="false" placeholder="Select/Search Category" formControlName="incidentCategory" onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))'>
+                  
+                    <!-- <option class="option" sledisabled hidden>Select Category</option> -->
+                    <ng-option   value="" selected disabled hidden>Select/Search Category</ng-option>
+                    <ng-option  class="option" *ngFor="let x of incidentCategoryData" [value]="x.incident_cat_id">{{x.incident_cat_type}}
+                     
+                    </ng-option>
+                  </ng-select>
+            </form>
+            <span class="save-as pl-2" (click)="updateIncidentCategory()" mdbTooltip="Update Incident Category"
+                placement="right">Save Category</span>
+        </div>
+        <div class="col-lg-12 description-padding" style="padding-right: 0px;">
+            <span class="pl-3 pr-2 pt-1 category" style="float: left;">Incident Status:</span>
+            <form [formGroup]='incidentStatusForm' style="float:left">
+                <div class="form-group">
+                    <select class="form-control col-md-2 fac-dropdown" (change)="onStatusChange($event.target.value)"
+                    formControlName="incidentStatus">
+          
+                        <option selected disabled hidden>Select Status</option>
+
+                        <option class="option" *ngFor="let x of incidentStatus" name="status" ngDefaultControl
+                            [value]="x.incident_status_id"> {{x.incident_status_type}}
+
+                        </option>
+                    </select>
+                </div>
+            </form>
+            <span class="save-as pl-3" (click)="updateIncidentStatus()" mdbTooltip="Update Incident Status"
+                placement="right">Save Status</span>
+        </div>
+        <!-- <div class="col-lg-2 status-dropdown">
+
+         
+        </div>
+        <div class="col-lg-8" style="padding-top: 4px;padding-left: 0px;">
+            
+        </div> -->
+        <div class="col-lg-12 description-padding" style="margin-top: -20px;">
+            <span class="pl-3 category">Geo Location:</span><span class="category-value"> {{incidentData.address}}</span>
+        </div>
+        <div class="col-lg-12 description-padding">
+            <span class="pl-3 category">Ward Name:</span><span class="category-value"> {{incidentData.Ward_Name |
+                titlecase}}</span>
+        </div>
+
+        <div class="col-lg-12 description-padding">
+
+            <span class="pl-3 category">Attachments:</span>
+
+            <span *ngFor="let filename of thumbnailArray">
+                <i class="{{getFileExtension(filename)}}" style="color:#4e37b0;font-size:50px;padding-left: 20px;"
+                    aria-hidden="true" *ngIf="incident_media"></i> &nbsp;&nbsp;
+
+            </span>
+            <div class="col-lg-12" *ngIf="incident_media.length !== 0">
+            <span class="download" (click)="downloadZip(incidentData.IncidentMedia)" *ngIf="incident_media.length !== 0">{{downloadText}}</span>
+            </div>
+            <span class="downloadNot" *ngIf="incident_media.length == 0">{{downloadText}}</span>
+            <!-- <span class="category-value">  &nbsp; <img class="img-align" src="../../../assets/img/img.png">&nbsp;&nbsp;
+                <img class="img-align" src="../../../assets/img/img.png">&nbsp;&nbsp;
+                <img class="img-align" src="../../../assets/img/pdf.png"></span> -->
+        </div>
+
+
+        <!-- <div class="col-lg-12 description-padding">
+
+            <span class="download" (click)="downloadZip(incidentData.incident_media)">{{downloadText}}</span>
+        </div> -->
+    </div>
+
+    <div class="space"></div>
+    <div class="comment-count">{{incidentData.comment_count}} comments</div>
+
+
+
+    <div *ngFor="let comment of incidentData.comments">
+        <div class="row">
+            <div class="col-lg-10" style="margin-left: 33px;">
+                <h6 class="citizen-name-comment"><span class="pr-3">
+
+                        <!-- <img src="{{url}}{{comment.image_path}}" class="img-square"> -->
+                        <img src="{{comment.image_path}}" class="img-square" *ngIf="comment.account_type == 'social'">
+                        <img src="{{url}}{{comment.image_path}}" class="img-square" *ngIf="comment.account_type == 'manual'">
+                    </span>{{comment.full_name}}<span class="pt-2 displaySmallTextComment"> - Posted -
+                        {{comment.submission_date}}</span></h6>
+            </div>
+
+            <div class="col-lg-1" style="text-align: center;padding-left:83px">
+                <mdb-icon style=" color: #FE4848;cursor: pointer;" fas icon="trash-alt"
+                    (click)="deleteIncidentComment(comment.comment_incident_id, comment.is_admin, comment.user_id)">
+                </mdb-icon>
+            </div>
+        </div>
+        <div class="row pl-5 pr-5">
+            <p class="pl-3 pr-5 displayMediumTextComment"> {{comment.comments}} </p>
+        </div>
+        <hr>
+    </div>
+
+    <div class="col-lg-12 "
+        *ngIf="incidentData.comment_count!=0 && incidentData.comment_count>3 && offset<incidentData.comment_count">
+
+        <span class="load-more" (click)="getIncidentDetails()">Load more comments...</span>
+    </div>
+
+    <div class="row">
+        <div class="col-md-11 col-lg-11 col-sm-11 col-xl-11 pl-3 pr-3 pt-4">
+
+            <div class="form-group">
+                <textarea placeholder="Leave comment" class="form-control input" [(ngModel)]="userComment" (keydown.enter)="onKeydown($event)"
+                    (keyup.enter)="addIncidentComment();" maxlength="500"></textarea>
+            </div>
+        </div>
+        <div class="col-md-1 col-lg-1 col-sm-1 col-xl-1 pl-2 pr-3">
+
+            <div class="form-group" style="padding-top: 36px; margin-left: -5px;">
+
+                <i style="font-size: 22px;color:#6146D5;padding-left:10px;cursor: pointer;" mdbTooltip="Post Comment"
+                    placement="top" (click)="addIncidentComment();" class="far fa-paper-plane"> </i>
+            </div>
+        </div>
+    </div>
+
+    <!-- <hr>
+    <div class="row">
+        <div class="col-md-4 pt-2 pl-3 pb-0">
+    
+        </div>
+        <div class="col-md-8">
+            <div class="float-right mb-3 pt-2 pb-0 button-padding">
+                <button mat-raised-button class="cancel" (click)="onClose()">Cancel</button>
+                <button mat-raised-button class="save ml-2" (click)="updateIncidentStatus()">Save</button>
+            </div>
+        </div>
+        
+    </div>  -->
+
+
+
+</div>

@@ -1,0 +1,309 @@
+@media (min-width: 200px) and (max-width: 300px) {
+
+    .become-volunter-banners {
+        background-image: url("../../../assets/banner/donation_mob.jpg");
+        height: 200px;
+        width: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .polls-banners {
+        background-image: url("../../../assets/banner/Surveys_mob.jpg");
+        height: 140px;
+        width: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .become-a-volunteer-banner-text {
+        padding-right: 20%;
+        padding-top: 12%;
+        padding-left: 15px;
+        text-align: left;
+        font-family: 'Segoe UI';
+        font-size: 11px;
+        /* font-family: normal normal normal 10px/16px Segoe UI; */
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-shadow: 0px 3px 6px #0000002b;
+    }
+}
+
+@media (min-width: 301px) and (max-width: 349px) {
+
+    .become-volunter-banners {
+        background-image: url("../../../assets/banner/donation_mob.jpg");
+        height: 200px;
+        width: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .polls-banners {
+        background-image: url("../../../assets/banner/Surveys_mob.jpg");
+        height: 200px;
+        width: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .become-a-volunteer-banner-text {
+        padding-right: 20%;
+        padding-top: 14%;
+        padding-left: 15px;
+        text-align: left;
+        font-family: 'Segoe UI';
+        font-size: 14px;
+        /* font-family: normal normal normal 14px/16px Segoe UI; */
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-shadow: 0px 3px 6px #0000002b;
+    }
+}
+
+
+@media (min-width: 350px) and (max-width: 400px)
+{
+
+    .polls-banners {
+        background-image: url("../../../assets/banner/Surveys_mob.jpg");
+        height: 180px;
+        width: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .become-volunter-banners {
+        background-image: url("../../../assets/banner/donation_mob.jpg");
+        height: 200px;
+        width: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .become-a-volunteer-banner-text {
+        padding-right: 20%;
+        padding-top: 14%;
+        padding-left: 15px;
+        text-align: left;
+        font: normal normal normal 16px/18px Segoe UI;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-shadow: 0px 3px 6px #0000002b;
+    }
+
+}
+
+@media (min-width: 400px) and (max-width: 530px)
+{
+
+    .polls-banners {
+        background-image: url("../../../assets/banner/Surveys_mob.jpg");
+        height: 200px;
+        width: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .become-volunter-banners {
+        background-image: url("../../../assets/banner/donation_mob.jpg");
+        height: 200px;
+        width: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .become-a-volunteer-banner-text {
+        padding-right: 20%;
+        padding-top: 18%;
+        padding-left: 15px;
+        text-align: left;
+        font: normal normal normal 18px/19px Segoe UI;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-shadow: 0px 3px 6px #0000002b;
+    }
+
+}
+
+@media (min-width: 531px) and (max-width: 576px)
+{
+
+    .polls-banners {
+        background-image: url("../../../assets/banner/Surveys_mob.jpg");
+        height: 200px;
+        width: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .become-volunter-banners {
+        background-image: url("../../../assets/banner/donation_mob.jpg");
+        height: 200px;
+        width: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .become-a-volunteer-banner-text {
+        padding-right: 20%;
+        padding-top: 14%;
+        padding-left: 15px;
+        text-align: left;
+        font: normal normal normal 18px/26px Segoe UI;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-shadow: 0px 3px 6px #0000002b;
+    }
+
+}
+
+@media (min-width: 580px) and (max-width: 765px) {
+
+    .become-volunter-banners {
+        background-image: url("../../../assets/banner/donation_desk.jpg");
+        height: 200px;
+        width: 100%;
+    }
+
+    .polls-banners {
+        background-image: url("../../../assets/banner/Surveys_desk.jpg");
+        height: 200px;
+        width: 100%;
+    }
+
+    .become-a-volunteer-banner-text {
+        padding-right: 15px;
+        padding-top: 18%;
+        padding-left: 15px;
+        text-align: left;
+        font: normal normal normal 18px/26px Segoe UI;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-shadow: 0px 3px 6px #0000002b;
+    }
+
+}
+
+@media (min-width: 767px) and (max-width: 990px) {
+
+    .become-volunter-banners {
+        background-image: url("../../../assets/banner/donation_desk.jpg");
+        height: 200px;
+        width: 100%;
+    }
+
+    .polls-banners {
+        background-image: url("../../../assets/banner/Surveys_desk.jpg");
+        height: 200px;
+        width: 100%;
+    }
+
+    .become-a-volunteer-banner-text {
+        padding-right: 15px;
+        padding-top: 20%;
+        padding-left: 25px;
+        text-align: left;
+        font: normal normal normal 18px/26px Segoe UI;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-shadow: 0px 3px 6px #0000002b;
+    }
+
+}
+
+@media (min-width: 1021px) and (max-width: 1367px) {
+    
+    .become-volunter-banners {
+        background-image: url("../../../assets/banner/donation_desk.jpg");
+        height: 200px;
+        width: 100%;
+    }
+
+    .polls-banners {
+        background-image: url("../../../assets/banner/Surveys_desk.jpg");
+        height: 200px;
+        width: 100%;
+    }
+
+    .become-a-volunteer-banner-text {
+        padding-right: 15px;
+        padding-top: 18%;
+        padding-left: 15px;
+        text-align: left;
+        font: normal normal normal 18px/26px Segoe UI;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-shadow: 0px 3px 6px #0000002b;
+    }
+    .pb-10{
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1020px) {
+
+    .become-volunter-banners {
+        background-image: url("../../../assets/banner/donation_desk.jpg");
+        height: 200px;
+        width: 100%;
+    }
+
+    .polls-banners {
+        background-image: url("../../../assets/banner/Surveys_desk.jpg");
+        height: 200px;
+        width: 100%;
+    }
+
+    .become-a-volunteer-banner-text {
+        padding-right: 15px;
+        padding-top: 10%;
+        padding-left: 0px;
+        text-align: left;
+        font: normal normal normal 18px/26px Segoe UI;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-shadow: 0px 3px 6px #0000002b;
+    }
+
+}
+
+@media (min-width: 1367px) and (max-width: 3500px) {
+
+    .polls-banners {
+        background-image: url("../../../assets/banner/Surveys_desk.jpg");
+        height: 200px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .become-volunter-banners {
+        background-image: url("../../../assets/banner/donation_desk.jpg");
+        height: 126px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .become-a-volunteer-banner-text {
+        padding-right: 22px;
+        padding-top: 8%;
+        padding-left: 15px;
+        text-align: left;
+        font: normal normal normal 18px/26px Segoe UI;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-shadow: 0px 3px 6px #0000002b;
+    }
+}

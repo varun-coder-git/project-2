@@ -1,0 +1,170 @@
+<div class="entirePage" *ngIf="volunteerData">
+    <div class="row">
+        <div class="col-lg-7 pt-2">
+            <p class="heading">
+                <mdb-icon far icon="hand-paper" class="title-icon"></mdb-icon>
+                Volunteer Activity Details
+            </p>
+        </div>
+        <!-- <div class="col-lg-6 pt-2">
+           
+        </div> -->
+        <div class="col-lg-4 ">
+            <!-- <h6><span class="pr-2 titleName"> 
+               
+                        <img src="{{url}}{{imgPath}}" class="img">&nbsp;&nbsp;
+                </span>{{user_name | titlecase}}
+            </h6> -->
+            <p class="complaint-id">Volunteer Activity ID - <span class="count">{{volunteerData.volunteer_id}}</span>
+            </p>
+        </div>
+        <div class="col-lg-1 pt-2" style="text-align: right;">
+            <mdb-icon fas style=" color: #6146D5;cursor: pointer;font-size: 24px;" icon="times" mdbTooltip="Close" placement="left"
+                (click)="onClose()">
+            </mdb-icon>
+        </div>
+    </div>
+    <hr class="hr-title">
+    <div class="row">
+
+        <div class="col-lg-12 title-align">
+            <span class="titleName">
+                <!-- <mdb-icon class="pr-2" style="color: #6146D5;" fas icon="lightbulb"></mdb-icon> -->
+                {{volunteerData.title}}
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-5">
+            <p class="pl-5 displaySmallTextTitle">Posted By - <span
+                    style="color: #6146D5;font-weight: 500;">{{volunteerData.PostedBy | titlecase}}</span> -
+                {{volunteerData.PostedOn}} </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 description-padding">
+            <p class="pl-3 displayMediumText">{{volunteerData.description}}</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 description-padding">
+            <span class="pl-3 category">Category Name:</span><span class="category-value">
+                {{volunteerData.volunteer_category_name}}</span>
+        </div>
+        <div class="col-lg-12 description-padding">
+            <span class="pl-3 category">Volunteer Activity Start Date:</span><span class="category-value">
+                {{volunteerData.start_date| date:'MMMM d, y'}}</span>
+        </div>
+        <div class="col-lg-12 description-padding">
+            <span class="pl-3 category">Volunteer Activity End Date:</span><span class="category-value">
+                {{volunteerData.end_date| date:'MMMM d, y'}}</span>
+        </div>
+        <!-- <div class="col-lg-3 description-padding" style="padding-right: 0px;">
+            <span class="pl-3 category">Complaint Status:</span>
+        </div>
+        <div class="col-lg-2 status-dropdown">
+            <form [formGroup]='complaintStatusForm'>
+                <div class="form-group">
+                    <select class="form-control col-md-2 fac-dropdown" (change)="onStatusChange($event.target.value)"
+                        formControlName="complaintStatus">
+                       
+                        <option selected disabled hidden>Select Status</option>
+
+                        <option class="option" *ngFor="let x of complaintStatus" name="status" ngDefaultControl
+                            [value]="x.complaint_status_id"> {{x.status_name}}
+
+                        </option>
+                    </select>
+                </div>
+            </form>
+
+        </div>
+        <div class="col-lg-7" style="padding-top: 4px;">
+            <span class="save-as" (click)="updateComplaintStatus()" mdbTooltip="Update Complaint Status"
+                placement="right">Save Status</span>
+        </div> -->
+        <div class="col-lg-12 description-padding">
+            <span class="pl-3 category">Geo Location:</span><span class="category-value"> {{volunteerData.address}}</span>
+        </div>
+        <div class="col-lg-12 description-padding">
+            <span class="pl-3 category">Ward Name:</span><span class="category-value"> {{volunteerData.ward_name |
+                titlecase}}</span>
+        </div>
+
+        <div class="col-lg-12 description-padding">
+
+            <span class="pl-3 category">Attachments:</span>
+            <span *ngFor="let filename of thumbnailArray">
+                <i class="{{getFileExtension(filename)}}" style="color:#4e37b0;font-size:50px;padding-left: 20px;"
+                    aria-hidden="true" *ngIf="volunteer_media"></i> &nbsp;&nbsp;
+
+            </span>
+            <div class="col-lg-12" *ngIf="volunteer_media.length !== 0">
+                <span class="download" (click)="downloadZip(volunteerData.media_files)" >{{downloadText}}</span>
+            </div>
+            
+            <span class="downloadNot" *ngIf="volunteer_media.length == 0">{{downloadText}}</span>
+        </div>
+        <!-- <div class="col-lg-12 description-padding">
+   
+            <span class="download" (click)="downloadZip(volunteerData.media_files)">{{downloadText}}</span>
+        </div> -->
+    </div>
+
+    <div class="space"></div>
+    <div class="comment-count">{{volunteerData.comment_count}} comments</div>
+  
+
+
+    <div *ngFor="let comment of volunteerData.comments_data">
+        <div class="row">
+            <div class="col-lg-10" style="margin-left: 33px;">
+                <h6 class="citizen-name-comment"><span class="pr-3">
+
+                        <!-- <img src="{{url}}{{comment.image_path}}" class="img-square"> -->
+                        <img src="{{comment.image_path}}" class="img-square" *ngIf="comment.account_type == 'social'">
+                        <img src="{{url}}{{comment.image_path}}" class="img-square" *ngIf="comment.account_type == 'manual'">
+                    </span>{{comment.PostedBy}}<span class="pt-2 displaySmallTextComment"> - Posted -
+                        {{comment.PostedOn}}</span></h6>
+            </div>
+
+            <div class="col-lg-1" style="text-align: center;padding-left:83px">
+                <mdb-icon style=" color: #FE4848;cursor: pointer;" fas icon="trash-alt"
+                    (click)="deleteVolunteerComment(comment.volunteer_id, comment.is_admin, comment.user_id)">
+                </mdb-icon>
+            </div>
+        </div>
+        <div class="row pl-5 pr-5">
+            <p class="pl-3 pr-5 displayMediumTextComment"> {{comment.comment}} </p>
+        </div>
+        <hr>
+    </div>
+
+    <div class="col-lg-12 "
+        *ngIf="volunteerData.comment_count!=0 && volunteerData.comment_count>3 && offset<volunteerData.comment_count">
+
+        <span class="load-more" (click)="getVolunteerDetails()">Load more comments...</span>
+    </div>
+    <div class="row">
+        <div class="col-md-11 col-lg-11 col-sm-11 col-xl-11 pl-3 pr-3 pt-4">
+
+            <div class="form-group">
+                <textarea placeholder="Leave comment" class="form-control input" [(ngModel)]="userComment" (keydown.enter)="onKeydown($event)"
+                    (keyup.enter)="addVolunteerComment();" maxlength="500"></textarea>
+            </div>
+        </div>
+        <div class="col-md-1 col-lg-1 col-sm-1 col-xl-1 pl-2 pr-3">
+
+            <div class="form-group" style="padding-top: 36px;margin-left: -5px; ">
+
+                <i style="font-size: 22px;color:#6146D5;padding-left:10px;cursor: pointer;" mdbTooltip="Post Comment"
+                    placement="top" (click)="addVolunteerComment();" class="far fa-paper-plane"> </i>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

@@ -1,0 +1,55 @@
+.endDateColor{
+    color:#3a3aa0;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.pollQuestion{
+    padding-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.radiowidth{
+    /* width: 100%; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.flexcloumnflow{
+    flex-direction: column;
+}
+.cursor-style{
+    cursor: pointer;
+}
+
+.MuiFormControlLabel-root {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0px !important; 
+    margin-right: 0px !important;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.buttonWidthCancel{
+    width: 100%;
+    background-color:#474747 !important;
+    font-size: 12px;
+    color: white !important;
+    border-radius: 2px;
+}
+
+.buttonWidthSubmit{
+    width: 100%;
+    background-color:#7367F0 !important;
+    font-size: 12px;
+    color: white !important;
+    border-radius: 2px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: none !important;
+}
